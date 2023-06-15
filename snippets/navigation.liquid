@@ -92,24 +92,62 @@
 
     <ul class="megamenu">
       <div class="megamenu__container">
+      
         {% if block.settings.nav_image != blank  %}
-        <span class="desktop-3 tablet-hide mm-image">
-          {% if block.settings.link != blank %}
-          <a href="{{ block.settings.link }}">
-          {% endif %}
-            <div class="megamenu__imagecontainer">
-              {% render 'basic-responsive-image', type: block.settings.nav_image, width: 300 %}
-            </div>
-          {% if block.settings.link != blank %}
-          </a>
-          {% endif %}
-        </span>
+            {% capture navimage %}
+              <span class="desktop-3 tablet-hide mm-image" data-image="image1">
+                {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+                {% endif %}
+                  <div class="megamenu__imagecontainer">
+                    {% render 'basic-responsive-image', type: block.settings.nav_image, width: 300 %}
+                  </div>
+                {% if block.settings.link != blank %}
+                </a>
+                {% endif %}
+              </span>
+            {% endcapture %}
+             {% endif %}
+          {% if block.settings.nav_image1 != blank  %}
+            {% capture navimage1 %}
+              <span class="desktop-3 tablet-hide mm-image displaynone" data-image="image2">
+                {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+                {% endif %}
+                  <div class="megamenu__imagecontainer">
+                    {% render 'basic-responsive-image', type: block.settings.nav_image1, width: 300 %}
+                  </div>
+                {% if block.settings.link != blank %}
+                </a>
+                {% endif %}
+              </span>
+            {% endcapture %}
         {% endif %}
+          {% if block.settings.nav_image2 != blank  %}
+            {% capture navimage2 %}
+              <span class="desktop-3 tablet-hide mm-image displaynone" data-image="image3">
+                {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+                {% endif %}
+                  <div class="megamenu__imagecontainer">
+                    {% render 'basic-responsive-image', type: block.settings.nav_image2, width: 300 %}
+                  </div>
+                {% if block.settings.link != blank %}
+                </a>
+                {% endif %}
+              </span>
+            {% endcapture %}
+        {% endif %}
+         {% if block.settings.nav_image_position == 'left' %}
+              {{ navimage }}
+              {{ navimage1 }}
+              {{ navimage2 }}
+            {% endif %}
         <span class="{% if block.settings.nav_image != blank %}desktop-9{% else %}desktop-12{% endif %} tablet-6">
           {% for sub_link in link.links %}
             <li class="megamenu__listcontainer desktop-3 tablet-fourth">
               <h4 class="megamenu__header">
-                <a class="megamenu__headerlink" href="{{ sub_link.url }}">{{ sub_link.title }}</a>
+                <a class="megamenu__headerlink" href="{{ sub_link.url }}" data-image="image{{ forloop.index }}">{{ sub_link.title }}</a>
               </h4>
               {% if sub_link.links != blank %}
                 <ul class="megamenu__list">
@@ -123,6 +161,11 @@
             </li>
           {% endfor %}
         </span>
+         {% if block.settings.nav_image_position == 'right' %}
+              {{ navimage }}
+              {{ navimage1 }}
+              {{ navimage2 }}
+            {% endif %}
       </div>
     </ul>
   </li>
