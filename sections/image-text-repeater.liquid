@@ -1,0 +1,112 @@
+<section class="image_text_repeater {% if section.settings.additionalClass %}{{ section.settings.additionalClass }}{% endif %}">
+  <div class="row">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="image_text_wrapper">
+      {% for block in section.blocks %}
+      <div class="image_text_row">
+        <div class="image_text_col col">
+          <div class="img_block">
+            <img class="img-fluid" src="{{ block.settings.image | image_url : master}}" alt="" />
+          </div>
+        </div>
+        <div class="image_text_col col">
+          <div class="content">
+            {{ block.settings.content }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {% if section.settings.additionalClass == "beans_flow" %}
+        <div class="beansFlowing">
+          <div class="beansMain bean-1"></div>
+          <div class="beansMain bean-2"></div>
+          <div class="beansMain bean-3"></div>
+          <div class="beansMain bean-4"></div>
+          <div class="beansMain bean-5"></div>
+          <div class="beansMain bean-6"></div>
+          <div class="beansMain bean-7"></div>
+          <div class="beansMain bean-8"></div>
+          <div class="beansMain bean-9"></div>
+          <div class="beansMain bean-10"></div>
+          <div class="beansMain bean-11"></div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if section.settings.additionalClass == "beans_flow" %}
+<script>
+  if(window.innerWidth >= 1000) {
+    gsap.registerPlugin(ScrollTrigger);
+    const beans = document.querySelectorAll('.beansMain');
+  
+    $('.beansMain').height(90/beans.length+'%')
+  
+    beans.forEach((bean) => {
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: bean,
+          start: 'top center',
+          end: 'bottom center',
+          scrub: true
+        },
+      });
+    
+      timeline.fromTo(
+        bean,
+        { autoAlpha: 0 }, // Initial state
+        { autoAlpha: 1 } // Final state
+      );
+    });
+  }
+</script>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Image Text Repeater",
+	"settings": [
+      	 {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+			"default" : "Heading"
+          },
+      	 {
+            "type": "text",
+            "id": "additionalClass",
+            "label": "Additional Class"
+          }
+	],
+"blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+		{
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+"presets": [
+    {
+      "name": "Image Text Repeater"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

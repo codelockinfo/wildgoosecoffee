@@ -1,0 +1,60 @@
+  <section class="collection_banner_custom" data-aos="fade"
+  data-section-id="{{ section.id }}" >
+      <div class="row">
+          <div class="col-6 content-part">
+            <h2>{{ section.settings.title }}</h2>
+            <p>{{ section.settings.content }}</p>
+            {% if section.settings.button != blank and section.settings.link != blank %}
+              <div class="cta">
+                <a href="{{ section.settings.link }}">
+                  {{ section.settings.button | escape }}
+                </a>
+              </div>
+            {% endif %}
+          </div>
+          <div class="col-6">
+            <div class="box-ratio">
+              <img src="{{ section.settings.image | img_url: 'master'  }}" alt="" class="img-fluid" width="auto" height="auto"/>
+            </div>
+            
+          </div>
+      </div>
+  </section>
+  
+{% schema %}
+{
+  "name": "IWT banner Custom",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+     {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+     {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IWT banner Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,69 @@
+<section class="footer_insta gridlock">
+  <div class="bordered_sec">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="row">
+    <span>{{ section.settings.section_icon }}</span>
+    <h2>{{ section.settings.title }}</h2>
+    <div class="insta_post_wrapper">
+      {% for block in section.blocks %}
+      <div class="insta_post">
+        <a href="{{ block.settings.instalink }}" target="_blank">
+          <img src="{{ block.settings.instaimage | image_url : master }}" alt="Insta" />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Footer Instagram",
+	"settings": [
+	{
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+			"default" : "Heading"
+          },
+          {
+            "type": "html",
+            "id": "section_icon",
+            "label": "Section Icon"
+		}
+	],
+"blocks": [
+      {
+        "type": "instaimage",
+        "name": "Insta Image",
+        "settings": [
+		{
+           "type": "image_picker",
+           "id": "instaimage",
+           "label": "Post Image"
+			
+         },
+          {
+            "type": "url",
+            "id": "instalink",
+            "label": "Post Link"
+          }
+        ]
+      }
+    ],
+"presets": [
+    {
+      "name": "Footer Instagram"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

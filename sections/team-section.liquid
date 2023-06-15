@@ -1,0 +1,74 @@
+<section class="team_section">
+  <div class="row">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="content">
+      {{ section.settings.content }} 
+    </div>
+  </div>
+  <div class="team_members_wrap">
+    {% for block in section.blocks %}
+    <div class="member_card">
+      <div class="member_img">
+        <img class="img-fluid" src="{{ block.settings.memberimage | image_url : master}}" alt="{{ block.settings.membername }}" />
+        <div class="member_info">
+          <h3>{{ block.settings.membername }}</h3>
+          <span>{{ block.settings.memberdesignation }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Team Section",
+	"settings": [
+	{
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+			"default" : "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+		}
+	],
+"blocks": [
+      {
+        "type": "member",
+        "name": "Member",
+        "settings": [
+          {
+            "type": "text",
+            "id": "membername",
+            "label": "Member Name"
+          },
+          {
+            "type": "text",
+            "id": "memberdesignation",
+            "label": "Member Designation"
+          },
+		{
+           "type": "image_picker",
+           "id": "memberimage",
+           "label": "Member Image"
+         }
+        ]
+      }
+    ],
+"presets": [
+    {
+      "name": "Team Section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

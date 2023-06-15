@@ -1,0 +1,34 @@
+{% comment %}
+snippets/sidebar-menu.liquid
+
+Renders a menu in the sidebar.
+
+Accepts:
+
+Block {Object} - Section block.
+
+Usage:
+
+{%
+  render: 'sidebar-menu',
+  block: block
+%}
+{% endcomment %}
+<div class="collection__sidebar-block" {{ block.shopify_attributes }}>
+  {% if block.settings.title != blank %}<h4>{{ block.settings.title }}</h4>{% endif %}
+  <ul class="collection__sidebar-menu sidebar-menu">
+    {% for link in linklists[block.settings.side_nav].links %}
+    {% if link.links != blank %}
+    <li class="extend has_sub_menu" aria-haspopup="true" aria-expanded="false"><a href="{{ link.url }}">{{ link.title }}</a>
+      <ul class="extended-submenu">
+        {% for sub_link in link.links %}
+        <li><a href="{{ sub_link.url }}">{{ sub_link.title }}</a></li>
+        {% endfor %}
+    </ul>
+    </li>
+    {% else %}
+    <li>{{ link.title | link_to: link.url }}</li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,104 @@
+<section class="location_Section">
+  <div class="row">
+    <div class="map_sec">
+      {% if section.settings.mapcode != blank %}
+      <div class="embed_code">
+        {{ section.settings.mapcode }}
+      </div>
+      {% else %}
+      <div class="img_block">
+        <img class="img-fluid" src="{{ section.settings.mapimage | image_url : master}} " alt="" />
+      </div>
+      {% endif %}
+    </div>
+    <div class="location_info">
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.content }}</p>
+      <ul>
+        <li>
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.02878 4L6.48356 7.645C7.76421 8.49627 8.40454 8.9219 9.09639 9.0873C9.7078 9.23347 10.3451 9.23347 10.9565 9.0873C11.6483 8.9219 12.2887 8.49627 13.5693 7.645L18.9736 4.04005M5.8 15H14.2C15.8802 15 16.7202 15 17.362 14.673C17.9265 14.3854 18.3854 13.9265 18.673 13.362C19 12.7202 19 11.8802 19 10.2V5.8C19 4.11984 19 3.27976 18.673 2.63803C18.3854 2.07354 17.9265 1.6146 17.362 1.32698C16.7202 1 15.8802 1 14.2 1H5.8C4.11984 1 3.27976 1 2.63803 1.32698C2.07354 1.6146 1.6146 2.07354 1.32698 2.63803C1 3.27976 1 4.11984 1 5.8V10.2C1 11.8802 1 12.7202 1.32698 13.362C1.6146 13.9265 2.07354 14.3854 2.63803 14.673C3.27976 15 4.11984 15 5.8 15Z" stroke="#6D3628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <a href="mailto:{{ section.settings.email }}">
+            {{ section.settings.email }}
+          </a>
+        </li>
+        <li>
+          <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 1V2.4C5 2.96005 5 3.24008 5.10899 3.45399C5.20487 3.64215 5.35785 3.79513 5.54601 3.89101C5.75992 4 6.03995 4 6.6 4H7.4C7.96005 4 8.24008 4 8.45399 3.89101C8.64215 3.79513 8.79513 3.64215 8.89101 3.45399C9 3.24008 9 2.96005 9 2.4V1M4.2 19H9.8C10.9201 19 11.4802 19 11.908 18.782C12.2843 18.5903 12.5903 18.2843 12.782 17.908C13 17.4802 13 16.9201 13 15.8V4.2C13 3.0799 13 2.51984 12.782 2.09202C12.5903 1.71569 12.2843 1.40973 11.908 1.21799C11.4802 1 10.9201 1 9.8 1H4.2C3.0799 1 2.51984 1 2.09202 1.21799C1.71569 1.40973 1.40973 1.71569 1.21799 2.09202C1 2.51984 1 3.07989 1 4.2V15.8C1 16.9201 1 17.4802 1.21799 17.908C1.40973 18.2843 1.71569 18.5903 2.09202 18.782C2.51984 19 3.07989 19 4.2 19Z" stroke="#6D3628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <a href="tel:{{ section.settings.phoneno }}">
+            {{ section.settings.phoneno }}
+          </a>
+        </li>
+        <li>
+          <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 19C11.5 15.4 15 12.1764 15 8.2C15 4.22355 11.866 1 8 1C4.13401 1 1 4.22355 1 8.2C1 12.1764 4.5 15.4 8 19Z" stroke="#6D3628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 11C9.65685 11 11 9.65685 11 8C11 6.34315 9.65685 5 8 5C6.34315 5 5 6.34315 5 8C5 9.65685 6.34315 11 8 11Z" stroke="#6D3628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>
+            {{ section.settings.address }}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Location Section",
+	"settings": [
+      	{
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+			"default" : "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+		},
+      {
+            "type": "text",
+            "id": "email",
+            "label": "Email ID",
+			"default" : "contact@wildgoosecoffeeroasters.com"
+          },
+      {
+            "type": "text",
+            "id": "phoneno",
+            "label": "Phone Number",
+			"default" : "(123) 456 - 789"
+          },
+      {
+            "type": "text",
+            "id": "address",
+            "label": "Address",
+			"default" : "Address"
+          },
+      {
+           "type": "image_picker",
+           "id": "mapimage",
+           "label": "Map Image"
+         },
+      {
+        "type" : "html",
+        "id" : "mapcode",
+        "label": "Map Embed Code"
+      }
+	],
+"presets": [
+    {
+      "name": "Location Section"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

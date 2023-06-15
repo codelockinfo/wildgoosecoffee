@@ -1,0 +1,112 @@
+<div id="loader">
+  <div class="animBeansHolder">
+    <img src="https://cdn.shopify.com/s/files/1/0261/8585/files/bean-1.png?v=1685638391" />
+    <img src="https://cdn.shopify.com/s/files/1/0261/8585/files/bean-2.png?v=1685641046" />
+    <img src="https://cdn.shopify.com/s/files/1/0261/8585/files/bean-3.png?v=1685641046" />
+    <img src="https://cdn.shopify.com/s/files/1/0261/8585/files/bean-4.png?v=1685641046" />
+    <img src="https://cdn.shopify.com/s/files/1/0261/8585/files/bean-5.png?v=1685641046" />
+  </div>
+</div>
+
+<style>
+.animBeansHolder img {
+   width: 30px;
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: darken;
+}
+.animBeansHolder {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#loader {
+  height: 100vh;
+  background: linear-gradient(180deg, #FFF8E3 27.25%, #FFF5D9 74.56%, #FFFDF6 97.85%);
+  position: fixed;
+  display: grid;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.5s ease-out;
+  z-index: 11;
+}
+.loader-hidden {
+  opacity: 0;
+}
+</style>
+
+<script>
+function showLoader() {
+  document.getElementById("loader").style.display = "grid";
+}
+
+function hideLoader() {
+ var loader = document.getElementById("loader");
+  loader.classList.add("loader-hidden"); // Add the "loader-hidden" class
+  setTimeout(function() {
+    loader.style.display = "none"; // Hide the loader after the fade-out effect
+    initialTimeline.pause();
+    reversedTimeline.pause();
+  }, 500);
+}
+
+showLoader();
+
+var minimumLoaderTime = 6000;
+
+var minimumTimeElapsed = false;
+
+function checkMinimumTime() {
+  minimumTimeElapsed = true;
+  hideLoader();
+}
+
+setTimeout(checkMinimumTime, minimumLoaderTime);
+
+window.onload = function() {
+  if (!minimumTimeElapsed) {
+    setTimeout(hideLoader, minimumLoaderTime);
+  }
+};
+
+
+var elements = document.querySelectorAll('.animBeansHolder img');
+
+var timeline = gsap.timeline({
+  repeat: -1,
+  repeatDelay: 0.5 // Delay between each repeat iteration
+});
+
+var initialTimeline = gsap.timeline();
+
+initialTimeline.to(elements, {
+  duration: 0.5,
+  y: -40,
+  ease: Back.easeOut.config(1.7),
+  stagger: {
+    amount: 0.7,
+    onComplete: function () {
+      gsap.to(this.targets(), { y: 0,ease: Back.easeOut.config(1.7), duration: 0.5 }); // Revert y-axis to 0
+    }
+  }
+});
+
+var reversedTimeline = gsap.timeline();
+
+reversedTimeline.to(elements, {
+  duration: 0.7,
+  y: -40,
+  ease: Back.easeOut.config(1.7),
+  stagger: {
+    amount: -0.7,
+    onComplete: function () {
+      gsap.to(this.targets(), { y: 0, ease: Back.easeOut.config(1.7), duration: 0.5 }); // Revert y-axis to 40
+    }
+  }
+});
+
+timeline.add(initialTimeline).add(reversedTimeline, "+=0.5");
+
+</script>

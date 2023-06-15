@@ -1,0 +1,94 @@
+{% comment %}
+snippets/collection-sidebar.liquid
+
+Collection sidebar.
+Includes blocks:
+- Collection image
+- Filters
+- Menu
+- Text note
+- Image
+
+Accepts:
+
+  - collection: {Object} collection
+  - block: {Object} section block
+  - unique_id: {String} A unique identifier used to make the inputs unique
+
+Usage:
+
+{%
+  render 'collection-sidebar',
+  collection: collection,
+  block: sidebar_block,
+  unique_id: 'collection-sidebar-mobile'
+%}
+
+ToDos
+- Switch main loop to use case/when instead of if
+{% endcomment %}
+<div id="sidebar" class="collection__sidebar--wrapper sidebar">
+  <form id="CollectionSidebarFiltersForm">
+    <div class="collection__sidebar--sidebar__inner-wrapper{% if section.settings.is_sticky %} is_sticky{% endif %}">
+
+        {% comment %}
+        Include block settings for collection template to add sidebar menus
+        {% endcomment %}
+
+      {% for block in section.blocks %}
+        {% if block.type == 'sidebar_collection_image' %}
+          <div class="collection__sidebar-block" {{ block.shopify_attributes }}>
+            {% if collection.image %}
+              {% render 'basic-responsive-image', type: collection, width: 400 %}
+            {% endif %}
+          </div>
+        {% elsif block.type == 'side_filter' %}
+          <div class="collection__sidebar-block" {{ block.shopify_attributes }}>
+            {%- for filter in collection.filters -%}
+
+              {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+              {% case filter.type %}
+
+                <!-- List -->
+                {% when 'list' %}
+                  {%
+                    render 'sidebar-list-filter',
+                    filter: filter,
+                    block: block,
+                    unique_id: unique_id
+                  %}
+
+                <!-- Price range -->
+                {% when 'price_range' %}
+                  {%
+                    render 'sidebar-price-range-filter',
+                    filter: filter,
+                    block: block,
+                    unique_id: unique_id,
+                    cart: cart,
+                    forloop: forloop
+                  %}
+              {% endcase %}
+            {%- endfor -%}
+          </div>
+        {% elsif block.type == 'menu' %}
+          {%
+            render: 'sidebar-menu',
+            block: block
+          %}
+        {% elsif block.type == 'image' %}
+          {%
+            render 'sidebar-image',
+            block: block,
+            forloop: forloop
+          %}
+        {% elsif block.type == 'text_note' %}
+          {%
+            render 'sidebar-text',
+            block: block
+          %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </form>
+</div>

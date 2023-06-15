@@ -1,0 +1,152 @@
+{%- liquid
+
+  assign section_padding = ''
+  if section.settings.section_padding == 'top'
+    assign section_padding = 'mb0'
+  elsif section.settings.section_padding == 'bottom'
+    assign section_padding = 'mt0'
+  elsif section.settings.section_padding == 'none'
+    assign section_padding = 'mt0 mb0'
+  endif
+
+-%}
+<section class="customvideo global__featured-video-{{ section.id }} global__section global__section--margin {{ section_padding }}"
+data-section-id="{{ section.id }}"
+data-section-type="video-section"
+data-aos="{{ settings.scroll_animation }}">
+  {% if section.settings.title != blank %}
+    <div class="section-title row">
+      <h2 class="text-black text-center">{{ section.settings.title | escape }}</h2>
+      {% if section.settings.text != blank %}
+              <div class="rte mw-500px">
+                {{ section.settings.text }}
+              </div>
+            {% endif %}
+            {% if section.settings.button != blank and section.settings.link != blank %}
+              <div class="cta">
+                <a href="{{ section.settings.link }}">
+                  {{ section.settings.button | escape }}
+                </a>
+              </div>
+            {% endif %}
+  
+    </div>
+    
+  {% endif %}
+            <div class="row">
+            
+  <div class="videoWrapper">
+    {% if section.settings.video_url == blank and section.settings.video_url_mp4 == blank %}
+      <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" title="{{ section.settings.description }}" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+    {% else %}
+      {% if section.settings.video_url.type == "youtube" %}
+        <iframe src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&showinfo=0&vq=720" title="{{ section.settings.description }}" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+      {% endif %}
+      {% if section.settings.video_url.type == "vimeo" %}
+        <iframe src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?byline=0&portrait=0&badge=0" title="{{ section.settings.description }}" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+      {% endif %}
+    {% endif %}
+
+    {% if section.settings.video_url == blank and section.settings.video_url_mp4 != blank %}
+      {{ section.settings.video_url_mp4 | video_tag: image_size: '2000x', controls: true, playsinline: true, preload: 'metadata', class: 'section-video js-video', title: section.settings.description }}
+    {% endif %}
+  </div>
+              </div>
+</section>
+{% schema %}
+{
+  "name": "Custom Video",
+  "settings":
+  [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Video"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button text"
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "YouTube or Vimeo link",
+      "accept":
+      [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "type": "video",
+      "id": "video_url_mp4",
+      "label": "A Shopify-hosted video"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "default": "Describe the video for customers using screen readers",
+      "label": "Video alt text"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "Section spacing",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        },
+        {
+          "value": "both",
+          "label": "Both"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ],
+      "default": "both"
+    }
+  ],
+  "presets":
+  [
+    {
+      "name": "Custom Video"
+    }
+  ],
+  "enabled_on": {
+    "templates":
+    [
+      "404",
+      "article",
+      "blog",
+      "cart",
+      "collection",
+      "list-collections",
+      "index",
+      "page",
+      "product",
+      "search"
+    ]
+  }
+}
+{% endschema %}

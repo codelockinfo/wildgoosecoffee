@@ -1,0 +1,29 @@
+{% comment %}
+snippets/sidebar-image.liquid
+
+Renders an image in the sidebar.
+
+Accepts:
+
+Block {Object} - Section block.
+Forloop {Object} - Forloop object.
+
+Usage:
+
+{%
+  render: 'sidebar-image',
+  block: block,
+  forloop: forloop
+%}
+{% endcomment %}
+{% if block.settings.image != blank %}
+  <div class="collection__sidebar--image-wrapper collection__sidebar-block image_container" {% if forloop.index == 1 %}style="margin-top:0;"{% endif %} {{ block.shopify_attributes }}>
+    {% if block.settings.link != blank %}
+    <a href="{{ block.settings.link }}">
+    {% endif %}
+    {% render 'basic-responsive-image', type: block.settings.image, width: 400 %}
+    {% if block.settings.link != blank %}
+    </a>
+    {% endif %}
+  </div>
+{% endif %}

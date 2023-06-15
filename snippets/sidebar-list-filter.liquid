@@ -1,0 +1,120 @@
+{% comment %}
+snippets/sidebar-list-filter.liquid
+
+Renders the sidebar list filter. Handles normal, size and color filters.
+
+Accepts:
+- filter {Object} - Filter Liquid object
+- block {Object} - Section block Liquid object
+- unique_id {String} - Unique identifier
+
+Usage:
+{%
+  render 'sidebar-list-filter',
+  filter: filter,
+  block: block,
+  unique_id: unique_id
+%}
+{% endcomment %}
+{%- liquid
+  # Set initial values
+  assign is_size_filter = false
+  assign is_color_filter = false
+  assign filter_label_to_lowercase = filter.label | downcase
+
+  # Check if this is a color filter
+  if filter_label_to_lowercase contains "color"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "colour"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "farbe"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "couleur"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "colore"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "cor"
+    assign is_color_filter = true
+  elsif filter_label_to_lowercase contains "size"
+    assign is_size_filter = true
+  endif
+
+  # Set filter type
+  if is_color_filter
+    assign filter_type = 'color'
+  elsif is_size_filter
+    assign filter_type = 'size'
+  else
+    assign filter_type = 'regular'
+  endif
+
+  # Get block settings
+  assign scroll_long_lists = block.settings.scroll_long_lists
+  assign two_column_labels = block.settings.two_column_labels
+  assign filter_color_swatches = block.settings.filter_color_swatches
+  assign show_filter_count = block.settings.show_filter_count
+
+  if is_color_filter and filter_color_swatches
+    assign two_column_labels = true
+  endif
+
+-%}
+<div class="sidebar-filter filter--{{ filter_type }}{% if scroll_long_lists %} scroll{% endif %}">
+  <h4>{{ filter.label | escape }}</h4>
+  <ul{% if two_column_labels %} class="two_column_labels"{% endif %}>
+    {% for value in filter.values %}
+
+      {%- liquid
+        assign variant_img_url = null
+        assign swatch_color_name = value.label | handleize | downcase | append: '.png'
+        assign swatch_image_url = swatch_color_name | file_url
+        assign css_color = value.label | split: ' ' | last | downcase
+
+        if images[swatch_color_name] != blank
+          assign bg_img = 'background-image:url(' | append:  swatch_image_url | append: ');'
+        else
+          assign bg_img = ''
+        endif
+        assign bg_color = 'background-color:' | append:  css_color | append: ';'
+
+        if value.active
+          assign status = 'current'
+          assign url = value.url_to_remove
+        elsif value.count == 0 and value.active == false
+          assign status = 'disabled'
+          assign url = ''
+        else
+          assign status = ''
+          assign url = value.url_to_add
+        endif
+      -%}
+
+      <li class="{{ status }} {% if is_color_filter and filter_color_swatches %}filter_swatch{% elsif is_color_filter and filter_color_swatches == false %}no_filter_swatch{% endif %}">
+        {% if is_color_filter %}
+          <a class="js-collection-side-filter {{ status }}" href="{{ url }}" title="{{ value.label }}">
+            <input type="checkbox"
+                   name="{{ value.param_name }}"
+                   id="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}"
+                   value="{{ value.value }}"
+                   {% if value.active %}checked{% endif %}
+                   {% if value.count == 0 and value.active == false %}disabled{% endif%} >
+            {% if filter_color_swatches %}
+              <span class="color-filter color-filter--rounded color-filter--{{ status }} {{ status }}" style="{{ bg_color }}{{ bg_img }}"></span>
+            {% endif %}
+              <label class="color-filter--label" for="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}">{{ value.label | escape }}{% if show_filter_count %} <span class="filter__count">({{ value.count }})</span>{% endif %}</label>
+          </a>
+        {% else %}
+          <a class="js-collection-side-filter {{ status }}" data-tag="{{ url }}" href="{{ url }}">
+            <input type="checkbox"
+                   name="{{ value.param_name }}"
+                   value="{{ value.value }}"
+                   id="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}"
+                   {% if value.active %}checked{% endif %}
+                   {% if value.count == 0 and value.active == false %}disabled{% endif%} >
+            <label class="regular-filter--label" for="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id}}">{{ value.label | escape }}{% if show_filter_count %} <span class="filter__count">({{ value.count }})</span>{% endif %}</label>
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
