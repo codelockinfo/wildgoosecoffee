@@ -15,6 +15,7 @@
         },
         "1561573685623": {
           "type": "submenu_with_image",
+          "disabled": true,
           "settings": {
             "menu_item": "SHOP",
             "nav_image_position": "left",
