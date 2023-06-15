@@ -31,7 +31,10 @@
         "1561573685623"
       ],
       "settings": {
-        "announcement_text": "<p>Share a shop announcement or message<\/p>",
+        "announcement_text": "<p>Enjoy 20% OFF on your first order! <\/p>",
+        "announcement_text2": "<p>3, 000, 000 pounds food donated so far!🎉<\/p>",
+        "announcebtnurl": "",
+        "announcementbtn": "Learn More",
         "announcement_text_size": 14,
         "top_nav": "",
         "announcement_cart": false,

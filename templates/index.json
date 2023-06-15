@@ -233,11 +233,13 @@
       ],
       "settings": {
         "title": "Why Wild Goose Coffee Roasters?",
-        "subtext": "<p>We know there are plenty of choices when it comes to your coffee. What sets Wild Goose apart from the rest? <\/p>"
+        "subtext": "<p>We know there are plenty of choices when it comes to your coffee. What sets Wild Goose apart from the rest? <\/p>",
+        "layout_mode1": "smiley"
       }
     },
     "1628115324d4b05084": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "background": false,
@@ -259,6 +261,40 @@
         "color_scheme": "cs1",
         "apply_color_to_section": false,
         "section_padding": "both"
+      }
+    },
+    "8749b033-c75d-4d77-9504-0e40f79a65a5": {
+      "type": "slider_image",
+      "blocks": {
+        "2369ef9a-d669-4414-af2e-99e11556aab8": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Container_1_8cd1c95b-c43a-4313-979d-843026ea253b.png"
+          }
+        },
+        "c7eb8afa-163c-47b8-a926-b6c5a4ac28b5": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Container_3_28fe6169-c91c-4b2f-a994-47760403b2d4.png"
+          }
+        },
+        "f3930427-565e-4f17-97d7-9e3f4f755580": {
+          "type": "collection",
+          "settings": {
+            "logourl": "shopify:\/\/shop_images\/Container_1_8cd1c95b-c43a-4313-979d-843026ea253b.png"
+          }
+        }
+      },
+      "block_order": [
+        "2369ef9a-d669-4414-af2e-99e11556aab8",
+        "c7eb8afa-163c-47b8-a926-b6c5a4ac28b5",
+        "f3930427-565e-4f17-97d7-9e3f4f755580"
+      ],
+      "settings": {
+        "slidemain": "Creating Better  Communities",
+        "slidesub": "At Wild Goose Coffee Roasters, we believe that every purchase should make an impact. That’s why we are committed to purchasing fairly-traded coffee from origin, ensuring that the farmers who work so hard to deliver such a great product are getting paid well for their hard work. In addition, Wild Goose donates 10 lbs of food to local food banks for every pound of coffee sold. By purchasing Wild Goose Coffee, you not only create better communities at origin, but also right here in your own neighbourhood.",
+        "slidebtn": "Learn More",
+        "slideurl": ""
       }
     },
     "d4856d15-bd61-41f0-a67d-d19179a0e7aa": {
@@ -352,6 +388,7 @@
     "1628115379da951ae7",
     "1f48b3bc-f1f7-481c-9dea-f959a5502016",
     "1628115324d4b05084",
+    "8749b033-c75d-4d77-9504-0e40f79a65a5",
     "d4856d15-bd61-41f0-a67d-d19179a0e7aa",
     "1b6ce225-244c-4e82-b3a3-d53002057621",
     "77308fd5-7eec-46b7-af9d-0e772bd174c4"
