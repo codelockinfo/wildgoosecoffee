@@ -1,1 +1,56 @@
-{"name":"Header","type":"header","sections":{"header":{"type":"header","blocks":{"1561573654669":{"type":"mega_menu","settings":{"menu_item":"EXPLORE","link":"shopify:\/\/collections"}},"1561573685623":{"type":"submenu_with_image","settings":{"menu_item":"SHOP","nav_image_position":"left","link":"shopify:\/\/collections"}}},"block_order":["1561573654669","1561573685623"],"settings":{"announcement_text":"<p>Share a shop announcement or message<\/p>","announcement_text_size":14,"top_nav":"","announcement_cart":false,"show_locale_selector":false,"show_country_selector":false,"full_width_header":true,"enable_sticky_header":true,"header_cover":false,"header_border":false,"show_mobile_search":true,"logo":"shopify:\/\/shop_images\/WILD_GOOSE_LOGO.png","logo_max_width":150,"mobile_logo_max_width":200,"logo_position":"inline","logo_align":"center","main_nav":"main-menu","product_menu":true,"nav_hover_effect":true}}},"order":["header"]}
+{
+  "name": "Header",
+  "type": "header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "1561573654669": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Shop",
+            "nav_image": "shopify:\/\/shop_images\/Container_1_8cd1c95b-c43a-4313-979d-843026ea253b.png",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "1561573685623": {
+          "type": "submenu_with_image",
+          "disabled": true,
+          "settings": {
+            "menu_item": "SHOP",
+            "nav_image_position": "left",
+            "link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "1561573654669",
+        "1561573685623"
+      ],
+      "settings": {
+        "announcement_text": "<p>Share a shop announcement or message<\/p>",
+        "announcement_text_size": 14,
+        "top_nav": "",
+        "announcement_cart": false,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "full_width_header": true,
+        "enable_sticky_header": true,
+        "header_cover": false,
+        "header_border": false,
+        "show_mobile_search": true,
+        "logo": "shopify:\/\/shop_images\/WILD_GOOSE_LOGO.png",
+        "logo_max_width": 150,
+        "mobile_logo_max_width": 200,
+        "logo_position": "inline",
+        "logo_align": "center",
+        "main_nav": "megamenu",
+        "product_menu": true,
+        "nav_hover_effect": true
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}
