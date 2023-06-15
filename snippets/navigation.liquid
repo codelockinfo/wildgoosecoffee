@@ -108,14 +108,14 @@
               </span>
             {% endcapture %}
              {% endif %}
-          {% if block.settings.nav_image1 != blank  %}
-            {% capture navimage1 %}
+          {% if block.settings.nav_image_one != blank  %}
+            {% capture nav_image_one %}
               <span class="desktop-3 tablet-hide mm-image displaynone" data-image="image2">
                 {% if block.settings.link != blank %}
                 <a href="{{ block.settings.link }}">
                 {% endif %}
                   <div class="megamenu__imagecontainer">
-                    {% render 'basic-responsive-image', type: block.settings.nav_image1, width: 300 %}
+                    {% render 'basic-responsive-image', type: block.settings.nav_image_one, width: 300 %}
                   </div>
                 {% if block.settings.link != blank %}
                 </a>
@@ -123,14 +123,14 @@
               </span>
             {% endcapture %}
         {% endif %}
-          {% if block.settings.nav_image2 != blank  %}
-            {% capture navimage2 %}
+          {% if block.settings.nav_image_two != blank  %}
+            {% capture nav_image_two %}
               <span class="desktop-3 tablet-hide mm-image displaynone" data-image="image3">
                 {% if block.settings.link != blank %}
                 <a href="{{ block.settings.link }}">
                 {% endif %}
                   <div class="megamenu__imagecontainer">
-                    {% render 'basic-responsive-image', type: block.settings.nav_image2, width: 300 %}
+                    {% render 'basic-responsive-image', type: block.settings.nav_image_two, width: 300 %}
                   </div>
                 {% if block.settings.link != blank %}
                 </a>
@@ -140,8 +140,8 @@
         {% endif %}
          {% if block.settings.nav_image_position == 'left' %}
               {{ navimage }}
-              {{ navimage1 }}
-              {{ navimage2 }}
+              {{ nav_image_one }}
+              {{ nav_image_two }}
             {% endif %}
         <span class="{% if block.settings.nav_image != blank %}desktop-9{% else %}desktop-12{% endif %} tablet-6">
           {% for sub_link in link.links %}
@@ -163,8 +163,8 @@
         </span>
          {% if block.settings.nav_image_position == 'right' %}
               {{ navimage }}
-              {{ navimage1 }}
-              {{ navimage2 }}
+              {{ nav_image_one }}
+              {{ nav_image_two }}
             {% endif %}
       </div>
     </ul>
