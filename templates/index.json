@@ -233,11 +233,13 @@
       ],
       "settings": {
         "title": "Why Wild Goose Coffee Roasters?",
-        "subtext": "<p>We know there are plenty of choices when it comes to your coffee. What sets Wild Goose apart from the rest? <\/p>"
+        "subtext": "<p>We know there are plenty of choices when it comes to your coffee. What sets Wild Goose apart from the rest? <\/p>",
+        "layout_mode1": "smiley"
       }
     },
     "1628115324d4b05084": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "background": false,
