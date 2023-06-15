@@ -86,7 +86,7 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
           {% render 'logo', logo_width: logo_width %}
         {% endif %}
 
-
+        
         <ul class="header__shopping-cart shopping__cart-links {{ header_cart_links_width }}">
           {% render 'shopping-cart-links',
             cart: cart,
@@ -283,6 +283,22 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
       "default": "<p>Share a shop announcement or message</p>"
     },
     {
+      "type": "richtext",
+      "id": "announcement_text2",
+      "label": "Text",
+      "default": "<p>Share a shop announcement or message</p>"
+    },
+    {
+      "type": "url",
+      "id": "announcebtnurl",
+      "label": "see more link"
+    },
+      {
+    "type": "text",
+    "id": "announcementbtn",
+    "label": "Button"
+    },
+    {
       "type": "range",
       "id": "announcement_text_size",
       "min": 13,
@@ -437,6 +453,7 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
       "label": "Choose navigation menu",
       "default": "main-menu"
     },
+   
     {
       "type": "checkbox",
       "id": "product_menu",

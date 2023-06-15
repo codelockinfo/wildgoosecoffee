@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<div class="Containers ">
+    <div class="slideflex">
+        <div class="blockk11">
+            <div class="logoimagess productslider3">
+                {% for block in section.blocks %}
+                    <div class="parterimg">
+                        <img src="{{ block.settings.logourl|img_url: '800x' }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="slidecontent">
+                    <div class="allslidecontent">
+                        <h2 class="slidemain">
+                            {{section.settings.slidemain}}
+                        </h2>
+                        <p class="slidsub">
+                            {{section.settings.slidesub}}
+                        </p>
+                        <div  class="slidebtn">
+                            <a href="{{ section.settings.slideurl }}">{{ section.settings.slidebtn }}</a>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "slider_image",
+    "class":"slider_image",
+    "settings": [
+  {
+    "type":"text",
+    "id":"slidemain",
+    "label":"Heading"
+  },
+  {
+    "type":"text",
+    "id":"slidesub",
+    "label":"Sub-Heading"
+  },
+  {
+      "type": "text",
+      "id": "slidebtn",
+      "label": "Button"
+    },
+    {
+      "type": "url",
+      "id": "slideurl",
+      "label": "See more link"
+    }
+      
+    ],
+    "blocks": [
+  {
+    "type": "collection",
+    "name": "Collection",
+    "settings": [
+       {
+    "type": "image_picker",
+    "id": "logourl",
+    "label": "Image"
+      }
+    ]
+  }
+    ],
+      
+      
+      
+      "presets": [
+  {
+   "name": "slider_image"
+  }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .logoimagess{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .parterimg{
+    width:20%;
+  }
+  .parterimg img{
+    width:100%;
+  }
+   .logoblock .slick-track{
+    padding: 10px 0;
+  }
+
+  .logoblock ul.slick-dots {
+    display: none !important;
+}
+ .logoblock.blockk11 {
+              width: 20%;
+             margin: 0 5px;
+          }
+	
+          .slick-dots li button:before {
+            font-size: 40px!important;
+            color: #D6D6D6!important;
+        }
+        .slick-dots li.slick-active button:before{
+            color: #C8602D!important;
+        }
+{% endstylesheet %}
+
+<script>
+  
+    $('.productslider3').slick({
+       speed: 500,
+        autoplaySpeed: 2000,
+      arrows: false,
+       dots: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+       autoplay: true,
+      // prevArrow:"<button type='button' class='drag dogarrow1 slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+      //         nextArrow:"<button type='button' class='drag dogarrow2  slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+       responsive: [
+  ]
+  });
+</script>
+

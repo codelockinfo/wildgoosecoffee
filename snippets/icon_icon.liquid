@@ -1,0 +1,109 @@
+<div class="column_div">
+    <h3 class="column_title">Big-Brand Coffee</h3>
+    <ul> 
+      {% for block in section.blocks %}
+          {% if block.settings.feature != blank %}
+            <li>
+              {% if block.settings.bigbrandcoffee == "no" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {% endif %}
+              {% if block.settings.bigbrandcoffee == "yes" %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+                    <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                {% endif %}
+              {% if block.settings.bigbrandcoffee == "both" %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 49" fill="none">
+                    <line x1="0.5" y1="48.0459" x2="0.5" y2="0.0458984" stroke="#6D3628"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+                        <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {% endif %}
+            </li>
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="column_div active">
+    <h3 class="column_title">
+      <img  src="https://cdn.shopify.com/s/files/1/0261/8585/files/2022-WG-Stacked-Logo-BLK_1.png?v=1680986387" alt="Wild Goose" />
+    </h3>
+    <ul>
+       {% for block in section.blocks %}
+         {% if block.settings.feature != blank %}
+       <li>
+         {% if block.settings.wildgoosecoffe == "no" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+            <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% endif %}
+         {% if block.settings.wildgoosecoffe == "yes" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+            <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% endif %}
+         {% if block.settings.wildgoosecoffe == "both" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+            <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 49" fill="none">
+            <line x1="0.5" y1="48.0459" x2="0.5" y2="0.0458984" stroke="#6D3628"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+                <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          {% endif %}
+      </li>
+            {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="column_div">
+    <h3 class="column_title">
+    Other Independent Roasters
+    </h3>
+   
+    <ul >
+     
+       {% for block in section.blocks %}
+         {% if block.settings.feature != blank %}
+       <li>
+       
+         {% if block.settings.otherindependent == "no" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+            <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% endif %}
+         {% if block.settings.otherindependent == "yes" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+            <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% endif %}
+         {% if block.settings.otherindependent == "both" %}
+         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+            <path d="M24.786 2.00879L2.00977 24.785" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24.7952 24.8L2 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1" height="49" viewBox="0 0 1 49" fill="none">
+            <line x1="0.5" y1="48.0459" x2="0.5" y2="0.0458984" stroke="#6D3628"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+                <path d="M2 13.33L13.3348 24.66L35.9948 2" stroke="#C8602D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          {% endif %}
+      </li>
+            {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
