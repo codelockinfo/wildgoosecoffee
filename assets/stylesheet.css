@@ -11105,7 +11105,7 @@ ul.product__block--tags li a {
   ul#mobile-cart {
     list-style: none;
     text-align: right;
-    padding-right: 10px;
+    margin-right: 10px;
   }
 
   ul#mobile-cart li {
