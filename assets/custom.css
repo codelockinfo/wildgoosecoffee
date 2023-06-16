@@ -4191,7 +4191,7 @@ body .collection__filter-toggleWrapper .style_para{
 /* end cls014 */
 /* Cls015 start */
 div#banner-message {
-  display: flex;
+  display: flex;flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   margin-left: 0;
@@ -4295,4 +4295,7 @@ h2.slidemain {
   }
 }
 /* Cls015 end */
-
+.mobile__search--container.row.grid__wrapper.full.desktop-hide.tablet-hide{
+  width:95%;
+  margin: 0 auto;
+}
