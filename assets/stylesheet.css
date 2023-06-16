@@ -12605,10 +12605,10 @@ input[type="search"]#Search::-webkit-search-results-decoration {
 
 /* ---- Mobile search form ----*/
 
-.mobile__search--container {
+/* .mobile__search--container {
   padding-left: 15px !important;
   padding-right: 15px !important;
-}
+} */
 
 .mobile__search {
     position: relative;
