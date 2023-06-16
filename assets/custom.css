@@ -3679,9 +3679,9 @@ body .collection__filter-toggleWrapper * {
 /*     object-fit: contain; */
   }
 
-  .product__section .grid_wrapper .sm-span-12.auto{
+  /* .product__section .grid_wrapper .sm-span-12.auto{
     grid-column: auto / span 11 !important;
-  }
+  } */
 
   .product__section-images .carousel .box-ratio,
   .product__section-images .carousel .box-ratio img.product__image{
