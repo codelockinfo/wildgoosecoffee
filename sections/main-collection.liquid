@@ -77,7 +77,7 @@
           <div id="main-content" class="grid__wrapper px0">
 
 <!-- <div class="filters_wrap"> -->
-            <div class="collection__page--section-title section-title span-12 sm-span-12 auto">
+            <!-- <div class="collection__page--section-title section-title span-12 sm-span-12 auto">
               <h1>
                 {% if collection.handle == 'all' %}
                   {{ 'collections.general.all_products' | t }}
@@ -85,7 +85,7 @@
                   {{ collection.title }}
                 {% endif %}
               </h1>
-            </div>
+            </div> -->
 
             {%- if show_sidebar -%}
               <div class="collection__page--sidebar mobile-sidebar {{ sidebar_grid }} lg-hide">
@@ -125,14 +125,14 @@
             <div class="collection__page--content {% if show_sidebar %}span-12{% else %}span-12{% endif %} md-span-12 sm-span-12 auto">
               {% if top_description %}
                 <div id="collection-description d-none">
-                  <div class="rte">
+                  <!-- <div class="rte">
                     {{ collection.description | remove: "[banner]" }}
-                  </div>
+                  </div> -->
                 </div>
               {% endif %}
 
               {% if section.blocks.size != 0 %}
-                <div class="collection__page--full-width-filters js-col-filter-full">
+                <div class="collection__page--full-width-filters js-col-filter-full padding_laptop_">
 
                   {%- if horizontal_filtering_enabled or sort_by_enabled or filtering_enabled -%}
                     <form id="CollectionFiltersForm" class="desktop-12 tablet-6 mobile-3 contained" data-collection-filters>
@@ -180,7 +180,7 @@
               {%- if collection.products.size >= 1 -%}
                 <div id="main-collection-product-grid"
                      data-id="{{ section.id }}"
-                     class="grid__wrapper px0 product-loop{% if is_five_column %} gtc5{% endif %}{% if section.settings.infinite_scroll %} is_infinite{% endif %}" {% if section.settings.infinite_scroll %}data-collection-infinite-scroll{% endif %}>
+                     class="grid__wrapper paddig_0_desk product-loop{% if is_five_column %} gtc5{% endif %}{% if section.settings.infinite_scroll %} is_infinite{% endif %}" {% if section.settings.infinite_scroll %}data-collection-infinite-scroll{% endif %}>
                   {% for product in collection.products %}
                     <div class="{{ grid_item_width }} {{ mobile_grid }} auto product-index" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
                       {% render 'product-listing', collection: collection, product: product %}

@@ -1,5 +1,6 @@
 <div class="quick-add-to-cart">
-  {% if product.variants.size <= 1 and product.available %}
+  <!-- {% if product.variants.size <= 1 and product.available %} {% endif %} -->
+  {% if product.available %}
       {% capture product_form_config %}
         {
           "money_format": {{ shop.money_format | json }},

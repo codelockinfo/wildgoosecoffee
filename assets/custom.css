@@ -4069,3 +4069,54 @@ body .collection__filter-toggleWrapper * {
     right: 45%;
     transform: rotate(10deg);
 }
+/* start cls014 */
+body .collection__filter-toggleWrapper .style_para{
+  font-family: 'M PLUS 1';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2E2E2E;
+}
+.collection_banner_custom .row > .padding_left_sp{
+  padding-left: 18%;
+}
+/* @media only screen and (min-width: 1200px) and (max-width: 1300px){
+ .padd_1300{
+  padding: 0 3%;
+ }
+} */
+
+@media (min-width: 1301px){
+  .paddig_0_desk{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1400px){
+  .collection_banner_custom .row > .padding_left_sp{
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1300px){
+  .padding_laptop_{
+  padding: 0 3%;
+}
+}
+@media (max-width: 1199px){
+  .collection_banner_custom .row > .padding_left_sp{
+    padding-left: 12%;
+  }
+}
+@media (max-width: 850px){
+  .collection_banner_custom .row > .padding_left_sp{
+    padding-left: 5%;
+  }
+}
+@media (max-width: 739px){
+  .collection_banner_custom .row > .padding_left_sp{
+    padding-left: 20px;
+  }
+}
+/* end cls014 */
