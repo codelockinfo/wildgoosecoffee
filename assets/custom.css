@@ -3752,11 +3752,11 @@ body .collection__filter-toggleWrapper * {
   text-align: center;
 }
 
-  .tags_wrap ul,
+  /* .tags_wrap ul,
   .tags_wrap{
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .tags_wrap svg{
     width: 18px;
