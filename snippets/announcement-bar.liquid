@@ -58,9 +58,19 @@ Usage:
 
       <div class="{% if section.settings.top_nav == blank %}desktop-push-3{% endif %} desktop-6 tablet-6 mobile-3" id="banner-message">
         {% if section.settings.announcement_text != blank %}
-          <div class="rte">
+          <div class="rte announcetext">
             {{ section.settings.announcement_text }}
           </div><!-- /.rte -->
+        {% endif %}
+        {% if section.settings.announcement_text2 != blank %}
+          <div class="rte anouncesubtext">
+            {{ section.settings.announcement_text2 }}
+          </div><!-- /.rte -->
+        {% endif %}
+        {% if section.settings.announcementbtn != blank %}
+        <div  class="announcebtn">
+          <a href="{{ section.settings.announcebtnurl }}">{{ section.settings.announcementbtn }}</a>
+       </div>
         {% endif %}
       </div>
 
