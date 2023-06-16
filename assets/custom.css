@@ -2824,13 +2824,13 @@ div#shopify-section-template--15200400638013__b1d722a5-2693-4c86-8eb0-5f9711f6e7
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 160%;
+    /* line-height: 160%; */
 /* identical to box height, or 32px */
     letter-spacing: 0.04em;
 
 /* The White */
     color: #FFFFFF !important;
-    padding: 10px !important;
+    /* padding: 10px !important; */
     transition: all 0.3s ease;
 }
 
@@ -3738,9 +3738,18 @@ body .collection__filter-toggleWrapper * {
   .featured__collection-carousel .image_portrait .box-ratio img{
     object-fit: contain;
   }
-
-  .tags_wrap ul,
-  .tags_wrap{
+.flickity-slider .product-details{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-details .size-swatch{
+  text-align: center;
+}
+  .tags_wrap ul
+  .tags_wrap
+  {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -4069,3 +4078,43 @@ body .collection__filter-toggleWrapper * {
     right: 45%;
     transform: rotate(10deg);
 }
+.shopify-section .pagewidth{
+  
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 95%;
+  margin: 0 auto;
+}
+.shopify-section .featured_collection .featured__collection-carousel .featured__collection-product{
+  width: 32%;
+
+}
+
+@media screen and (max-width: 979px) {
+  .custom_testimonials .reviews_block{
+  margin: 0;
+  } 
+  }
+  .Container{
+    max-width: 1200px!important;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .Cusaddcart{
+         min-width: 222px;
+    background: #4C86A0!important;
+    box-shadow: 0 4px 14px #00000014;
+    border-radius: 16px!important;
+    border: 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: .04em;
+    color: #fff!important;
+    transition: all .3s ease;
+    max-width: unset!important;
+  }
+  .product-details .Cusaddcart{
+    max-width: 300px!important;
+  } 

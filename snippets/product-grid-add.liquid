@@ -23,8 +23,17 @@
       </div>
     {% endform %}
   {% else %}
-    <div class="product-add">
+  <form method="post" action="/cart/add">
+
+    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  
+    <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+  
+    <input type="submit" value="Add to cart" class="add options button Cusaddcart" />
+  
+  </form>
+    {% comment %} <div class="product-add">
       <a class="add options button" href="{{ product.url | within: collection }}">{{ 'products.product.select_options' | t }}</a>
-    </div>
+    </div>  {% endcomment %}
   {% endif %}
 </div>

@@ -34,11 +34,11 @@
   data-section-type="carousel-section">
 
   {% if section.settings.title != blank %}
-    <div class="section-title row">
+    <div class="section-title row pagewidth">
       <h2>{{ section.settings.title | escape }}</h2>
     </div>
   {% endif %}
-  <div class="row">
+  <div class="row pagewidth">
     <div class="grid_wrapper testimonial__container">
       {% for block in section.blocks %}
         <div class="reviews_block span-4 auto sm-span-12 testimonial__block-{{ block.id }} testimonial" {{ block.shopify_attributes }}>
