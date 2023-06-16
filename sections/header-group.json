@@ -9,7 +9,10 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "Shop",
-            "nav_image": "shopify:\/\/shop_images\/Container_1_8cd1c95b-c43a-4313-979d-843026ea253b.png",
+            "nav_image": "shopify:\/\/shop_images\/WG_Round1-9_3.png",
+            "nav_image_one": "shopify:\/\/shop_images\/Container_4.png",
+            "nav_image_two": "shopify:\/\/shop_images\/Container_1_8cd1c95b-c43a-4313-979d-843026ea253b.png",
+            "nav_image_position": "right",
             "link": "shopify:\/\/collections"
           }
         },
@@ -28,7 +31,10 @@
         "1561573685623"
       ],
       "settings": {
-        "announcement_text": "<p>Share a shop announcement or message<\/p>",
+        "announcement_text": "<p>Enjoy 20% OFF on your first order! <\/p>",
+        "announcement_text2": "<p>3, 000, 000 pounds food donated so far!🎉<\/p>",
+        "announcebtnurl": "",
+        "announcementbtn": "Learn More",
         "announcement_text_size": 14,
         "top_nav": "",
         "announcement_cart": false,

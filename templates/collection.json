@@ -1,1 +1,224 @@
-{"sections":{"banner":{"type":"collection-banner-custom","settings":{"title":"Save Stress, Save Money!","content":"<p>Fully customizable options suited just for you.<\/p>","link":"","button":""}},"main":{"type":"main-collection","blocks":{"40e4cbd5-0224-4f3b-854a-e66e9ba0b7cf":{"type":"side_filter","settings":{"two_column_labels":false,"scroll_long_lists":true,"filter_color_swatches":true,"show_filter_count":true}}},"block_order":["40e4cbd5-0224-4f3b-854a-e66e9ba0b7cf"],"settings":{"full_width":false,"grid":3,"mobile_grid":"2","products_per_page":13,"infinite_scroll":false,"description_position":"top_description","is_sticky":false,"sort_by":true}},"162811572000d249af":{"type":"image-gallery","disabled":true,"blocks":{"162811572000d249af-0":{"type":"image","settings":{"image_width":"33%","double_height":false,"link":"","heading":"Heading","text":"Subheading","button":"Button","subheading_first":false,"text_color":"#000000","button_color":"#ffffff","button_background":"#000000","button_background_hover":"#000000","overlay_color":"#000000","overlay_opacity":0,"vertical_position":50,"horizontal_position":50,"align_text":"center"}},"162811572000d249af-1":{"type":"image","settings":{"image_width":"33%","double_height":false,"link":"","heading":"Heading","text":"Subheading","button":"Button","subheading_first":false,"text_color":"#000000","button_color":"#ffffff","button_background":"#000000","button_background_hover":"#000000","overlay_color":"#000000","overlay_opacity":0,"vertical_position":50,"horizontal_position":50,"align_text":"center"}},"162811572000d249af-2":{"type":"image","settings":{"image_width":"33%","double_height":false,"link":"","heading":"Heading","text":"Subheading","button":"Button","subheading_first":false,"text_color":"#000000","button_color":"#ffffff","button_background":"#000000","button_background_hover":"#000000","overlay_color":"#000000","overlay_opacity":0,"vertical_position":50,"horizontal_position":50,"align_text":"center"}}},"block_order":["162811572000d249af-0","162811572000d249af-1","162811572000d249af-2"],"settings":{"full_width":false,"title":"Image gallery","image_size":"natural","desktop_image_height":500,"mobile_image_height":400,"mobile_swipe":true,"heading_size":24,"subheading_size":17,"color_scheme":"none","section_padding":"both"}},"162811576510380c29":{"type":"image-with-text","disabled":true,"settings":{"full_width":false,"layout":"left","image_width":"50%","image_height":"natural","desktop_height":500,"mobile_height":600,"title":"Image with text","text":"<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link":"","button":"","text_align":"left","text_position":"vai-center","heading_size":22,"text_size":14,"text_offset":0,"color_scheme":"cs1","apply_color_to_section":false,"section_padding":"both"}},"16281157712b2ded17":{"type":"image-with-text","disabled":true,"settings":{"full_width":false,"layout":"right","image_width":"50%","image_height":"natural","desktop_height":500,"mobile_height":600,"title":"Image with text","text":"<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link":"","button":"","text_align":"left","text_position":"vai-center","heading_size":22,"text_size":14,"text_offset":0,"color_scheme":"cs1","apply_color_to_section":false,"section_padding":"both"}}},"order":["banner","main","162811572000d249af","162811576510380c29","16281157712b2ded17"]}
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner-custom",
+      "settings": {
+        "title": "Save Stress, Save Money!",
+        "content": "<p>Fully customizable options suited just for you.<\/p>",
+        "link": "",
+        "button": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "40e4cbd5-0224-4f3b-854a-e66e9ba0b7cf": {
+          "type": "side_filter",
+          "disabled": true,
+          "settings": {
+            "two_column_labels": false,
+            "scroll_long_lists": true,
+            "filter_color_swatches": true,
+            "show_filter_count": true
+          }
+        },
+        "3d03a8c9-c654-4355-8715-4d7d8f95c559": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "side_nav": "",
+            "title": "Explore"
+          }
+        },
+        "317e9cab-837a-4e89-807c-b3550d2456b5": {
+          "type": "sidebar_collection_image",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "107ebafd-e61e-40ad-a65f-9db3565c93c8": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "255273f1-9e75-42ca-950c-88f7346c35b1": {
+          "type": "text_note",
+          "disabled": true,
+          "settings": {
+            "textbox_heading": "Heading",
+            "textbox_subheading": "<p>Subheading<\/p>",
+            "subheading_align": "left"
+          }
+        },
+        "2e3aa1fc-98ae-4d80-a2f6-c976e06e3819": {
+          "type": "dropdown_filter",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "40e4cbd5-0224-4f3b-854a-e66e9ba0b7cf",
+        "3d03a8c9-c654-4355-8715-4d7d8f95c559",
+        "317e9cab-837a-4e89-807c-b3550d2456b5",
+        "107ebafd-e61e-40ad-a65f-9db3565c93c8",
+        "255273f1-9e75-42ca-950c-88f7346c35b1",
+        "2e3aa1fc-98ae-4d80-a2f6-c976e06e3819"
+      ],
+      "settings": {
+        "full_width": false,
+        "grid": 3,
+        "mobile_grid": "1",
+        "products_per_page": 13,
+        "infinite_scroll": false,
+        "description_position": "top_description",
+        "is_sticky": false,
+        "sort_by": true
+      }
+    },
+    "162811572000d249af": {
+      "type": "image-gallery",
+      "disabled": true,
+      "blocks": {
+        "162811572000d249af-0": {
+          "type": "image",
+          "settings": {
+            "image_width": "33%",
+            "double_height": false,
+            "link": "",
+            "heading": "Heading",
+            "text": "Subheading",
+            "button": "Button",
+            "subheading_first": false,
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "button_background_hover": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "vertical_position": 50,
+            "horizontal_position": 50,
+            "align_text": "center"
+          }
+        },
+        "162811572000d249af-1": {
+          "type": "image",
+          "settings": {
+            "image_width": "33%",
+            "double_height": false,
+            "link": "",
+            "heading": "Heading",
+            "text": "Subheading",
+            "button": "Button",
+            "subheading_first": false,
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "button_background_hover": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "vertical_position": 50,
+            "horizontal_position": 50,
+            "align_text": "center"
+          }
+        },
+        "162811572000d249af-2": {
+          "type": "image",
+          "settings": {
+            "image_width": "33%",
+            "double_height": false,
+            "link": "",
+            "heading": "Heading",
+            "text": "Subheading",
+            "button": "Button",
+            "subheading_first": false,
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "button_background_hover": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "vertical_position": 50,
+            "horizontal_position": 50,
+            "align_text": "center"
+          }
+        }
+      },
+      "block_order": [
+        "162811572000d249af-0",
+        "162811572000d249af-1",
+        "162811572000d249af-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "title": "Image gallery",
+        "image_size": "natural",
+        "desktop_image_height": 500,
+        "mobile_image_height": 400,
+        "mobile_swipe": true,
+        "heading_size": 24,
+        "subheading_size": 17,
+        "color_scheme": "none",
+        "section_padding": "both"
+      }
+    },
+    "162811576510380c29": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "background": false,
+        "layout": "left",
+        "image_width": "50%",
+        "image_height": "natural",
+        "desktop_height": 500,
+        "mobile_height": 600,
+        "title": "Image with text",
+        "text": "<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "link": "",
+        "button": "",
+        "text_align": "left",
+        "text_position": "vai-center",
+        "heading_size": 22,
+        "text_size": 14,
+        "text_offset": 0,
+        "color_scheme": "cs1",
+        "apply_color_to_section": false,
+        "section_padding": "both"
+      }
+    },
+    "16281157712b2ded17": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "background": false,
+        "layout": "right",
+        "image_width": "50%",
+        "image_height": "natural",
+        "desktop_height": 500,
+        "mobile_height": 600,
+        "title": "Image with text",
+        "text": "<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "link": "",
+        "button": "",
+        "text_align": "left",
+        "text_position": "vai-center",
+        "heading_size": 22,
+        "text_size": 14,
+        "text_offset": 0,
+        "color_scheme": "cs1",
+        "apply_color_to_section": false,
+        "section_padding": "both"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "162811572000d249af",
+    "162811576510380c29",
+    "16281157712b2ded17"
+  ]
+}
