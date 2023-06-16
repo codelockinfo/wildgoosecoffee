@@ -69,7 +69,7 @@
       "settings": {
         "full_width": false,
         "grid": 3,
-        "mobile_grid": "2",
+        "mobile_grid": "1",
         "products_per_page": 13,
         "infinite_scroll": false,
         "description_position": "top_description",
