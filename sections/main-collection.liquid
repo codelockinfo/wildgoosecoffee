@@ -182,7 +182,7 @@
                      data-id="{{ section.id }}"
                      class="grid__wrapper paddig_0_desk product-loop{% if is_five_column %} gtc5{% endif %}{% if section.settings.infinite_scroll %} is_infinite{% endif %}" {% if section.settings.infinite_scroll %}data-collection-infinite-scroll{% endif %}>
                   {% for product in collection.products %}
-                    <div class="{{ grid_item_width }} {{ mobile_grid }} auto product-index" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
+                    <div class="{{ grid_item_width }} {{ mobile_grid }} span-t-6 auto product-index" id="prod-{{ product.id }}" data-alpha="{{ product.title }}" data-price="{{ product.price }}" data-aos="{{ settings.scroll_animation }}" data-product-id="{{ product.id }}">
                       {% render 'product-listing', collection: collection, product: product %}
                     </div>
                   {% endfor %}

@@ -4130,4 +4130,7 @@ body .collection__filter-toggleWrapper .style_para{
     max-width: 100% !important;
   }
 }
+@media (min-width: 768px) and (max-width:1024px) {
+  .product-loop .span-t-6 { grid-column: auto / span 6 !important; width: 100%; }
+}
 /* end cls014 */
