@@ -12955,3 +12955,36 @@ section.section-tabs .rte-tab section div.tabbed-block {
 .search-sidebar .js-collection-side-filter label {
   pointer-events: none;
 }
+.navigation__menu .navigation__menuitem {
+  line-height: 70px;
+}
+.megamenu .megamenu__header .megamenu__headerlink{
+  
+  font-family: 'M PLUS 1';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 46px;
+  color: #6D3628;
+  text-transform: capitalize;
+}
+header .nav-container .megamenu__listlink{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px !important;
+line-height: 30px;
+color: #2E2E2E;
+}
+.mm-image.displaynone{
+  display: none;
+}
+.megamenu__headerlink{
+  padding-bottom: 4%;
+  border-bottom: 1px solid #C8602D;
+}
+@media screen and (min-width: 980px){
+.gridlock .row .desktop-3.megamenu__listcontainer  {
+    width: 27%;
+}
+}
