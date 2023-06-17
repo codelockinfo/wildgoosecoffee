@@ -112,6 +112,7 @@
     },
     "7a739a1a-e9d6-4779-ada8-0acb2fef76ef": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "background": false,
@@ -181,8 +182,12 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        ".custom_testimonials.global__section.global__section--margin {margin: 0;}"
+      ],
       "settings": {
         "product_recommendations_heading": "You may also like",
+        "product_recommendations_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.",
         "items_shown": 3
       }
     }
