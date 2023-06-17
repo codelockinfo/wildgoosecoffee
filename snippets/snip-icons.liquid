@@ -11,7 +11,7 @@
       <style>{{ wrapper }} .icon--icon-theme-bag:hover .hover-fill { fill: {{ hover }};}</style>
     </svg>
   {%- elsif icon == 'cart' -%}
-    <svg class="icon--icon-theme-cart {{ classes }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    {% comment %} <svg class="icon--icon-theme-cart {{ classes }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 20.8 20" height="{{ size }}" xml:space="preserve">
       <g class="hover-fill" fill="{{ fill }}">
         <path class="st0" d="M0,0.5C0,0.2,0.2,0,0.5,0h1.6c0.7,0,1.2,0.4,1.4,1.1l0.4,1.8h15.4c0.9,0,1.6,0.9,1.4,1.8l-1.6,6.7
@@ -24,17 +24,20 @@
           c1.1,0,1.9,0.9,1.9,1.9c0,1.1-0.9,1.9-1.9,1.9C14.2,20,13.3,19.1,13.3,18.1z"/>
       </g>
       <style>{{ wrapper }} .icon--icon-theme-cart:hover .hover-fill { fill: {{ hover }};}</style>
-    </svg>
+    </svg> {% endcomment %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none"style="width: 18px;height: 16px;">
+      <path d="M5.39969 3.66667H25L22.3333 13H6.83562M23.6667 18.3333H7.66667L5 1H1M9 23.6667C9 24.403 8.40305 25 7.66667 25C6.93029 25 6.33333 24.403 6.33333 23.6667C6.33333 22.9303 6.93029 22.3333 7.66667 22.3333C8.40305 22.3333 9 22.9303 9 23.6667ZM23.6667 23.6667C23.6667 24.403 23.0697 25 22.3333 25C21.597 25 21 24.403 21 23.6667C21 22.9303 21.597 22.3333 22.3333 22.3333C23.0697 22.3333 23.6667 22.9303 23.6667 23.6667Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
   {%- elsif icon == 'user' -%}
-    <svg class="icon--icon-theme-user {{ classes }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 20.5 20" height="{{ size }}" xml:space="preserve">
-       <g class="hover-fill" fill="{{ fill }}">
-         <path d="M12.7,9.6c1.6-0.9,2.7-2.6,2.7-4.5c0-2.8-2.3-5.1-5.1-5.1C7.4,0,5.1,2.3,5.1,5.1c0,1.9,1.1,3.6,2.7,4.5
-           C3.3,10.7,0,14.7,0,19.5C0,19.8,0.2,20,0.5,20s0.5-0.2,0.5-0.5c0-5.1,4.2-9.3,9.3-9.3s9.3,4.2,9.3,9.3c0,0.3,0.2,0.5,0.5,0.5
-           s0.5-0.2,0.5-0.5C20.5,14.7,17.1,10.7,12.7,9.6z M6,5.1c0-2.3,1.9-4.2,4.2-4.2s4.2,1.9,4.2,4.2s-1.9,4.2-4.2,4.2S6,7.4,6,5.1z"/>
-       </g>
-       <style>{{ wrapper }} .icon--icon-theme-user:hover .hover-fill { fill: {{ hover }};}</style>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22.000000pt" height="26.000000pt" viewBox="0 0 22.000000 26.000000" preserveAspectRatio="xMidYMid meet" style="width: 18px;height: 16px;">
+
+    <g transform="translate(0.000000,26.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+    <path d="M72 244 c-22 -15 -30 -57 -14 -80 16 -24 51 -35 75 -23 29 16 37 28 37 61 0 28 -31 58 -60 58 -9 0 -26 -7 -38 -16z m66 -16 c17 -17 15 -53 -3 -68 -12 -10 -21 -10 -40 -2 -40 19 -29 82 15 82 9 0 21 -5 28 -12z"/>
+    <path d="M19 94 c-6 -7 -9 -30 -7 -51 l3 -38 95 0 95 0 3 39 c2 21 -2 44 -8 50 -16 16 -167 16 -181 0z m171 -41 l0 -33 -80 0 -80 0 0 33 0 33 80 0 80 0 0 -33z"/>
+    </g><style>{{ wrapper }} .icon--icon-theme-user:hover .hover-fill { fill: {{ hover }};}</style>
     </svg>
+       
+   
   {%- elsif icon == 'user-logout' -%}
     <svg class="icon--icon-theme-user-logout {{ classes }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 20 20" height="{{ size }}" xml:space="preserve">
@@ -50,13 +53,9 @@
        <style>{{ wrapper }} .icon--icon-theme-user-logout:hover .hover-fill { fill: {{ hover }};}</style>
     </svg>
   {%- elsif icon == 'search' -%}
-    <svg class="icon--icon-theme-search {{ classes }}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 20 20" height="{{ size }}" xml:space="preserve">
-      <g class="hover-fill" fill="{{ fill }}">
-        <path d="M19.8,19.1l-4.6-4.6c1.4-1.5,2.2-3.6,2.2-5.8c0-4.8-3.9-8.7-8.7-8.7S0,3.9,0,8.7s3.9,8.7,8.7,8.7
-        c2.2,0,4.2-0.8,5.8-2.2l4.6,4.6c0.2,0.2,0.5,0.2,0.7,0C20.1,19.6,20.1,19.3,19.8,19.1z M1,8.7C1,4.5,4.5,1,8.7,1
-        c4.2,0,7.7,3.4,7.7,7.7c0,4.2-3.4,7.7-7.7,7.7C4.5,16.4,1,13,1,8.7z"/>
-      </g>
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none" style="width: 18px;height: 16px;">
+    <path d="M18.0607 18.0814L25 25M21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11Z" stroke="#2E2E2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
     <style>{{ wrapper }} .icon--icon-theme-search:hover .hover-fill { fill: {{ hover }};}</style>
     </svg>
   {%- elsif icon == 'home' -%}

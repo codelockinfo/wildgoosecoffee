@@ -19,6 +19,7 @@
         assign product_description_active = true
       endif
   
+      
     endfor
   
     assign product_buttons_form_id = 'product-form-buttons-' | append: section.id
@@ -300,7 +301,7 @@
                           class: "product_form",
                           data-product-form: product_form_config,
                           data-product-id: product.id %}
-  
+                        <div style="border-top: 1px solid #CDCDCD;"></div>
                         {%- unless product.has_only_default_variant -%}
                          {%- if settings.product_variants == 'swatches' -%}
                            <div class="product__variants-swatches mt4 mb6 no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
@@ -414,7 +415,24 @@
                         <span class="product__sku-value js-product-sku">{{ current_variant.sku }}</span>
                       </div>
                     </div>
+                    {% when 'icon_shiipping' %}
+                      <div class="shippintext">
+                          <div class="proflexx">
+                              <div>
+                                {% if block.settings.icondd != blank %}
+                                  <img src="{{ block.settings.icondd | img_url : '800x'  }}" alt="" style="width: 20px;"  />
+                                {% endif %}
+                              </div>
+                              <div>
+                                <h3>{{block.settings.Shippingtext}}</h3>
+                              </div>
+                          </div>
+                      </div>
                   {% when 'product_description' %}
+                    <div class="cusprodesicon">
+                        <h3 class="cusprodes">Product Info</h3>
+                        <div class="plus-minus-toggle collapsed"></div>
+                    </div>
                     <div class="product__section-details__inner product__section-details__inner--{{ block.type }}" {{ block.shopify_attributes }}>
                       {% if section.settings.product_description_position == 'below' %}
                         {% assign product_description_rendered = true %}
@@ -929,6 +947,26 @@
         []
       },
       {
+        "type": "icon_shiipping",
+        "name": "icon_shiipping",
+        "limit": 1,
+        "settings":
+        [
+          
+              {
+                "type": "image_picker",
+                "id": "icondd",
+                "label": "Image"
+              },
+              {
+                "type": "text",
+                "id": "Shippingtext",
+                "label": " Shipping Text"
+              }
+            
+        ]
+      },
+      {
         "type": "product_quantity",
         "name": "Quantity selector",
         "limit": 1,
@@ -1062,6 +1100,7 @@
           }
         ]
       },
+     
       {
         "type": "metafield_popup",
         "name": "Text popup",

@@ -13,7 +13,7 @@
   </li>
   {% if shop.customer_accounts_enabled %}
     {% if customer  %}
-      <li class="cart-links__item cust">
+      <li class=" cart-links__item cust">
         <a href="{{ routes.account_url }}">
           {% render 'snip-icons',
              wrapper: wrapper,
@@ -25,7 +25,7 @@
              hover: fill_color %}
         </a>
       </li>
-      <li class="cart-links__item cust">
+      <li class=" cart-links__item cust">
         <a href="{{ routes.account_logout_url }}" class="logout-link">
           {% render 'snip-icons',
              wrapper: wrapper,
@@ -55,7 +55,7 @@
 {% endif %}
 
 {%- if hd_locale_selector -%}
-  <li class="cart-links__item lang-selector">
+  <li class=" cart-links__item lang-selector">
       <div class="selectors-form__item">
         <h2 class="visually-hidden" id="lang-heading">
           {{ 'general.language.dropdown_label' | t }}
@@ -174,10 +174,10 @@
       {% assign cart_classes = 'js-modal-open' %}
       {% assign cart_settings = 'data-wau-modal-target="ajax-cart"' %}
     {%- endif -%}
-    <div class="slideout__trigger--open">
-      <a href="{{ routes.cart_url }}">
-        <button class="slideout__trigger-mobile-menu js-mini-cart-trigger {{ cart_classes }}" {{ cart_settings }} aria-label="Open cart" tabindex="0" type="button" name="button">
-          <span class="my-cart-text vib-center">{{ 'cart.general.title' | t }}</span>
+    <div class=" slideout__trigger--open">
+      <a href="{{ routes.cart_url }}" style="display: flex;align-items: center;">
+        {% comment %} <button class="slideout__trigger-mobile-menu js-mini-cart-trigger {{ cart_classes }}" {{ cart_settings }} aria-label="Open cart" tabindex="0" type="button" name="button">
+          <span class="my-cart-text vib-center">{{ 'cart.general.title' | t }}</span> {% endcomment %}
           {% render 'snip-icons',
                wrapper: wrapper,
                type: 'icon-theme',
@@ -187,7 +187,7 @@
                fill: fill_color,
                hover: fill_color %}
           <span class="js-cart-count vib-center">{{ cart.item_count }}</span>
-        </button>
+        {% comment %} </button> {% endcomment %}
       </a>
     </div>
   {% endif %}
