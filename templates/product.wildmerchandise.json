@@ -1,0 +1,258 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-wildmerchandise",
+      "blocks": {
+        "product_info": {
+          "type": "product_info",
+          "settings": {
+          }
+        },
+        "product_sku": {
+          "type": "product_sku",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "product_variants": {
+          "type": "product_variants",
+          "settings": {
+          }
+        },
+        "product_quantity": {
+          "type": "product_quantity",
+          "settings": {
+          }
+        },
+        "6762c795-1fbb-4bba-9bd8-e5b1d7745562": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "product_buttons": {
+          "type": "product_buttons",
+          "settings": {
+            "back_in_stock": true,
+            "back_in_stock_text": "<p>Email me when this is available<\/p>"
+          }
+        },
+        "7b18a9e9-4b0c-4141-950b-0982a1cda095": {
+          "type": "ingredients_data",
+          "settings": {
+          }
+        },
+        "product_availability": {
+          "type": "product_availability",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "product_description": {
+          "type": "product_description",
+          "settings": {
+          }
+        },
+        "metafield_popup": {
+          "type": "metafield_popup",
+          "settings": {
+            "popup_label": "Care guide",
+            "popup_metafield_content": "<p>{{ product.metafields.descriptors.care_guide.value }}<\/p>"
+          }
+        },
+        "shortcode_popup1": {
+          "type": "shortcode_popup",
+          "settings": {
+            "popup_label": "Size",
+            "shortcode_name": "size"
+          }
+        },
+        "shortcode_popup2": {
+          "type": "shortcode_popup",
+          "settings": {
+            "popup_label": "Other",
+            "shortcode_name": "other"
+          }
+        }
+      },
+      "block_order": [
+        "product_info",
+        "product_sku",
+        "product_variants",
+        "product_quantity",
+        "6762c795-1fbb-4bba-9bd8-e5b1d7745562",
+        "product_buttons",
+        "7b18a9e9-4b0c-4141-950b-0982a1cda095",
+        "product_availability",
+        "product_description",
+        "metafield_popup",
+        "shortcode_popup1",
+        "shortcode_popup2"
+      ],
+      "custom_css": [
+        "input#addToCart {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "click_to_enlarge": true,
+        "image_section_size": "medium",
+        "image_options": "static",
+        "thumbnail_position": "bottom",
+        "slide_controls": "dots",
+        "enable_video_looping": false,
+        "show_social_share": true,
+        "product_description_position": "below",
+        "lower_description": "small",
+        "section_background": "",
+        "lower_description_background": ""
+      }
+    },
+    "main-product-content": {
+      "type": "main-product-content",
+      "disabled": true,
+      "settings": {
+        "section_padding": "both"
+      }
+    },
+    "7a739a1a-e9d6-4779-ada8-0acb2fef76ef": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "background": false,
+        "image": "shopify:\/\/shop_images\/Container_3_28fe6169-c91c-4b2f-a994-47760403b2d4.png",
+        "layout": "left",
+        "image_width": "50%",
+        "image_height": "natural",
+        "desktop_height": 500,
+        "mobile_height": 600,
+        "title": "Brewing Suggestions",
+        "text": "<p>Pair text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "link": "",
+        "button": "",
+        "text_align": "a-left",
+        "text_position": "vai-start",
+        "heading_size": 22,
+        "text_size": 14,
+        "text_offset": 0,
+        "color_scheme": "none",
+        "apply_color_to_section": false,
+        "section_padding": "both"
+      }
+    },
+    "16281158786d72aa6c": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "3808e2f7-5e7a-424f-806c-1cd4ccfa4bf6": {
+          "type": "text",
+          "settings": {
+            "heading": "Block heading",
+            "rich_text": "<p>Use rich text blocks to add more content to your pages. Further describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "center": false,
+            "block_size": 2
+          }
+        },
+        "c2ffa9d7-f977-4cd3-a08b-79295213608c": {
+          "type": "text",
+          "settings": {
+            "heading": "Block heading",
+            "rich_text": "<p>Use rich text blocks to add more content to your pages. Further describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "center": false,
+            "block_size": 2
+          }
+        },
+        "9bbd2e8d-e6cf-4bf1-ad4d-e551c1111c8b": {
+          "type": "text",
+          "settings": {
+            "heading": "Block heading",
+            "rich_text": "<p>Use rich text blocks to add more content to your pages. Further describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "center": false,
+            "block_size": 2
+          }
+        }
+      },
+      "block_order": [
+        "3808e2f7-5e7a-424f-806c-1cd4ccfa4bf6",
+        "c2ffa9d7-f977-4cd3-a08b-79295213608c",
+        "9bbd2e8d-e6cf-4bf1-ad4d-e551c1111c8b"
+      ],
+      "settings": {
+        "classname": "",
+        "title": "",
+        "color_scheme": "none",
+        "section_padding": "both"
+      }
+    },
+    "35747348-98cb-44a5-ab82-966062fc5f8f": {
+      "type": "custom-testimonials",
+      "blocks": {
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-0": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container.png",
+            "title": "",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.<\/p>",
+            "author": "John Carter",
+            "stars": 5
+          }
+        },
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-1": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container_1.png",
+            "title": "",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.<\/p>",
+            "author": "John Carter",
+            "stars": 5
+          }
+        },
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-2": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Container.png",
+            "title": "",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.<\/p>",
+            "author": "John Carter",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-0",
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-1",
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-2"
+      ],
+      "custom_css": [
+        ".custom_testimonials.global__section.global__section--margin {margin: 0;}"
+      ],
+      "settings": {
+        "title": "What our customers say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.",
+        "color_scheme": "none",
+        "star_color": "#ffd450",
+        "section_padding": "both"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "custom_css": [
+        ".product-recommendations h2 {padding-bottom: 0px;}",
+        ".desktop-12.tablet-6.mobile-3 {padding-bottom: 0px;}"
+      ],
+      "settings": {
+        "product_recommendations_heading": "You may also like these!",
+        "product_recommendations_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.",
+        "items_shown": 3
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main-product-content",
+    "7a739a1a-e9d6-4779-ada8-0acb2fef76ef",
+    "16281158786d72aa6c",
+    "35747348-98cb-44a5-ab82-966062fc5f8f",
+    "product-recommendations"
+  ]
+}

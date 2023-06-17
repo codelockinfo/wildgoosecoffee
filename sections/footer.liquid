@@ -164,7 +164,7 @@
           {% render 'social-icons', fill_color: 'var(--footer-text)', wrapper: '.sub-footer' %}
         {% endif %}
         <p>
-          {% if section.settings.show_copyright %}<a href="{{ routes.root_url }}">&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}</a> • {% endif %}{{ powered_by_link }}
+          {% if section.settings.show_copyright %}<a href="{{ routes.root_url }}">&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}</a>  {% endif %}
         </p>
       </div>
       <div id="payment" class="footer-right">

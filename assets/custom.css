@@ -4294,11 +4294,100 @@ h2.slidemain {
     line-height: 24px;
   }
 }
+h2.reccomedes {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5F5F5F;
+  width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+p.custreview{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #5F5F5F;
+width: 55%;
+text-align: left;
+}
+.cuspricetotal{
+  font-family: 'Lato'!important;
+font-style: normal!important;
+font-weight: 400!important;
+font-size: 20px!important;
+line-height: 28px!important;
+color: #5F5F5F!important;
+}
+.cusproductflex{
+  border-top: 1px solid #CDCDCD;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4%;
+}
+.product-add.custadd{
+  width: 50%;
+}
+li.cart-links__item.cust a{
+  display: flex;
+  align-items: center;
+}
+
+ul.header__shopping-cart.shopping__cart-links.span-5.auto{
+  width: 50%;
+}
+.custheader{
+  max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.cusprodesicon{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CDCDCD;
+    padding-top: 7%;
+}
+.proflexx{
+  display: flex;
+}
+.proflexx h3{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #2E2E2E;
+}
+@media screen and (min-width: 981px) {
+  .custom_nav{
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+     grid-column: auto / span 5;
+  }
+}
+@media screen and (max-width: 981px) {
+  .custom_nav {
+    display: none;
+}
+}
+@media screen and (max-width: 768px) {
+  p.custreview ,h2.reccomedes{
+      width: 100%;
+  }
+}
 /* Cls015 end */
 .mobile__search--container.row.grid__wrapper.full.desktop-hide.tablet-hide{
   width:95%;
   margin: 0 auto;
 }
+
 /* wildgoosecoffee product template */
 .product__section-title .metafield_tags{
   column-gap: 3px;
@@ -4399,3 +4488,33 @@ h2.slidemain {
   margin-right: 10px;
 }
 /* wildgoosecoffee product template */
+
+/* accordiun */
+
+.plus-minus-toggle {
+  cursor: pointer;
+  height: 21px;
+  position: relative;
+  width: 21px;
+}
+.plus-minus-toggle:before, .plus-minus-toggle:after {
+  background: #000;
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 21px;
+  transition: transform 500ms ease;
+}
+.plus-minus-toggle:after {
+  transform-origin: center;
+}
+.plus-minus-toggle.collapsed:after {
+  transform: rotate(90deg);
+}
+.plus-minus-toggle.collapsed:before {
+  transform: rotate(180deg);
+}
+/* accordiun end */
+

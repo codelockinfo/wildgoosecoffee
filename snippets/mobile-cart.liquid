@@ -7,7 +7,7 @@
         {% render 'snip-icons',
              wrapper: wrapper,
              type: 'icon-theme',
-             icon: 'cart',
+             icon: 'cart', 
              classes: 'my-cart-link-container--icon vib-center',
              size: '14px',
              fill: fill_color,
@@ -25,7 +25,7 @@
       <div class="slideout__trigger--open">
         <a href="{{ routes.cart_url }}">
           <button class="slideout__trigger-mobile-menu js-mini-cart-trigger {{ cart_classes }}" {{ cart_settings }} aria-label="Open cart" tabindex="0" type="button" name="button">
-            <span class="my-cart-text vib-center">{{ 'cart.general.title' | t }}</span>
+            {% comment %} <span class="my-cart-text vib-center">{{ 'cart.general.title' | t }}</span> {% endcomment %}
             {% render 'snip-icons',
                  wrapper: wrapper,
                  type: 'icon-theme',

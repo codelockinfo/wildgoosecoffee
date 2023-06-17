@@ -32,12 +32,16 @@
   data-section-id="{{ section.id }}"
   data-aos="{{ settings.scroll_animation }}"
   data-section-type="carousel-section">
-
+  
   {% if section.settings.title != blank %}
     <div class="section-title row pagewidth">
       <h2>{{ section.settings.title | escape }}</h2>
     </div>
   {% endif %}
+ 
+    <div class="section-title row pagewidth">
+      <p class="custreview">{{ section.settings.subtitle | escape }}</p>
+    </div>
   <div class="row pagewidth">
     <div class="grid_wrapper testimonial__container">
       {% for block in section.blocks %}
@@ -184,6 +188,11 @@
       "id": "title",
       "label": "Heading",
       "default": "Testimonials"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub-Heading"
     },
     {
       "type": "select",

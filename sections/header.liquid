@@ -10,7 +10,7 @@ data-section-id="{{ section.id }}"
 data-section-type="header-section"
 data-sticky="{{ section.settings.enable_sticky_header }}">
   <div id="navigation"{% if section.settings.full_width_header %} class="gridlock-fluid"{% endif %}>
-    <div class="row">
+    <div class="row custheader">
       <div class="nav-container grid__wrapper {% if section.settings.full_width_header %}full{% endif %} {{ section.settings.logo_position }}"><!-- start nav container -->
 
         <!-- Mobile menu trigger -->
@@ -85,8 +85,15 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
         {% if logo_align_center and logo_position_inline %}
           {% render 'logo', logo_width: logo_width %}
         {% endif %}
-
-        
+        <div class="custom_nav">
+        <nav aria-label="Primary Navigation" class="navigation header-navigation {{ nav_width }}">
+          <ul role="menubar" aria-label="Primary Navigation" id="main-nav" class="navigation__menu">
+            {% for link in linklists[section.settings.main_nav-2].links %}
+              {% render 'navigation', link: link %}
+            {% endfor %}
+          </ul>
+        </nav>
+        {% comment %} </nav> {% endcomment %}
         <ul class="header__shopping-cart shopping__cart-links {{ header_cart_links_width }}">
           {% render 'shopping-cart-links',
             cart: cart,
@@ -94,6 +101,7 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
             fill_color: 'var(--pre-scroll-color)',
             wrapper: '.header__shopping-cart' %}
         </ul>
+      </div>
         {% render 'mobile-cart', cart: cart %}
 
       </div><!-- end nav container -->
@@ -453,7 +461,12 @@ data-sticky="{{ section.settings.enable_sticky_header }}">
       "label": "Choose navigation menu",
       "default": "main-menu"
     },
-   
+    {
+      "type": "link_list",
+      "id": "main_nav-2",
+      "label": "Choose navigation menu-2",
+      "default": "main-menu"
+    },
     {
       "type": "checkbox",
       "id": "product_menu",
