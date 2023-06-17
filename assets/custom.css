@@ -4367,6 +4367,12 @@ color: #2E2E2E;
 #main-nav2{
   text-align: center;
 }
+.navigation__menu li a:hover {
+  color: #c8602d!important;
+}
+.slidebtn a:hover ,input#footer-subscribe:hover {
+  background: #c8602d!important;
+}
 @media screen and (min-width: 981px) {
   .custom_nav{
     display: flex;
