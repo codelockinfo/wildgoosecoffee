@@ -1126,7 +1126,7 @@
     "icon_position": "top_right",
     "new_icon": true,
     "sale_icon": true,
-    "product_variants": "drop-downs",
+    "product_variants": "swatches",
     "show_tax_note": true,
     "show_shipping_note": true,
     "show_cart_notes": true,
