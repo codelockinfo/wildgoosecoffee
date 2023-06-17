@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-wildgoosecoffee",
       "blocks": {
         "product_info": {
           "type": "product_info",
