@@ -4299,3 +4299,103 @@ h2.slidemain {
   width:95%;
   margin: 0 auto;
 }
+/* wildgoosecoffee product template */
+.product__section-title .metafield_tags{
+  column-gap: 3px;
+}
+.metafield_tags_text{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #2E2E2E;
+}
+.productpage.pagewidth{
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wildgoosecoffee .product__section-content{
+  padding: 40px;
+
+}
+.Singllinetext-content{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5F5F5F;
+}
+.wildgoosecoffee .product__section-details #product-price .pricetext{
+  font-family: 'Lato' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5F5F5F !important;
+
+}
+.wildgoosecoffee .product__variants-select{
+  display: flex;
+  border-top: 1px solid #CDCDCD;
+  border-bottom: 1px solid #CDCDCD;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.wildgoosecoffee  .product-form__input.product-form__input--dropdown{
+  margin-right: 10px;
+}
+.singllinetextsvg{
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.displayflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wildgoosecoffee  .product-form__input--dropdown .form__label,.wildgoosecoffee .product-qty label{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5F5F5F;
+  text-transform: capitalize;
+}
+.wildgoosecoffee .product-form__input option{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2E2E2E;
+}
+.metafieldiconimage{
+  width: 40px;
+  height: 40px;
+}
+.metafield_icon_text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.metafield50{
+  width:48%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4% 0;
+}
+.cusimageicon{
+  display: flex;
+  align-items: center;
+}
+.imgiconsvg{
+  margin-right: 10px;
+}
+/* wildgoosecoffee product template */
