@@ -21,46 +21,11 @@
     </button>
     {% endif %}
 
-    {% if sort_by_enabled %}
-      <div class="collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
-        {% render 'snip-icons',
-             wrapper: '.sort-by__wrapper',
-             type: 'apollo',
-             icon: 'down-carrot',
-             classes: 'filter--icon vib-center',
-             size: '6px',
-             fill: 'var(--text-color)',
-             hover: 'var(--text-color)' %}
-        <div class="collection__filtering js-hz-filter">
-          <label class="visually-hidden" for="sort-by--{{ section.id }}">{{ 'collections.filters.sort_by_placeholder' | t }}</label>
-          <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="sort-by" data-placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" data-generic-placeholder="{{ 'collections.filters.type_to_filter' | t }}" placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" id="sort-by--{{ section.id }}">
-          <ul class="value-list js-hz-filter-list">
-            {% for option in collection.sort_options %}
-              {%- liquid
-                if option.value == collection.sort_by
-                  assign status = 'current'
-                else
-                  assign status = 'available'
-                endif
-              -%}
-              <li class="{{ status }}" data-placeholder="{{ option.name }}" data-option-value="{{ option.value }}">
-                <input type="checkbox"
-                       name="sort_by"
-                       id="{{ option.value | escape }}"
-                       value="{{ option.value | escape }}">
-                <label class="js-hz-filter-label" for="{{ option.value | handle }}">{{ option.name }}</label>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
-
   </div>
 </div>
 
 {% if horizontal_filtering_enabled %}
-<div class="collection__filter-wrapper" id="collection__filter-wrapper">
+<div class="collection__filter-wrapper open" id="collection__filter-wrapper">
   <div class="collection__page-filter desktop-12 tablet-6 mobile-3 contained" data-collection-filters-hz {{ block.shopify_attributes }}>
     <div class="collection__horizontal-toolbar filtering__wrapper">
       <p>{{ 'collections.filters.filter_by_label' | t }}</p>
@@ -283,6 +248,40 @@
             {% endcase %}
           {%- endfor -%}
         {%- endif -%}
+        {% if sort_by_enabled %}
+          <div class="collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
+            {% render 'snip-icons',
+                 wrapper: '.sort-by__wrapper',
+                 type: 'apollo',
+                 icon: 'down-carrot',
+                 classes: 'filter--icon vib-center',
+                 size: '6px',
+                 fill: 'var(--text-color)',
+                 hover: 'var(--text-color)' %}
+            <div class="collection__filtering js-hz-filter">
+              <label class="visually-hidden" for="sort-by--{{ section.id }}">{{ 'collections.filters.sort_by_placeholder' | t }}</label>
+              <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="sort-by" data-placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" data-generic-placeholder="{{ 'collections.filters.type_to_filter' | t }}" placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" id="sort-by--{{ section.id }}">
+              <ul class="value-list js-hz-filter-list">
+                {% for option in collection.sort_options %}
+                  {%- liquid
+                    if option.value == collection.sort_by
+                      assign status = 'current'
+                    else
+                      assign status = 'available'
+                    endif
+                  -%}
+                  <li class="{{ status }}" data-placeholder="{{ option.name }}" data-option-value="{{ option.value }}">
+                    <input type="checkbox"
+                           name="sort_by"
+                           id="{{ option.value | escape }}"
+                           value="{{ option.value | escape }}">
+                    <label class="js-hz-filter-label" for="{{ option.value | handle }}">{{ option.name }}</label>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endif %}
       </ul>
       <noscript>
         <!-- No js filters button to submit select filters -->

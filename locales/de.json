@@ -188,7 +188,7 @@
       "products":"produkte",
       "filter":"Filter",
       "filter_and_sort": "Filtern und sortieren",
-      "filter_by_label": "Filtern nach",
+      "filter_by_label": "Filtern",
       "filter_button": "Filter",
       "filters_selected": "{{ count }} ausgewählt",
       "max_price": "Der höchste Preis ist {{ price }}",
