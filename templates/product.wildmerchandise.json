@@ -26,6 +26,7 @@
         },
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -88,6 +89,9 @@
         "metafield_popup",
         "shortcode_popup1",
         "shortcode_popup2"
+      ],
+      "custom_css": [
+        "input#addToCart {margin-bottom: 0;}"
       ],
       "settings": {
         "click_to_enlarge": true,
@@ -233,10 +237,11 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "custom_css": [
-        ".custom_testimonials.global__section.global__section--margin {margin: 0;}"
+        ".product-recommendations h2 {padding-bottom: 0px;}",
+        ".desktop-12.tablet-6.mobile-3 {padding-bottom: 0px;}"
       ],
       "settings": {
-        "product_recommendations_heading": "You may also like",
+        "product_recommendations_heading": "You may also like these!",
         "product_recommendations_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.",
         "items_shown": 3
       }
