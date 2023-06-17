@@ -196,9 +196,10 @@
         "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-1": {
           "type": "testimonial",
           "settings": {
-            "title": "Testimonials",
-            "content": "<p>Customer testimonial content about your products or service<\/p>",
-            "author": "Author",
+            "image": "shopify:\/\/shop_images\/Container_1.png",
+            "title": "",
+            "content": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orc, netus nisl laoreet.<\/p>",
+            "author": "John Carter",
             "stars": 5
           }
         },
