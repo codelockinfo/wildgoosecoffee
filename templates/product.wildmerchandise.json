@@ -49,6 +49,13 @@
           "settings": {
           }
         },
+        "47364da7-f385-4ca3-ba27-30b6c57864fb": {
+          "type": "icon_shiipping",
+          "settings": {
+            "icondd": "shopify:\/\/shop_images\/Icon_1_f5a8576c-e8af-4bf0-b6ed-d5902b768707.png",
+            "Shippingtext": "Hurray!! Avail Free Shipping on all orders above $50"
+          }
+        },
         "product_description": {
           "type": "product_description",
           "settings": {
@@ -77,13 +84,6 @@
             "popup_label": "Other",
             "shortcode_name": "other"
           }
-        },
-        "47364da7-f385-4ca3-ba27-30b6c57864fb": {
-          "type": "icon_shiipping",
-          "settings": {
-            "icondd": "shopify:\/\/shop_images\/Icon_1_f5a8576c-e8af-4bf0-b6ed-d5902b768707.png",
-            "Shippingtext": "Hurray!! Avail Free Shipping on all orders above $50"
-          }
         }
       },
       "block_order": [
@@ -95,11 +95,11 @@
         "product_buttons",
         "7b18a9e9-4b0c-4141-950b-0982a1cda095",
         "product_availability",
+        "47364da7-f385-4ca3-ba27-30b6c57864fb",
         "product_description",
         "metafield_popup",
         "shortcode_popup1",
-        "shortcode_popup2",
-        "47364da7-f385-4ca3-ba27-30b6c57864fb"
+        "shortcode_popup2"
       ],
       "custom_css": [
         "input#addToCart {margin-bottom: 0;}"
