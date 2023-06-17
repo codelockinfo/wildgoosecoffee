@@ -90,6 +90,9 @@
         "shortcode_popup1",
         "shortcode_popup2"
       ],
+      "custom_css": [
+        "input#addToCart {margin-bottom: 0;}"
+      ],
       "settings": {
         "click_to_enlarge": true,
         "image_section_size": "medium",
