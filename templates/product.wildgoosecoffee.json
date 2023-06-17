@@ -3,6 +3,11 @@
     "main": {
       "type": "main-product-wildgoosecoffee",
       "blocks": {
+        "77a3df0e-911f-4a0e-885c-8c1e1042487a": {
+          "type": "rating",
+          "settings": {
+          }
+        },
         "product_info": {
           "type": "product_info",
           "settings": {
@@ -32,7 +37,6 @@
         },
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -49,6 +53,11 @@
           "settings": {
             "singllinetextsvg": "shopify:\/\/shop_images\/Icon_1_f5a8576c-e8af-4bf0-b6ed-d5902b768707.png",
             "Singllinetext": "Hurray!! Avail Free Shipping on all orders above $50"
+          }
+        },
+        "c8432cc8-e940-40e2-ba0b-1e1260ef5de4": {
+          "type": "Metafield_icon_text",
+          "settings": {
           }
         },
         "7b18a9e9-4b0c-4141-950b-0982a1cda095": {
@@ -90,6 +99,7 @@
         }
       },
       "block_order": [
+        "77a3df0e-911f-4a0e-885c-8c1e1042487a",
         "product_info",
         "590c102c-25c4-4643-ab61-7acc16dded36",
         "product_sku",
@@ -98,6 +108,7 @@
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562",
         "product_buttons",
         "3d86e8de-8332-4fa5-a37b-beb5ec7c207a",
+        "c8432cc8-e940-40e2-ba0b-1e1260ef5de4",
         "7b18a9e9-4b0c-4141-950b-0982a1cda095",
         "product_availability",
         "product_description",
