@@ -8,6 +8,12 @@
           "settings": {
           }
         },
+        "5f8f6e4c-795b-4f80-80dd-2c0436d2ed19": {
+          "type": "Singllinetext-content",
+          "settings": {
+            "Singllinetext": "A perfect blend of style and comfort: This retro-swirl look will get you smiling and people talking."
+          }
+        },
         "product_sku": {
           "type": "product_sku",
           "disabled": true,
@@ -88,6 +94,7 @@
       },
       "block_order": [
         "product_info",
+        "5f8f6e4c-795b-4f80-80dd-2c0436d2ed19",
         "product_sku",
         "product_variants",
         "product_quantity",
