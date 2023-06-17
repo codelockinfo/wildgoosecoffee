@@ -51,6 +51,7 @@
         "logo_position": "inline",
         "logo_align": "center",
         "main_nav": "megamenu",
+        "main_nav-2": "megamenu2",
         "product_menu": true,
         "nav_hover_effect": true
       }

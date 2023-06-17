@@ -14,7 +14,7 @@
     },
     "mobile_nav": {
       "account": "Konto",
-      "login": "Einloggen / Konto erstellen",
+      "login": "Einloggen \/ Konto erstellen",
       "logout": "Ausloggen"
     },
     "404": {
@@ -54,7 +54,7 @@
   "accessibility": {
     "total_reviews": "Bewertungen insgesamt",
     "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen"
-   },
+  },
   "blogs": {
     "article": {
       "posted_on_date_html": "Versand am {{ date }}",
@@ -102,11 +102,6 @@
       "savings": "Ersparnisse insgesamt",
       "discount_applied": "Rabatt angewandt:",
       "items": "Artikel",
-      "free_shipping_before": "Sie sind nur",
-      "free_shipping_after": "weg von kostenlosem Versand im Inland!",
-      "free_shipping_qualified": "Ihre Bestellung ist für kostenlosen Inlandsversand qualifiziert!",
-      "free_shipping_exclusions": "(Außer international)",
-      "items": "Artikel",
       "cart_error": "Warenkorbfehler",
       "update_qty_error": "Einige Artikel waren nicht mehr verfügbar. Aktualisieren Sie die Menge und versuchen Sie es erneut.",
       "tax": "MwSt",
@@ -130,7 +125,7 @@
       "decrease": "Verringere die Menge für {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Fügen Sie Akkordeon-Inhalte im Design-Editor hinzu."
     },
@@ -153,8 +148,8 @@
       "get_directions": "Anweisungen bekommen",
       "address_error": "Fehler beim Nachschlagen dieser Adresse",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
-      "address_query_limit": "Sie haben das Nutzungslimit für die Google API überschritten. Erwägen Sie ein Upgrade auf einen Premium-Plan (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
-      "auth_error": "Beim Authentifizieren Ihres Google Maps-Kontos ist ein Problem aufgetreten. Erstellen und aktivieren Sie die JavaScript-API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\) permissions of your app."
+      "address_query_limit": "Sie haben das Nutzungslimit für die Google API überschritten. Erwägen Sie ein Upgrade auf einen Premium-Plan (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
+      "auth_error": "Beim Authentifizieren Ihres Google Maps-Kontos ist ein Problem aufgetreten. Erstellen und aktivieren Sie die JavaScript-API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key) permissions of your app."
     },
     "search": {
       "no_results_html": "Ihre Suche nach \"{{ terms }}\" ergab keine Ergebnisse.",
@@ -171,7 +166,7 @@
       "filter_by_label": "{{ count }} Ergebnisse für \"{{ terms }}\" filtern nach",
       "filter_button": "Filter",
       "filters_selected": "{{ count }} ausgewählt",
-      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">löschen Sie alle</a>",
+      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">löschen Sie alle<\/a>",
       "type_to_filter": "Zum Filtern eingeben",
       "suggestions": "Vorschläge"
     }
@@ -185,17 +180,17 @@
       "refine": "Refine",
       "clear_all": "Alles löschen",
       "from": "Von",
-      "products":"produkte",
-      "filter":"Filter",
+      "products": "produkte",
+      "filter": "Filter",
       "filter_and_sort": "Filtern und sortieren",
-      "filter_by_label": "Filtern nach",
+      "filter_by_label": "Filtern",
       "filter_button": "Filter",
       "filters_selected": "{{ count }} ausgewählt",
       "max_price": "Der höchste Preis ist {{ price }}",
       "reset": "Zurücksetzen",
       "sort_by_placeholder": "Sortiere nach",
       "to": "To",
-      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">löschen Sie alle</a>",
+      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">löschen Sie alle<\/a>",
       "type_to_filter": "Zum Filtern eingeben"
     }
   },
@@ -206,7 +201,7 @@
       "link": "Zurück zum Konto",
       "details": "Kontodetails",
       "view_addresses": "Adressen ansehen",
-      "returns_content": "Returns",      
+      "returns_content": "Returns",
       "return": "Zu den Kontodetails zurückkehren"
     },
     "activate_account": {

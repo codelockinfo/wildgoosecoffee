@@ -14,7 +14,7 @@
     },
     "mobile_nav": {
       "account": "Account",
-      "login": "Log In/Create Account",
+      "login": "Log In\/Create Account",
       "logout": "Logout"
     },
     "404": {
@@ -103,11 +103,6 @@
       "discount_applied": "Discount Applied!",
       "items": "Item(s)",
       "cart_discount": "Discount Code (Applied at Checkout)",
-      "free_shipping_before": "You are only",
-      "free_shipping_after": "away from Free Domestic Shipping!",
-      "free_shipping_qualified": "Your order qualifies for Free Domestic Shipping!",
-      "free_shipping_exclusions": "(Excludes International)",
-      "items": "Item(s)",
       "cart_error": "Cart Error",
       "update_qty_error": "Some items became unavailable. Update the quantity and try again.",
       "tax": "Tax",
@@ -131,7 +126,7 @@
       "decrease": "Decrease quantity for {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Add accordion content in the theme editor."
     },
@@ -154,8 +149,8 @@
       "get_directions": "Get directions",
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit": "You have exceeded the Google API usage limit. Consider upgrading to a Premium Plan (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
-      "auth_error": "There was a problem authenticating your Google Maps account. Create and enable the JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\) permissions of your app."
+      "address_query_limit": "You have exceeded the Google API usage limit. Consider upgrading to a Premium Plan (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
+      "auth_error": "There was a problem authenticating your Google Maps account. Create and enable the JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key) permissions of your app."
     },
     "search": {
       "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
@@ -172,7 +167,7 @@
       "filter_by_label": "Filter {{ count }} results for \"{{ terms }}\" by",
       "filter_button": "Filter",
       "filters_selected": "{{ count }} selected",
-      "use_fewer_filters_html": "No results. Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+      "use_fewer_filters_html": "No results. Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
       "type_to_filter": "Type to filter",
       "suggestions": "Suggestions"
     }
@@ -186,17 +181,17 @@
       "refine": "Refine",
       "clear_all": "Clear all",
       "from": "From",
-      "products":"products",
-      "filter":"Filter",
+      "products": "products",
+      "filter": "Filter",
       "filter_and_sort": "Filter and sort",
-      "filter_by_label": "Filter by",
+      "filter_by_label": "Filter",
       "filter_button": "Filter",
       "filters_selected": "{{ count }} selected",
       "max_price": "The highest price is {{ price }}",
       "reset": "Reset",
       "sort_by_placeholder": "Sort by",
       "to": "To",
-      "use_fewer_filters_html": "No products. Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+      "use_fewer_filters_html": "No products. Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
       "type_to_filter": "Type to filter"
     }
   },
@@ -207,7 +202,7 @@
       "link": "Back to Account",
       "details": "Account Details",
       "view_addresses": "View Addresses",
-      "returns_content": "Returns",      
+      "returns_content": "Returns",
       "return": "Return to Account Details"
     },
     "activate_account": {

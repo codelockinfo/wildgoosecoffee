@@ -14,7 +14,7 @@
     },
     "mobile_nav": {
       "account": "Account",
-      "login": "Accedi/Crea account",
+      "login": "Accedi\/Crea account",
       "logout": "Esci"
     },
     "404": {
@@ -103,7 +103,7 @@
       "free_shipping_exclusions": "(Escluso internazionale)",
       "items": "Item(s)",
       "cart_error": "Si è verificato un errore durante l'aggiornamento del carrello. Riprova più tardi",
-			"update_qty_error": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
+      "update_qty_error": "Puoi aggiungere soltanto {{ quantity }} di questo articolo al tuo carrello.",
       "tax": "Imposta",
       "shipping": "Spedizione",
       "shipping_no_destination": "Non effettuiamo consegne a questa destinazione.",
@@ -125,7 +125,7 @@
       "decrease": "Diminuisci quantità per {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Aggiungi contenuti per fisarmonica nell'editor del tema."
     },
@@ -148,7 +148,7 @@
       "get_directions": "Ottenere indicazioni",
       "address_error": "Errore durante la ricerca di quell'indirizzo",
       "address_no_results": "Nessun risultato per quell'indirizzo",
-      "address_query_limit": "Hai superato il limite di utilizzo dell'API di Google. Prendi in considerazione l'aggiornamento a un piano Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
+      "address_query_limit": "Hai superato il limite di utilizzo dell'API di Google. Prendi in considerazione l'aggiornamento a un piano Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
       "auth_error": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps."
     },
     "search": {
@@ -166,7 +166,7 @@
       "filter_by_label": "Filtro {{ count }} risultati per \"{{ terms }}\" di",
       "filter_button": "Filtro",
       "filters_selected": "{{ count }} selezionato",
-      "use_fewer_filters_html": "Nessun risultato. Usa meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">Cancella tutto</a>",
+      "use_fewer_filters_html": "Nessun risultato. Usa meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">Cancella tutto<\/a>",
       "type_to_filter": "Digita per filtrare",
       "suggestions": "Suggerimenti"
     }
@@ -180,24 +180,24 @@
       "refine": "Filtro",
       "clear_all": "Cancella tutto",
       "from": "A partire dal",
-      "products":"Prodotti",
-      "filter":"Filtro",
+      "products": "Prodotti",
+      "filter": "Filtro",
       "filter_and_sort": "Filtra e ordina",
-      "filter_by_label": "Filtra per",
+      "filter_by_label": "Filtra",
       "filter_button": "Filtro",
       "filters_selected": "{{ count }} selezionato",
       "max_price": "Il prezzo più alto è {{ price }}",
       "reset": "Ripristina",
       "sort_by_placeholder": "Ordina per",
       "to": "A",
-      "use_fewer_filters_html": "Nessun risultato. Usa meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">Cancella tutto</a>",
+      "use_fewer_filters_html": "Nessun risultato. Usa meno filtri o <a class=\"{{ class }}\" href=\"{{ link }}\">Cancella tutto<\/a>",
       "type_to_filter": "Digita per filtrare"
     }
   },
   "customer": {
     "account": {
       "title": "Account",
-      "logout":"Disconnettersi",
+      "logout": "Disconnettersi",
       "link": "Ritorna ai dettagli dell'account",
       "details": "Dettagli account",
       "returns_content": "Returns",
@@ -333,15 +333,14 @@
       "back_in_stock": "Vi prego di inviarmi un'e-mail quando questo è disponibile",
       "back_in_stock_confirm": "Grazie, ti contatteremo quando sarà disponibile",
       "readmore": "Leggi di più",
-      "required":"necessario",
+      "required": "Necessario",
       "view_in_space": "Visualizza nel tuo spazio",
       "view_in_space_label": "Visualizza nel tuo spazio",
       "only_left": {
         "one": "Rimasto solo {{ count }}",
         "other": "Solo {{ count }} rimanenti!"
       },
-      "unit_price_label": "Prezzo unitario",
-      "required": "Necessario"
+      "unit_price_label": "Prezzo unitario"
     },
     "product_pickup_availability": {
       "view_store_info": "Visualizza i dettagli del negozio",
@@ -372,7 +371,7 @@
       "pinterest": "Aggiungi un pin su Pinterest"
     },
     "product_share": {
-    "month_date_year": "%B %d %Y"
+      "month_date_year": "%B %d %Y"
     }
   }
 }

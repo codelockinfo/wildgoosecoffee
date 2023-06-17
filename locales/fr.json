@@ -95,17 +95,12 @@
       "checkout": "Paiement",
       "note": "Veuillez laisser vos instructions particulières ici:",
       "free_shipping_before": "Vous n'êtes qu'à",
-      "free_shipping_after": "de la livraison gratuite sur le territoire national !",
-      "free_shipping_qualified": "Votre commande peut être expédiée gratuitement sur le territoire national !",
+      "free_shipping_after": "away from Free Domestic Shipping!",
+      "free_shipping_qualified": "de la livraison gratuite sur le territoire national !",
       "free_shipping_exclusions": "(À l'exclusion de l'international)",
       "discounts": "Réductions",
       "savings": "Total des économies",
       "discount_applied": "Réduction appliquée:",
-      "items": "Article(s)",
-      "free_shipping_before": "Vous n'êtes qu'à",
-      "free_shipping_after": "away from Free Domestic Shipping!",
-      "free_shipping_qualified": "de la livraison gratuite sur le territoire national !",
-      "free_shipping_exclusions": "(À l'exclusion de l'international)",
       "items": "Article(s)",
       "cart_error": "Erreur de panier",
       "update_qty_error": "Certains articles sont devenus indisponibles. Mettez à jour la quantité et réessayez.",
@@ -130,7 +125,7 @@
       "decrease": "Réduire la quantité de {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Ajoutez du contenu accordéon dans l'éditeur de thème."
     },
@@ -153,8 +148,8 @@
       "get_directions": "Obtenir des directions",
       "address_error": "Erreur lors de la recherche de cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
-      "address_query_limit": "Vous avez dépassé la limite d'utilisation de l'API Google. Envisagez de passer à un plan Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
-      "auth_error": "Un problème est survenu lors de l'authentification de votre compte Google Maps. Créez et activez le JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\) permissions of your app."
+      "address_query_limit": "Vous avez dépassé la limite d'utilisation de l'API Google. Envisagez de passer à un plan Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
+      "auth_error": "Un problème est survenu lors de l'authentification de votre compte Google Maps. Créez et activez le JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key) permissions of your app."
     },
     "search": {
       "no_results_html": "Votre recherche de \"{{ terms }}\" n'a donné aucun résultat.",
@@ -171,7 +166,7 @@
       "filter_by_label": "Filtrer {{ count }} résultats pour \"{{ terms }}\" par",
       "filter_button": "Filtre",
       "filters_selected": "{{ count }} sélectionnés",
-      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">effacez tout</a>",
+      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">effacez tout<\/a>",
       "type_to_filter": "Tapez à filtrer",
       "suggestions": "Suggestions"
     }
@@ -185,17 +180,17 @@
       "refine": "Refine",
       "clear_all": "Tout effacer",
       "from": "De",
-      "products":"produits",
-      "filter":"Filtre",
+      "products": "produits",
+      "filter": "Filtre",
       "filter_and_sort": "Filtrer et trier",
-      "filter_by_label": "Filtrer par",
+      "filter_by_label": "Filtrer",
       "filter_button": "Filtre",
       "filters_selected": "{{ count }} sélectionnés",
       "max_price": "Le prix le plus élevé est {{ price }}",
       "reset": "Réinitialiser",
       "sort_by_placeholder": "Trier par",
       "to": "à",
-      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">effacez tout</a>",
+      "use_fewer_filters_html": "Utilisez moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">effacez tout<\/a>",
       "type_to_filter": "Tapez à filtrer"
     }
   },
@@ -206,7 +201,7 @@
       "link": "Adresse principale",
       "details": "Détails du compte",
       "view_addresses": "Afficher les adresses",
-      "returns_content": "Returns",      
+      "returns_content": "Returns",
       "return": "Retour aux détails du compte"
     },
     "activate_account": {
