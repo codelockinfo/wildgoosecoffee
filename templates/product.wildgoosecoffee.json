@@ -263,14 +263,6 @@
         "section_padding": "both"
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "product_recommendations_heading": "You may also like",
-        "product_recommendations_description": "You may also like about",
-        "items_shown": 3
-      }
-    },
     "27161b85-0753-4e3a-9aeb-caeeedb3925a": {
       "type": "find-right-coffee",
       "settings": {
@@ -370,6 +362,14 @@
       "settings": {
         "title": "Frequently Asked Questions"
       }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like these!",
+        "product_recommendations_description": "Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit.",
+        "items_shown": 3
+      }
     }
   },
   "order": [
@@ -378,9 +378,9 @@
     "main-product-content",
     "7a739a1a-e9d6-4779-ada8-0acb2fef76ef",
     "16281158786d72aa6c",
-    "product-recommendations",
     "27161b85-0753-4e3a-9aeb-caeeedb3925a",
     "2f4de349-8fc0-4a0c-b0d9-9554e8033126",
-    "4daf73f2-e9ff-4bb0-b5b3-e7e8961ab100"
+    "4daf73f2-e9ff-4bb0-b5b3-e7e8961ab100",
+    "product-recommendations"
   ]
 }
