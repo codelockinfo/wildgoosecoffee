@@ -130,6 +130,62 @@
         "lower_description_background": ""
       }
     },
+    "a01b56ce-47f8-4461-8e3d-ec36e4e97865": {
+      "type": "image-with-icontext",
+      "blocks": {
+        "a87ec405-9f88-429c-ae90-ce94b6801ea2": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Collaboration with the washing station to ensure.<\/p>"
+          }
+        },
+        "4e1ff00f-b634-4f7a-98f1-edea174bfa85": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Collaboration with the washing station to ensure highest quality farming practices.<\/p>"
+          }
+        },
+        "b323848d-198e-423c-8545-91c722b1ea38": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Farmed from small-share, independent farmers.<\/p>"
+          }
+        },
+        "04bdb30b-da6d-413a-aba2-693ce96b7168": {
+          "type": "icon",
+          "settings": {
+            "text": "<p>Collaboration with the washing station to ensure highest quality farming practices.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a87ec405-9f88-429c-ae90-ce94b6801ea2",
+        "4e1ff00f-b634-4f7a-98f1-edea174bfa85",
+        "b323848d-198e-423c-8545-91c722b1ea38",
+        "04bdb30b-da6d-413a-aba2-693ce96b7168"
+      ],
+      "settings": {
+        "full_width": false,
+        "background": false,
+        "image": "shopify:\/\/shop_images\/Rectangle_38.png",
+        "layout": "left",
+        "image_width": "50%",
+        "image_height": "natural",
+        "desktop_height": 500,
+        "mobile_height": 600,
+        "title": "Brewing Suggestions",
+        "link": "",
+        "button": "",
+        "text_align": "a-left",
+        "text_position": "vai-center",
+        "heading_size": 22,
+        "text_size": 14,
+        "text_offset": 0,
+        "color_scheme": "none",
+        "apply_color_to_section": false,
+        "section_padding": "both"
+      }
+    },
     "main-product-content": {
       "type": "main-product-content",
       "disabled": true,
@@ -139,6 +195,7 @@
     },
     "7a739a1a-e9d6-4779-ada8-0acb2fef76ef": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "background": false,
@@ -213,70 +270,14 @@
         "product_recommendations_description": "You may also like about",
         "items_shown": 3
       }
-    },
-    "a01b56ce-47f8-4461-8e3d-ec36e4e97865": {
-      "type": "image-with-icontext",
-      "blocks": {
-        "a87ec405-9f88-429c-ae90-ce94b6801ea2": {
-          "type": "icon",
-          "settings": {
-            "text": "<p>Collaboration with the washing station to ensure.<\/p>"
-          }
-        },
-        "4e1ff00f-b634-4f7a-98f1-edea174bfa85": {
-          "type": "icon",
-          "settings": {
-            "text": "<p>Collaboration with the washing station to ensure highest quality farming practices.<\/p>"
-          }
-        },
-        "b323848d-198e-423c-8545-91c722b1ea38": {
-          "type": "icon",
-          "settings": {
-            "text": "<p>Farmed from small-share, independent farmers.<\/p>"
-          }
-        },
-        "04bdb30b-da6d-413a-aba2-693ce96b7168": {
-          "type": "icon",
-          "settings": {
-            "text": "<p>Collaboration with the washing station to ensure highest quality farming practices.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "a87ec405-9f88-429c-ae90-ce94b6801ea2",
-        "4e1ff00f-b634-4f7a-98f1-edea174bfa85",
-        "b323848d-198e-423c-8545-91c722b1ea38",
-        "04bdb30b-da6d-413a-aba2-693ce96b7168"
-      ],
-      "settings": {
-        "full_width": false,
-        "background": false,
-        "image": "shopify:\/\/shop_images\/Rectangle_38.png",
-        "layout": "left",
-        "image_width": "50%",
-        "image_height": "natural",
-        "desktop_height": 500,
-        "mobile_height": 600,
-        "title": "Brewing Suggestions",
-        "link": "",
-        "button": "",
-        "text_align": "a-left",
-        "text_position": "vai-center",
-        "heading_size": 22,
-        "text_size": 14,
-        "text_offset": 0,
-        "color_scheme": "none",
-        "apply_color_to_section": false,
-        "section_padding": "both"
-      }
     }
   },
   "order": [
     "main",
+    "a01b56ce-47f8-4461-8e3d-ec36e4e97865",
     "main-product-content",
     "7a739a1a-e9d6-4779-ada8-0acb2fef76ef",
     "16281158786d72aa6c",
-    "product-recommendations",
-    "a01b56ce-47f8-4461-8e3d-ec36e4e97865"
+    "product-recommendations"
   ]
 }
