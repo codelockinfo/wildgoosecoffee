@@ -328,6 +328,48 @@
         "star_color": "#ffd450",
         "section_padding": "both"
       }
+    },
+    "4daf73f2-e9ff-4bb0-b5b3-e7e8961ab100": {
+      "type": "custom-faq",
+      "blocks": {
+        "c8efa561-c730-45a9-9256-7fba11a64112": {
+          "type": "faq",
+          "settings": {
+            "faqquestion": "What is Webflow and why is it the best website builder?",
+            "faqanswer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit.<\/p>"
+          }
+        },
+        "89681ab5-32bc-4f0e-8dbb-6521a76a2f54": {
+          "type": "faq",
+          "settings": {
+            "faqquestion": "What is your favorite template from BRIX Templates?",
+            "faqanswer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit.<\/p>"
+          }
+        },
+        "f93c8e0d-9b0c-46f8-9f57-3c33469c6fee": {
+          "type": "faq",
+          "settings": {
+            "faqquestion": "How do you clone a Webflow Template?",
+            "faqanswer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit.<\/p>"
+          }
+        },
+        "68eb5d70-b180-4deb-9489-d96bd55e4834": {
+          "type": "faq",
+          "settings": {
+            "faqquestion": "Why is BRIX Templates the best Webflow agency?",
+            "faqanswer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c8efa561-c730-45a9-9256-7fba11a64112",
+        "89681ab5-32bc-4f0e-8dbb-6521a76a2f54",
+        "f93c8e0d-9b0c-46f8-9f57-3c33469c6fee",
+        "68eb5d70-b180-4deb-9489-d96bd55e4834"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
@@ -338,6 +380,7 @@
     "16281158786d72aa6c",
     "product-recommendations",
     "27161b85-0753-4e3a-9aeb-caeeedb3925a",
-    "2f4de349-8fc0-4a0c-b0d9-9554e8033126"
+    "2f4de349-8fc0-4a0c-b0d9-9554e8033126",
+    "4daf73f2-e9ff-4bb0-b5b3-e7e8961ab100"
   ]
 }
