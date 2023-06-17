@@ -180,6 +180,53 @@
         "section_padding": "both"
       }
     },
+    "35747348-98cb-44a5-ab82-966062fc5f8f": {
+      "type": "custom-testimonials",
+      "blocks": {
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-0": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Testimonials",
+            "content": "<p>Customer testimonial content about your products or service<\/p>",
+            "author": "Author",
+            "stars": 5
+          }
+        },
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-1": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Testimonials",
+            "content": "<p>Customer testimonial content about your products or service<\/p>",
+            "author": "Author",
+            "stars": 5
+          }
+        },
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-2": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Testimonials",
+            "content": "<p>Customer testimonial content about your products or service<\/p>",
+            "author": "Author",
+            "stars": 5
+          }
+        }
+      },
+      "block_order": [
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-0",
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-1",
+        "template--15217915789373__35747348-98cb-44a5-ab82-966062fc5f8f-168698606776cb5ce7-2"
+      ],
+      "custom_css": [
+        ".custom_testimonials.global__section.global__section--margin {margin: 0;}"
+      ],
+      "settings": {
+        "title": "What our customers say",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.",
+        "color_scheme": "none",
+        "star_color": "#ffd450",
+        "section_padding": "both"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "custom_css": [
@@ -197,6 +244,7 @@
     "main-product-content",
     "7a739a1a-e9d6-4779-ada8-0acb2fef76ef",
     "16281158786d72aa6c",
+    "35747348-98cb-44a5-ab82-966062fc5f8f",
     "product-recommendations"
   ]
 }
