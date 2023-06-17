@@ -56,6 +56,7 @@
         },
         "metafield_popup": {
           "type": "metafield_popup",
+          "disabled": true,
           "settings": {
             "popup_label": "Care guide",
             "popup_metafield_content": "<p>{{ product.metafields.descriptors.care_guide.value }}<\/p>"
@@ -63,6 +64,7 @@
         },
         "shortcode_popup1": {
           "type": "shortcode_popup",
+          "disabled": true,
           "settings": {
             "popup_label": "Size",
             "shortcode_name": "size"
@@ -70,9 +72,17 @@
         },
         "shortcode_popup2": {
           "type": "shortcode_popup",
+          "disabled": true,
           "settings": {
             "popup_label": "Other",
             "shortcode_name": "other"
+          }
+        },
+        "47364da7-f385-4ca3-ba27-30b6c57864fb": {
+          "type": "icon_shiipping",
+          "settings": {
+            "icondd": "shopify:\/\/shop_images\/Icon_1_f5a8576c-e8af-4bf0-b6ed-d5902b768707.png",
+            "Shippingtext": "Hurray!! Avail Free Shipping on all orders above $50"
           }
         }
       },
@@ -88,7 +98,8 @@
         "product_description",
         "metafield_popup",
         "shortcode_popup1",
-        "shortcode_popup2"
+        "shortcode_popup2",
+        "47364da7-f385-4ca3-ba27-30b6c57864fb"
       ],
       "custom_css": [
         "input#addToCart {margin-bottom: 0;}"
