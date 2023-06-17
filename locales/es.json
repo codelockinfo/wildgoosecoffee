@@ -14,7 +14,7 @@
     },
     "mobile_nav": {
       "account": "Cuenta",
-      "login": "Iniciar sesión/Crear cuenta",
+      "login": "Iniciar sesión\/Crear cuenta",
       "logout": "Cerrar Sesión"
     },
     "404": {
@@ -94,18 +94,13 @@
       "update": "Actualizar el carrito",
       "checkout": "Página de pago",
       "note": "Deja las instrucciones especiales a continuación:",
-      "free_shipping_before": "Eres solo",
-      "free_shipping_after": "¡de los envíos nacionales gratuitos!",
+      "free_shipping_before": "¡Eres solo",
+      "free_shipping_after": "de los envíos nacionales gratuitos!",
       "free_shipping_qualified": "¡Tu pedido cumple con los requisitos para el envío doméstico gratuito!",
       "free_shipping_exclusions": "(Excluye internacional)",
       "discounts": "Descuentos",
       "savings": "Ahorro total",
       "discount_applied": "Descuento aplicado:",
-      "items": "Artículo(s)",
-      "free_shipping_before": "¡Eres solo",
-      "free_shipping_after": "de los envíos nacionales gratuitos!",
-      "free_shipping_qualified": "¡Tu pedido cumple con los requisitos para el envío doméstico gratuito!",
-      "free_shipping_exclusions": "(Excluye internacional)",
       "items": "Artículo(s)",
       "cart_error": "Error de carrito de compras",
       "update_qty_error": "Algunos artículos dejaron de estar disponibles. Actualice la cantidad y vuelva a intentarlo.",
@@ -130,7 +125,7 @@
       "decrease": "Reducir cantidad para {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Agregue contenido de acordeón en el editor de temas."
     },
@@ -153,8 +148,8 @@
       "get_directions": "Obtener las direcciones",
       "address_error": "Error al buscar esa dirección",
       "address_no_results": "No hay resultados para esa dirección",
-      "address_query_limit": "Has superado el límite de uso de la API de Google. Considere actualizar a un plan premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
-      "auth_error": "Hubo un problema al autenticar su cuenta de Google Maps. Cree y habilite el JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\) permissions of your app."
+      "address_query_limit": "Has superado el límite de uso de la API de Google. Considere actualizar a un plan premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
+      "auth_error": "Hubo un problema al autenticar su cuenta de Google Maps. Cree y habilite el JavaScript API (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key) permissions of your app."
     },
     "search": {
       "no_results_html": "Tu búsqueda de \"{{ terms }}\" no dio ningún resultado.",
@@ -171,7 +166,7 @@
       "filter_by_label": "Filtrar {{ count }} resultados para \"{{ terms }}\" por",
       "filter_button": "Filtrar",
       "filters_selected": "{{ count }} seleccionados",
-      "use_fewer_filters_html": "Use menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borre todo</a>",
+      "use_fewer_filters_html": "Use menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borre todo<\/a>",
       "type_to_filter": "Escriba para filtrar",
       "suggestions": "Sugerencias"
     }
@@ -185,8 +180,8 @@
       "refine": "Refine",
       "clear_all": "Limpiar todo",
       "from": "De",
-      "products":"productos",
-      "filter":"Filtrar",
+      "products": "productos",
+      "filter": "Filtrar",
       "filter_and_sort": "Filtrar y ordenar",
       "filter_by_label": "Filtrado",
       "filter_button": "Filtrar",
@@ -195,7 +190,7 @@
       "reset": "Reiniciar",
       "sort_by_placeholder": "Ordenar por",
       "to": "A",
-      "use_fewer_filters_html": "Use menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borre todo</a>",
+      "use_fewer_filters_html": "Use menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borre todo<\/a>",
       "type_to_filter": "Escriba para filtrar"
     }
   },
@@ -206,7 +201,7 @@
       "link": "Volver a la cuenta",
       "details": "Detalles de la cuenta",
       "view_addresses": "Ver direcciones",
-      "returns_content": "Returns",      
+      "returns_content": "Returns",
       "return": "Volver a los detalles de la cuenta"
     },
     "activate_account": {
@@ -230,7 +225,7 @@
       "city": "Ciudad",
       "country": "País",
       "province": "Provincia",
-      "zip": "Código postal/ZIP",
+      "zip": "Código postal\/ZIP",
       "phone": "Teléfono",
       "set_default": "Establecer como dirección predeterminada",
       "add": "Añadir dirección",
@@ -345,7 +340,7 @@
         "other": "¡Solo {{ count }} restantes!"
       },
       "unit_price_label": "Precio unitario",
-      "required":"Requerido"
+      "required": "Requerido"
     },
     "product_pickup_availability": {
       "view_store_info": "Ver información de la tienda",

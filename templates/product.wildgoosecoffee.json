@@ -8,6 +8,12 @@
           "settings": {
           }
         },
+        "590c102c-25c4-4643-ab61-7acc16dded36": {
+          "type": "Singllinetext-content",
+          "settings": {
+            "Singllinetext": "Taken to a more developed roast profile. A creamy finish."
+          }
+        },
         "product_sku": {
           "type": "product_sku",
           "disabled": true,
@@ -26,6 +32,7 @@
         },
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "disabled": true,
           "settings": {
             "product": "{{product}}"
           }
@@ -35,6 +42,13 @@
           "settings": {
             "back_in_stock": true,
             "back_in_stock_text": "<p>Email me when this is available<\/p>"
+          }
+        },
+        "3d86e8de-8332-4fa5-a37b-beb5ec7c207a": {
+          "type": "Singllinetext-content",
+          "settings": {
+            "singllinetextsvg": "shopify:\/\/shop_images\/Icon_1_f5a8576c-e8af-4bf0-b6ed-d5902b768707.png",
+            "Singllinetext": "Hurray!! Avail Free Shipping on all orders above $50"
           }
         },
         "7b18a9e9-4b0c-4141-950b-0982a1cda095": {
@@ -77,11 +91,13 @@
       },
       "block_order": [
         "product_info",
+        "590c102c-25c4-4643-ab61-7acc16dded36",
         "product_sku",
         "product_variants",
         "product_quantity",
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562",
         "product_buttons",
+        "3d86e8de-8332-4fa5-a37b-beb5ec7c207a",
         "7b18a9e9-4b0c-4141-950b-0982a1cda095",
         "product_availability",
         "product_description",

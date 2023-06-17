@@ -14,7 +14,7 @@
     },
     "mobile_nav": {
       "account": "Conta",
-      "login": "Entrar/Criar conta",
+      "login": "Entrar\/Criar conta",
       "logout": "SAIR"
     },
     "404": {
@@ -102,11 +102,6 @@
       "savings": "Total de descontos",
       "discount_applied": "Desconto aplicado:",
       "items": "Item(ns)",
-      "free_shipping_before": "Você está apenas",
-      "free_shipping_after": "distante de frete grátis!",
-      "free_shipping_qualified": "Seu pedido está qualificado para frete grátis!",
-      "free_shipping_exclusions": "(Exclui internacional)",
-      "items": "Item(ns)",
       "cart_error": "Erro no carrinho",
       "update_qty_error": "Alguns itens ficaram indisponíveis. Atualize a quantidade e tente novamente.",
       "tax": "Imposto",
@@ -131,7 +126,7 @@
       "decrease": "Diminuir a quantidade de {{ product }}"
     }
   },
-  "sections" :{
+  "sections": {
     "accordion": {
       "placeholder": "Adicione conteúdo sanfonado no editor de temas."
     },
@@ -154,8 +149,8 @@
       "get_directions": "Obter direções",
       "address_error": "Erro ao procurar esse endereço",
       "address_no_results": "Nenhum resultado para esse endereço",
-      "address_query_limit": "Você excedeu o limite de uso da API do Google. Considere fazer o upgrade para um Plano Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits\).",
-      "auth_error": "Ocorreu um problema ao autenticar sua conta do Google Maps. Crie e ative a API JavaScript (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\) permissions of your app."
+      "address_query_limit": "Você excedeu o limite de uso da API do Google. Considere fazer o upgrade para um Plano Premium (https:\/\/developers.google.com\/maps\/premium\/usage-limits).",
+      "auth_error": "Ocorreu um problema ao autenticar sua conta do Google Maps. Crie e ative a API JavaScript (https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key) and Geocoding API (https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key) permissions of your app."
     },
     "search": {
       "no_results_html": "Sua pesquisa por \"{{ terms }}\" não produziu nenhum resultado.",
@@ -172,7 +167,7 @@
       "filter_by_label": "Filtre {{ count }} resultados para \"{{ terms }}\" por",
       "filter_button": "Filtro",
       "filters_selected": "{{ count }} selecionados",
-      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpe todos</a>",
+      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpe todos<\/a>",
       "type_to_filter": "Digite para filtrar",
       "suggestions": "Sugestões"
     }
@@ -186,8 +181,8 @@
       "refine": "Refine",
       "clear_all": "Limpar tudo",
       "from": "De",
-      "products":"produtos",
-      "filter":"Filtro",
+      "products": "produtos",
+      "filter": "Filtro",
       "filter_and_sort": "Filtrar e classificar",
       "filter_by_label": "Filtrar",
       "filter_button": "Filtro",
@@ -196,7 +191,7 @@
       "reset": "Redefinir",
       "sort_by_placeholder": "Ordenar por",
       "to": "A",
-      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpe todos</a>",
+      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpe todos<\/a>",
       "type_to_filter": "Digite para filtrar"
     }
   },
@@ -207,7 +202,7 @@
       "link": "Voltar para a conta",
       "details": "Detalhes da conta",
       "view_addresses": "Ver endereços",
-      "returns_content": "Returns",      
+      "returns_content": "Returns",
       "return": "Voltar para os detalhes da conta"
     },
     "activate_account": {
@@ -231,7 +226,7 @@
       "city": "Cidade",
       "country": "País",
       "province": "Província",
-      "zip": "CEP/Código postal",
+      "zip": "CEP\/Código postal",
       "phone": "Telefone",
       "set_default": "Definir como endereço padrão",
       "add": "Adicionar endereço",
