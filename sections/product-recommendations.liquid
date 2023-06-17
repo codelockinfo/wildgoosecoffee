@@ -7,12 +7,17 @@
 
       <div class="product-recommendations row" data-product-id="{{ product.id }}">
 
-        {% if section.settings.product_recommendations_heading != blank %}
-          <div class="section-title desktop-12 tablet-6 mobile-3">
-            <h2>{{ section.settings.product_recommendations_heading }}</h2>
-          </div>
+          {% if section.settings.product_recommendations_heading != blank %}
+            <div class="section-title desktop-12 tablet-6 mobile-3">
+              <h2>{{ section.settings.product_recommendations_heading }}</h2>
+            </div>
           {% endif %}
-
+          {% if section.settings.product_recommendations_description != blank %}
+            <div class="section-title desktop-12 tablet-6 mobile-3">
+              <h2 class="reccomedes">{{ section.settings.product_recommendations_description }}</h2>
+            </div>
+          {% endif %}
+  
         <div class="clear"></div>
         <div class="related-product-loop grid__wrapper px0">
           {%- for product in recommendations.products limit: section.settings.items_shown -%}
@@ -47,6 +52,12 @@
       "id": "product_recommendations_heading",
       "label": "Heading",
       "default": "You may also like"
+    },
+    {
+      "type": "text",
+      "id": "product_recommendations_description",
+      "label": "Description",
+      "default": "You may also like about"
     },
     {
       "type": "range",
