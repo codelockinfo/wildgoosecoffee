@@ -12838,12 +12838,32 @@ input[type="search"]#Search::-webkit-search-results-decoration {
   height: var(--desktop-section-height);
   object-fit: cover;
 }
+.displaymobile{
+  display: none;
+}
+.displaydesktop{
+  display: block;
+}
 @media screen and (max-width: 740px) {
   .product__content-image.size--fixed .box-ratio {
     padding-bottom: var(--mobile-section-height) !important;
   }
   .product__content-image.size--fixed img {
     height: var(--mobile-section-height);
+  }
+  .sort__filter--triggers.displaymobile{
+    display: block;
+  }
+  .displaydesktop{
+    display: none;
+  }
+  .displaymobile .collection__horizontal-toolbar.sort-by__wrapper{
+    width: 30%;
+    padding-right: 15px;
+
+  }
+  .collection__horizontal-toolbar .icon--apollo-down-carrot{
+    right: 20px;
   }
 }
 
