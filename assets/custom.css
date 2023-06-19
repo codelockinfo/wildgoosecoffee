@@ -89,7 +89,9 @@ a.button:hover,
     padding: 0 24px;
     margin-bottom: 0;
 }
-
+.custom_testimonials .section-title .custreview,h3{
+      margin-left: 25px;
+}
 .product-single__thumbnails-item img,
 .product__section-images .carousel .box-ratio img.product__image{
     border-radius: 20px;
