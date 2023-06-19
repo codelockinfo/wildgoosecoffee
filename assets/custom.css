@@ -90,7 +90,7 @@ a.button:hover,
     margin-bottom: 0;
 }
 .custom_testimonials .section-title .custreview,h2{
-      margin: 25px 0;
+      margin: 0 25px;
 }
 .product-single__thumbnails-item img,
 .product__section-images .carousel .box-ratio img.product__image{
