@@ -14,9 +14,10 @@
 }
 
 .gridlock .row {
- width: 92%;
+ width: 100%;
  margin-left: auto;
- margin-right: auto
+ margin-right: auto;
+ padding: 0;
 }
 
 .gridlock .row:after {
