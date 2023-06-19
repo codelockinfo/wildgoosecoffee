@@ -3,7 +3,7 @@
 {% capture loading %}{{ loading | default: 'lazy' }}{% endcapture %}
 <div class="box-ratio {{ class }}" style="padding-bottom: {{ image_box_ratio }};">
   {{ hover }}??
-   {% if template == 'index' and hover == true %}
+   {% if template == 'index' and hover == "true" %}
        <div class="overlay"></div>
        {% endif %}
   {{ type | image_url: width: width | image_tag:
