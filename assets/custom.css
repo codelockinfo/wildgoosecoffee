@@ -4530,10 +4530,10 @@ color: #2E2E2E;
   transform-origin: center;
 }
 .plus-minus-toggle.collapsed:after {
-  transform: rotate(90deg);
+  transform: rotate(135deg);
 }
 .plus-minus-toggle.collapsed:before {
-  transform: rotate(180deg);
+  transform: rotate(225deg);
 }
 /* accordiun end */
 .collection__horizontal-toolbar.filtering__wrapper p{
