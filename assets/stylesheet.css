@@ -13061,3 +13061,6 @@ color: #2E2E2E;
 .share-icons{
   display: none;
 }
+.image__with-text  .box-ratio  img{
+  border-radius: 20px;
+}
