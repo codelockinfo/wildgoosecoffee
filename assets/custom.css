@@ -4663,7 +4663,7 @@ color: #2E2E2E;
   float: left;
 }
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1100px){
   .wildgoosecoffee .product__section-details__inner--product_buttons{
       width: 100%;
   }
