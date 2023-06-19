@@ -41,6 +41,11 @@
             "product": "{{product}}"
           }
         },
+        "4f15d5e5-4eb1-4e1c-acd2-58e505b99610": {
+          "type": "product_price",
+          "settings": {
+          }
+        },
         "product_buttons": {
           "type": "product_buttons",
           "settings": {
@@ -106,6 +111,7 @@
         "product_variants",
         "product_quantity",
         "6762c795-1fbb-4bba-9bd8-e5b1d7745562",
+        "4f15d5e5-4eb1-4e1c-acd2-58e505b99610",
         "product_buttons",
         "3d86e8de-8332-4fa5-a37b-beb5ec7c207a",
         "c8432cc8-e940-40e2-ba0b-1e1260ef5de4",
