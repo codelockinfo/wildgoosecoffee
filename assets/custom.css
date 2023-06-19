@@ -4355,8 +4355,10 @@ ul.header__shopping-cart.shopping__cart-links.span-5.auto{
   display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #CDCDCD;
     padding-top: 7%;
+}
+.wildmerchandise .cusprodesicon{
+    border-top: 1px solid #CDCDCD;
 }
 .proflexx{
   display: flex;
