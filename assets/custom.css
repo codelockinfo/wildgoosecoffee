@@ -4097,7 +4097,7 @@ body .collection__filter-toggleWrapper * {
   max-width: 100%;
     width: 96%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 .shopify-section .featured_collection .featured__collection-carousel .featured__collection-product{
   width: 32%;
