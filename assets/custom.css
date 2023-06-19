@@ -4613,7 +4613,7 @@ color: #2E2E2E;
     transition: all 0.4s ease-in-out 0s;
     z-index: 99;
 }
-.home_collection  .collection__grid--item img:hover .overlay{
+.home_collection  .collection--image .box-ratio  img:hover .overlay{
       opacity: 1;
 }
 /* .home_collection  .collection__grid--item img{
