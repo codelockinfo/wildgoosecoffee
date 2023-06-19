@@ -2,6 +2,9 @@
 {% capture sizes %}(min-width: 1601px) {{ lg_render | default: '2000px' }},(min-width: 768px) and (max-width: 1600px) {{ md_render | default: '1200px' }},(max-width: 767px) {{ sm_render | default: '100vw' }}, 900px{% endcapture %}
 {% capture loading %}{{ loading | default: 'lazy' }}{% endcapture %}
 <div class="box-ratio {{ class }}" style="padding-bottom: {{ image_box_ratio }};">
+   {% if template == 'index' %}
+       <div class="overlay"></div>
+       {% endif %}
   {{ type | image_url: width: width | image_tag:
     loading: loading,
     sizes: sizes,
