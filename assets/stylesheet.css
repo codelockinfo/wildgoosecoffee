@@ -5606,7 +5606,8 @@ input.AddToCart {
     top: 0;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    margin-top: 70px;
+/*  margin-top: 70px; */
+    margin-top: 18%;
     height: 150px;
     padding: 0;
     width: 50px;
