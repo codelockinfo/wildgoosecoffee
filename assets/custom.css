@@ -4621,6 +4621,7 @@ color: #2E2E2E;
     position: absolute;
     font-size: 54px;
     text-align: center;
+    width: 100%;
     color: #fff;
     top: 50%;
     z-index: 11;
@@ -4631,10 +4632,10 @@ color: #2E2E2E;
     opacity: 0; /*or 1, if the title is always visible*/
     transition: all 350ms;
 }
-/* .home_collection  .collection--image .box-ratio  img:hover .content-title{
+.home_collection  .collection--image .box-ratio  img:hover .content-title{
     transform: translateY(0);
     opacity: 1;
-} */
+}
 /* .home_collection  .collection__grid--item img{
       background: #c8602d!important;
 
