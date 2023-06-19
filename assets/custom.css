@@ -4517,14 +4517,22 @@ color: #2E2E2E;
   width: 21px;
 }
 .plus-minus-toggle:before, .plus-minus-toggle:after {
-  background: #000;
+/*   background: #000;
   content: "";
   height: 5px;
   left: 0;
   position: absolute;
   top: 0;
   width: 21px;
-  transition: transform 500ms ease;
+  transition: transform 500ms ease; */
+      background: #fff;
+    content: "";
+    height: 3px;
+    left: 5px;
+    position: absolute;
+    top: 9px;
+    width: 12px;
+    transition: transform .5s ease;
 }
 .plus-minus-toggle:after {
   transform-origin: center;
