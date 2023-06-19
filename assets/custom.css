@@ -876,7 +876,8 @@ section.footer_insta.gridlock {
 
 /* Custom FAQ CSS : Starts */
 .custom_faq {
-    background: linear-gradient(180deg, #FFF8E3 27.25%, #FFF5D9 74.56%, #FFFDF6 97.85%);
+    /* background: linear-gradient(180deg, #FFF8E3 27.25%, #FFF5D9 74.56%, #FFFDF6 97.85%); */
+    background: #FFEBB9;
     margin-bottom: 100px;
     padding: 90px 0 75px 0;
 }
@@ -894,7 +895,7 @@ section.footer_insta.gridlock {
     font-weight: 500;
     font-size: 54px;
     line-height: 78px;
-    color: #C8602D;
+    color: #2E2E2E;
 }
 
 .custom_faq .accordion-container .set {
@@ -4490,10 +4491,11 @@ color: #2E2E2E;
   margin: 4% 0;
 }
 .cusimageicon{
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 .imgiconsvg{
+  float: left;
   margin-right: 10px;
 }
 /* wildgoosecoffee product template */
@@ -4560,3 +4562,37 @@ color: #2E2E2E;
     width: 100%;
   }
 }
+.cart-links__item .js-cart-count{
+  width: 15px;
+    height: 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    box-shadow: 1px 1px 3px #0000004d;
+    opacity: 1;
+    transition: .3s ease-in-out;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: -11px;
+}
+.cusimageicon .imgicon{
+  width: 32px !important;
+  height: 32px;
+}
+.wildgoosecoffee .product__section-details__inner--product_buttons{
+  width: 50%;
+  }
+  .spaces-between{
+    justify-content: space-between;
+  }
+  .wildmerchandise .swatches__form--input:checked + .swatches__form--label {
+    color: #2E2E2E;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+  }
+  

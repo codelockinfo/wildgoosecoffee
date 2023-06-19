@@ -5610,7 +5610,7 @@ input.AddToCart {
     height: 150px;
     padding: 0;
     width: 50px;
-    z-index: 1;
+    z-index: 99;
   }
 }
 
@@ -12987,4 +12987,12 @@ color: #2E2E2E;
 .gridlock .row .desktop-3.megamenu__listcontainer  {
     width: 27%;
 }
+}
+.wildmerchandise .swatches__form--input:checked + .swatches__form--label {
+  color: #2E2E2E;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+}
+.wildmerchandise .selector-wrapper label, label.single-option--label{
+  text-transform: capitalize;
 }

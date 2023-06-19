@@ -214,9 +214,6 @@ data-sale-format="{{ settings.sale_items }}">
                       </div><!-- /#variant-stock-levels -->
                     {% endif %}
                   </div>
-                {%- when 'product_price' -%}
-                  {% render 'product-price-wildgoosecoffe', variant: current_variant, product: product %}
-
                 {%- when 'Metafield_icon_text' -%}
                 <div class="product__section-details__inner product__section-details__inner--{{ block.type }}" {{ block.shopify_attributes }}></div>
                 <div class="metafield_icon_text">
@@ -318,6 +315,12 @@ data-sale-format="{{ settings.sale_items }}">
                   </div>
                 {% when 'product_buttons' %}
 
+                <div class="displayflex spaces-between">
+                  {% if block.settings.product_price %}
+                  <div class="product_price">
+                    {% render 'product-price-wildgoosecoffe', variant: current_variant, product: product %}
+                  </div>
+                  {% endif %}
                 
                   <div class="product__section-details__inner product__section-details__inner--{{ block.type }}" {{ block.shopify_attributes }}>
 
@@ -369,6 +372,7 @@ data-sale-format="{{ settings.sale_items }}">
                       {% render 'back-in-stock-form', product: product %}
                     {% endif %}
                   </div>
+                </div>
                   {% when 'Singllinetext-content' %}
                   <div class="product__section-details__inner product__section-details__inner--{{ block.type }}" {{ block.shopify_attributes }}>
                  <div class="displayflex">
@@ -403,7 +407,7 @@ data-sale-format="{{ settings.sale_items }}">
                         data-product-id: product.id %}
 
                       {%- unless product.has_only_default_variant -%}
-                       {%- if settings.product_variants == 'swatches' -%}
+                       {%- if block.settings.product_variants == 'swatches' -%}
                          <div class="product__variants-swatches mt4 mb6 no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
                            {% for option in product.options_with_values %}
                              {% render "swatch",
@@ -841,7 +845,7 @@ data-sale-format="{{ settings.sale_items }}">
         assign thumb_width = '25%'
         assign thumb_img_size = '340px'
     else
-        assign thumb_width = '20%'
+        assign thumb_width = '32.5%'
         assign thumb_img_size = '170px'
     endif
 
@@ -1052,13 +1056,24 @@ data-sale-format="{{ settings.sale_items }}">
       "type": "product_variants",
       "name": "Variant picker",
       "limit": 1,
-      "settings": []
-    },   
-    {
-      "type": "product_price",
-      "name": "product price",
-      "limit": 1,
-      "settings": []
+      "settings": [
+      {
+        "type": "select",
+        "id": "product_variants",
+        "label": "Product variant display",
+        "options": [
+         {
+           "value": "swatches",
+           "label": "Swatches"
+         },
+         {
+           "value": "drop-downs",
+           "label": "Drop-downs"
+         }
+        ],
+        "default": "swatches"
+      }
+      ]
     },   
     {
       "type": "Metafield_icon_text",
@@ -1120,6 +1135,12 @@ data-sale-format="{{ settings.sale_items }}">
       "name": "Buy buttons",
       "limit": 1,
       "settings": [
+      {
+        "type": "checkbox",
+        "id": "product_price",
+        "label": "Show product price",
+        "default": true
+      },
         {
           "type": "checkbox",
           "id": "back_in_stock",

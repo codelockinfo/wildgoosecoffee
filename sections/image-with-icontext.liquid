@@ -136,8 +136,11 @@
                 {% for block in section.blocks %}
                         {% if block.settings.text != blank %}
                         <div class="rte cusimageicon">
-                        <span class="imgiconsvg">
-                            </span><span>{{ block.settings.text }}</span>
+                          {% if block.settings.imageicon != blank %}
+                          <span class="imgiconsvg">
+                            <img src="{{ block.settings.imageicon | image_url }}" class="imgicon">
+                          </span>
+                          {% endif %}<span>{{ block.settings.text }}</span>
                         </div>
                     {% endif %}
                     {% endfor %}
@@ -418,6 +421,11 @@
         "name": "icon",
         "settings":
         [
+        {
+          "type": "image_picker",
+          "id": "imageicon",
+          "label": "Icon Image"
+        },
         {
             "type": "richtext",
             "id": "text",
