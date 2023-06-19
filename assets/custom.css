@@ -4360,6 +4360,9 @@ ul.header__shopping-cart.shopping__cart-links.span-5.auto{
 .wildmerchandise .cusprodesicon{
     border-top: 1px solid #CDCDCD;
 }
+.product__section-details__inner--Metafield_icon_text{
+    border-top: 1px solid #CDCDCD;
+}
 .proflexx{
   display: flex;
 }
