@@ -7457,7 +7457,8 @@ body .focus-visible,
 }
 
 .horizontal-carousel.flickity-slider--false #thumb-slider-wrapper .product-single__thumbnails-item {
-  width: 130px;
+/*   width: 110px; */
+  width: 155px;
 }
 
 /* --
