@@ -315,7 +315,7 @@
     "product": {
       "designer": "Diseñador",
       "sold_out": "Agotado",
-      "from_lowest_price_html": "de {{ lowest_price }}",
+      "from_lowest_price_html": "{{ lowest_price }}",
       "unavailable": "No disponible",
       "compare_at": "Comparar en",
       "include_taxes": "Impuesto incluido.",

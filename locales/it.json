@@ -315,7 +315,7 @@
     "product": {
       "designer": "Designer",
       "sold_out": "Esaurito",
-      "from_lowest_price_html": "Da {{ lowest_price }}",
+      "from_lowest_price_html": "{{ lowest_price }}",
       "unavailable": "Non disponibile",
       "compare_at": "Confronta a",
       "include_taxes": "Imposte incluse.",

@@ -316,7 +316,7 @@
     "product": {
       "designer": "Designer",
       "sold_out": "Sold Out",
-      "from_lowest_price_html": "from {{ lowest_price }}",
+      "from_lowest_price_html": "{{ lowest_price }}",
       "unavailable": "Unavailable",
       "compare_at": "Compare at",
       "include_taxes": "Tax included.",

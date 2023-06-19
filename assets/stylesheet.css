@@ -7457,7 +7457,8 @@ body .focus-visible,
 }
 
 .horizontal-carousel.flickity-slider--false #thumb-slider-wrapper .product-single__thumbnails-item {
-  width: 110px;
+/*   width: 110px; */
+  width: 155px;
 }
 
 /* --
@@ -13072,10 +13073,14 @@ color: #2E2E2E;
   width: 100%;
 }
 .product__section .grid_wrapper .sm-span-12.auto{
-  grid-column: auto / span 12 !important;
+/*   grid-column: auto / span 12 !important; */
+  grid-column: auto / span 10 !important;
 }
 }
 
 .share-icons{
   display: none;
+}
+.image__with-text  .box-ratio  img{
+  border-radius: 20px;
 }
