@@ -4624,7 +4624,7 @@ color: #2E2E2E;
     width: 100%;
     color: #fff;
     top: 50%;
-    z-index: 9;
+    z-index: 11;
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out 0s;
