@@ -13053,7 +13053,8 @@ color: #2E2E2E;
   width: 100%;
 }
 .product__section .grid_wrapper .sm-span-12.auto{
-  grid-column: auto / span 12 !important;
+/*   grid-column: auto / span 12 !important; */
+  grid-column: auto / span 10 !important;
 }
 }
 
