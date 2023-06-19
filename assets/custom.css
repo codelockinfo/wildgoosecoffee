@@ -4642,7 +4642,8 @@ color: #2E2E2E;
     transition: all 350ms; */
 }
 .collection-title{
-  
+   color: #fff;
+  text-decoration:none;
    font-size: 54px;
   transform: translateY(-4px);
     opacity: 0;
