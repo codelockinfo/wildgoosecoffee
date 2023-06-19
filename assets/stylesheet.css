@@ -13014,6 +13014,6 @@ color: #2E2E2E;
     transition: all 0.4s ease-in-out 0s;
     z-index: 99;
 }
-.box-ratio img:hover .overlay{
+.box-ratio:hover .overlay{
       opacity: 1;
 }
