@@ -4551,6 +4551,9 @@ color: #2E2E2E;
 .plus-minus-toggle:before {
   transform: rotate(180deg);
 }
+.cusprodes{
+  color: #6D3628;
+}
 /* accordiun end */
 .collection__horizontal-toolbar.filtering__wrapper p{
   width: 100px;
