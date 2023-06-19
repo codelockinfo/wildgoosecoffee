@@ -4620,11 +4620,9 @@ color: #2E2E2E;
 .content-title{
     position: absolute;
     text-align: center;
-/*     padding-left: 1em;
-    padding-right: 1em; */
     width: 100%;
-/*     top: 50%;
-    left: 50%; */
+  color: #fff;
+    z-index: 9;
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out 0s;
