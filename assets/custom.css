@@ -4085,12 +4085,11 @@ body .collection__filter-toggleWrapper * {
     right: 45%;
     transform: rotate(10deg);
 }
-.shopify-section .pagewidth.section-title{
+.shopify-section .custom_testimonials .pagewidth.section-title{
       margin: 0 auto;
 }
 
 .shopify-section .pagewidth{
-  
   max-width: 1200px;
   padding: 0 15px;
   width: 95%;
