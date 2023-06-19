@@ -4515,6 +4515,8 @@ color: #2E2E2E;
   height: 21px;
   position: relative;
   width: 21px;
+  background: #2E2E2E;
+  border-radius: 80px;
 }
 .plus-minus-toggle:before, .plus-minus-toggle:after {
 /*   background: #000;
