@@ -4662,6 +4662,9 @@ color: #2E2E2E;
 .cusimageicon span {
   text-align: left;
 }
+.product__section--desc h3{
+      color: #5f5f5f;
+}
 @media screen and (max-width: 1400px){
 .product__section-title .metafield_tags{
   display: block;
