@@ -12996,3 +12996,8 @@ color: #2E2E2E;
 .wildmerchandise .selector-wrapper label, label.single-option--label{
   text-transform: capitalize;
 }
+@media screen and (max-width: 1200px){
+.product__section-content .span-6.auto {
+    grid-column: auto / span 5;
+}
+}
