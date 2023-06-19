@@ -1722,6 +1722,9 @@ footer.footer-section div#footer-wrapper div#footer_signup form#footer--newslett
 }
 
 @media all and (max-width: 740px){
+  .find_right_coffee .row{
+    flex-direction: column-reverse;
+  }
   footer.footer-section div#footer-wrapper div#footer_signup{
     display: block;
     text-align: center;
@@ -4652,8 +4655,11 @@ color: #2E2E2E;
 
 }
 .home_collection  .collection--image .box-ratio:hover .collection-title{
-    transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
+}
+.cusimageicon span {
+  text-align: left;
 }
 @media screen and (max-width: 1400px){
 .product__section-title .metafield_tags{
@@ -4666,5 +4672,10 @@ color: #2E2E2E;
 @media screen and (max-width: 1100px){
   .wildgoosecoffee .product__section-details__inner--product_buttons{
       width: 100%;
+  }
+}
+@media screen and (max-width: 739px){
+  .content-wrapper .product__section .grid_wrapper .sm-span-12.auto{
+    grid-column: auto / span 12 !important;
   }
 }
