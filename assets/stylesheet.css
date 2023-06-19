@@ -13002,3 +13002,19 @@ color: #2E2E2E;
     grid-column: auto / span 5;
 }
 }
+.overlay{
+  background: #c8602d;
+    position: absolute;
+    /* height: 99%; */
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 99;
+}
+.home_collection  .collection--image .box-ratio  img:hover .overlay{
+      opacity: 1;
+}
