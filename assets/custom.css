@@ -4618,7 +4618,7 @@ color: #2E2E2E;
 }
 
 .content-title{
-  position: absolute;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4627,28 +4627,17 @@ color: #2E2E2E;
     right: 0;
     bottom: 0;
     left: 0;
-/*     position: absolute;
-    font-size: 54px;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    top: 50%;
-    z-index: 11;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out 0s;
-    transform: translateY(-4px);
-    opacity: 0;
-    transition: all 350ms; */
 }
 .collection-title{
-   color: #fff;
+  color: #fff;
   z-index:12;
   text-decoration:none;
-   font-size: 54px;
+  font-size: 54px;
   transform: translateY(-4px);
-    opacity: 0;
-    transition: all 350ms;
+  opacity: 0;
+  transition: all 350ms;
+  border: none;
+
 }
 .home_collection  .collection--image .box-ratio:hover .collection-title{
     transform: translateY(0);
