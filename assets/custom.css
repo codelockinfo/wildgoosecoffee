@@ -4091,6 +4091,12 @@ body .collection__filter-toggleWrapper * {
   width: 95%;
   margin: 0 auto;
 }
+.shopify-section .custom_testimonials .pagewidth{
+  max-width: 100%;
+    width: 96%;
+    padding: 0;
+    margin: 0;
+}
 .shopify-section .featured_collection .featured__collection-carousel .featured__collection-product{
   width: 32%;
 
