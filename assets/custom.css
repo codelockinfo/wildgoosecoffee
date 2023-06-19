@@ -4545,6 +4545,12 @@ color: #2E2E2E;
 .plus-minus-toggle.collapsed:before {
   transform: rotate(225deg);
 }
+.plus-minus-toggle:after {
+  transform: rotate(90deg);
+}
+.plus-minus-toggle:before {
+  transform: rotate(180deg);
+}
 /* accordiun end */
 .collection__horizontal-toolbar.filtering__wrapper p{
   width: 100px;
