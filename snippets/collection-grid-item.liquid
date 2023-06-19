@@ -15,9 +15,12 @@
 
 <div class="collection--image ci image_{{ aspect_ratio }}">
   <a href="{{ collection.url }}" title="{{ collection_title }}">
-    {% if collection.image %}///
+    {% if collection.image %}
+     {% if template == 'index' %}
+       <div class="overlay"></div>
+       {% endif %}
       {% render 'basic-responsive-image', type: collection, width: 800 %}
-    {% elsif collection.products.first and collection.products.first.media != empty %}???
+    {% elsif collection.products.first and collection.products.first.media != empty %}
       {% render 'basic-responsive-image', type: collection.products.first.featured_media, width: 800 %}
     {% else %}
     {% endif %}
