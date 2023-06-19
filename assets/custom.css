@@ -4717,6 +4717,9 @@ color: #2E2E2E;
   .content-wrapper .product__section .grid_wrapper .sm-span-12.auto{
     grid-column: auto / span 10 !important;
   }
+  .anim-img-hide{
+    display: none;
+  }
 }
 @keyframes fadeInUp {
   from {
