@@ -2,6 +2,9 @@
   "sections": {
     "16257529729c6c2524": {
       "type": "image-with-text-overlay",
+      "custom_css": [
+        ".home_banner {margin-top:0;}"
+      ],
       "settings": {
         "classname": "home_banner",
         "overlay_color": "#000000",
@@ -360,6 +363,7 @@
       ],
       "settings": {
         "title": "What our customers say",
+        "subtitle": "",
         "color_scheme": "none",
         "star_color": "#c8602d",
         "section_padding": "both"
