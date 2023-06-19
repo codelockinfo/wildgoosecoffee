@@ -70,7 +70,7 @@
         "full_width": false,
         "grid": 3,
         "mobile_grid": "1",
-        "products_per_page": 13,
+        "products_per_page": 12,
         "infinite_scroll": false,
         "description_position": "top_description",
         "is_sticky": false,
