@@ -12997,7 +12997,7 @@ color: #2E2E2E;
   text-transform: capitalize;
 }
 @media screen and (max-width: 1400px){
-.product__section-content .span-6.auto {
+.product__section  .product__section-content.span-6.auto {
     grid-column: auto / span 5;
 }
 }
