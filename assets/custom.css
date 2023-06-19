@@ -4408,7 +4408,6 @@ color: #2E2E2E;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
   color: #2E2E2E;
 }
 .productpage.pagewidth{
@@ -4439,6 +4438,7 @@ color: #2E2E2E;
 }
 .wildgoosecoffee .product__variants-select{
   display: flex;
+  flex-wrap: wrap;
   border-top: 1px solid #CDCDCD;
   border-bottom: 1px solid #CDCDCD;
   padding: 10px 0;
@@ -4451,6 +4451,9 @@ color: #2E2E2E;
   width: 18px;
   height: 18px;
   margin-right: 5px;
+}
+.floatleft{
+  float: left;
 }
 .displayflex{
   display: flex;
@@ -4493,6 +4496,7 @@ color: #2E2E2E;
 .cusimageicon{
   /* display: flex;
   align-items: center; */
+  width: 100%;
 }
 .imgiconsvg{
   float: left;
@@ -4562,7 +4566,7 @@ color: #2E2E2E;
     width: 100%;
   }
 }
-.cart-links__item .js-cart-count{
+.custheader .js-cart-count{
   width: 15px;
     height: 15px;
     letter-spacing: 0;
@@ -4651,7 +4655,16 @@ color: #2E2E2E;
     transform: translateY(0);
   opacity: 1;
 }
-/* .home_collection  .collection__grid--item img{
-      background: #c8602d!important;
-
-} */
+@media screen and (max-width: 1400px){
+.product__section-title .metafield_tags{
+  display: block;
+}
+.metafieldicon{
+  float: left;
+}
+}
+@media screen and (max-width: 950px){
+  .wildgoosecoffee .product__section-details__inner--product_buttons{
+      width: 100%;
+  }
+}

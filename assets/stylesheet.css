@@ -13000,7 +13000,7 @@ color: #2E2E2E;
 }
 @media screen and (max-width: 1400px){
 .product__section  .product__section-content.span-6.auto {
-    grid-column: auto / span 5;
+    /* grid-column: auto / span 5; */
 }
 }
 .overlay{
@@ -13017,4 +13017,35 @@ color: #2E2E2E;
 }
 .box-ratio:hover .overlay{
       opacity: 1;
+}
+.metafieldtext{
+  text-align: center;
+}
+.metafield50 .metafieldtext{
+
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #6D3628;
+}
+.metafield50 .metafieldtext:nth-child(2n){
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #5F5F5F;
+}
+
+@media screen and (max-width: 776px){
+  .product__section-images.sm-span-12.auto {
+    grid-column: auto / span 12 !important;
+    width: 100%;
+}
+.product__section-content.sm-span-12.auto {
+  grid-column: auto / span 12 !important;
+  width: 100%;
+}
 }
