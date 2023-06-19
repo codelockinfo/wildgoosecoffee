@@ -4600,10 +4600,15 @@ color: #2E2E2E;
         width: 96%;
   }
 }
-.overlay{
+.collection__grid--item:first-child .overlay{
+  background:#FFEBB9;
+}
+.collection__grid--item:last-child .overlay{
   background: #c8602d;
+}
+.overlay{
+  background:#a03d24;
     position: absolute;
-    /* height: 99%; */
     width: 100%;
     left: 0;
     top: 0;
@@ -4628,9 +4633,12 @@ color: #2E2E2E;
     bottom: 0;
     left: 0;
 }
+.collection__grid--item:first-child .collection-title{
+  color: #c8602d;
+}
 .collection-title{
   color: #fff;
-  z-index:12;
+  z-index:10;
   text-decoration:none;
   font-size: 54px;
   transform: translateY(-4px);
