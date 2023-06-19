@@ -254,6 +254,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "custom_css": [
         ".product-recommendations h2 {padding-bottom: 0px;}",
         ".desktop-12.tablet-6.mobile-3 {padding-bottom: 0px;}"
