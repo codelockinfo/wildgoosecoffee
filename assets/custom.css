@@ -4647,7 +4647,7 @@ color: #2E2E2E;
     opacity: 0;
     transition: all 350ms;
 }
-.home_collection  .collection--image .box-ratio  img:hover .content-title{
+.home_collection  .collection--image .box-ratio  img:hover .collection-title{
     transform: translateY(0);
   opacity: 1;
 }
