@@ -4677,6 +4677,6 @@ color: #2E2E2E;
 }
 @media screen and (max-width: 739px){
   .content-wrapper .product__section .grid_wrapper .sm-span-12.auto{
-    grid-column: auto / span 12 !important;
+    grid-column: auto / span 10 !important;
   }
 }
