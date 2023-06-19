@@ -13004,7 +13004,7 @@ color: #2E2E2E;
   grid-column: auto / span 5;
 }
 .product__section  .product__section-content.span-6.auto {
-  grid-column: auto / span 7;
+  grid-column: auto / span 6;
 }
 .overlay{
   background: #c8602d;
