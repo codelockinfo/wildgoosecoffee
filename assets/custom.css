@@ -5132,4 +5132,95 @@ color: #2E2E2E;
   .wildmerchandise .product__section-images.sm-span-12.auto,.wildmerchandise  .product__section-content.sm-span-12.auto{
         width: 70%;
   }
+} 
+.displaymobile .mobile-nav {
+  width: 100%;
+  /* border: 1px solid #005500; */
+  border-top: none;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;  
+}
+
+.displaymobile .mobile-nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  line-height: 42px;
+}
+
+
+.displaymobile .mobile-nav .dd + ul {
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;  
+}
+.displaymobile .mobile-nav a.dd:after {
+  content: '\25BC';
+  margin-left: 5px;
+  font-size: 12px;  
+  float: right;
+    position: relative;
+    right: 10px;
+}
+
+.displaymobile .mobile-nav .dd-show + ul {
+  height: auto; 
+}
+
+.displaymobile .filterdropdown.inctop{
+  top: 19.3%;
+}
+.displaymobile .filterdropdown,.displaymobile .sortingdropdown{
+display: none;
+height: 350px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  top: 24%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-top: none;
+  border-bottom: none;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1); 
+}
+#collection--filter,#collection--sorting{
+  list-style:none;
+  padding: 20px;
+  margin-top: 11%;
+}
+.dropdoen ul,.sortingdropdown ul{
+  list-style: none;
+}
+.filterdropdown .mobile-nav #collection--filter  li,.sortingdropdown ul label{
+  text-align: left;
+}
+.marginchecbox{
+  margin: 5px 10px;
+}
+.close-btn{
+  position: absolute;
+    right: 10px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 23px;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5F5F5F;
+    border-radius: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 2px;
+
+}
+#collection--sorting li{
+  display: flex;
 }

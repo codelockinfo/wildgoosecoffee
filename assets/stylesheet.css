@@ -4671,11 +4671,12 @@ span.filter__count {
   }
 }
 
-button.filter-price__trigger.js-show-filters {
+button.filter-price__trigger.js-show-filters,.displaymobile  button.filter-price__trigger.sort-by__wrapper {
   width: unset;
   padding: 0 15px;
   text-indent: 0;
   display: inline-block;
+  background: #fff;
 }
 
 button.filter-price__trigger.js-show-filters:before {
@@ -12857,11 +12858,6 @@ input[type="search"]#Search::-webkit-search-results-decoration {
   }
   .displaydesktop{
     display: none;
-  }
-  .displaymobile .collection__horizontal-toolbar.sort-by__wrapper{
-    width: 30%;
-    padding-right: 15px;
-
   }
   .collection__horizontal-toolbar .icon--apollo-down-carrot{
     right: 20px;

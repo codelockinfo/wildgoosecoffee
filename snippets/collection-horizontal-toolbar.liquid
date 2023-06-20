@@ -303,202 +303,128 @@
          fill: 'var(--text-color)',
          hover: 'var(--text-color)' %}
     </button>
-    <div class="collection__horizontal-toolbar filtering__wrapper">
-      <p>Filter</p>
-      <ul id="collection--filters" role="list">
-<li class="clearfix filter filter--regular" data-index="1">
-                
-  
-    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
-      <g class="hover-fill" fill="var(--text-color)">
-        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
-      </g>
-      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
-    </svg>
-  
+    <div class="collection__horizontal-toolbar filtering__wrapper filterdropdown">
+    <nav class="mobile-nav">
+      <div class="close-btn">×</div>
+      <ul id="collection--filter" role="list">
+        {%- if horizontal_filtering_enabled -%}
+          {%- for filter in collection.filters -%}
+            {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+            {% case filter.type %}
+            {% when 'list' %}
+              {%- liquid
 
+                assign is_size_filter = false
+                assign is_color_filter = false
+                assign filter_label_to_lowercase = filter.label | downcase
 
+                if filter_label_to_lowercase contains "color"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "colour"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "farbe"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "couleur"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "colore"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "cor"
+                  assign is_color_filter = true
+                elsif filter_label_to_lowercase contains "size"
+                  assign is_size_filter = true
+                endif
 
+                if is_color_filter
+                  assign filter_type = 'color'
+                elsif is_size_filter
+                  assign filter_type = 'size'
+                else
+                  assign filter_type = 'regular'
+                endif
 
+              -%}
 
+              <li class="dropdoen filter--{{ filter_type }}" data-index="{{ forloop.index }}">
+                <a class="dd dd-0{{ forloop.index }}" for="{{ filter.label | handle }}" href="#">{{ filter.label }}</a>
+                <ul class="dd-0{{ forloop.index }}-ul">
+                    {% for value in filter.values %}
 
-                <div class="collection__filtering js-hz-filter">
-                  <label class="visually-hidden" for="featured">Featured</label>
-                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Featured" data-generic-placeholder="Type to filter" placeholder="Featured" id="featured">
-                  <ul class="value-list js-hz-filter-list">
-                    
+                    {%- liquid
 
-                        <li id="Filter-Featured-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.featured=Best+Sellers&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.m.custom.featured" id="featured--best-sellers--hz-toolbar" value="Best Sellers">
-                          <label class="js-hz-filter-label" for="featured--best-sellers--hz-toolbar">Best Sellers <span class="filter__count">(1)</span></label>
-                        </li>
-                      
-                    
+                      if is_color_filter
+                        assign swatch_color_name = value.label | handleize | downcase | append: '.png'
+                        assign swatch_image_url = swatch_color_name | file_url
+                        assign css_color = value.label | split: ' ' | last | downcase
 
-                        <li id="Filter-Featured-2" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.featured=New+Arrivals&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.m.custom.featured" id="featured--new-arrivals--hz-toolbar" value="New Arrivals">
-                          <label class="js-hz-filter-label" for="featured--new-arrivals--hz-toolbar">New Arrivals <span class="filter__count">(1)</span></label>
-                        </li>
-                      
-                    
+                        if images[swatch_color_name] != blank
+                          assign bg_img = 'background-image:url(' | append: swatch_image_url | append: ');'
+                        else
+                          assign bg_img = ''
+                        endif
+                        assign bg_color = 'background-color:' | append: css_color | append: ';'
+                      endif
+
+                      if value.active
+                        assign status = 'current'
+                      elsif value.count == 0 and value.active == false
+                        assign status = 'disabled'
+                      else
+                        assign status = ''
+                      endif
+                    -%}
+
+                    {% if is_color_filter %}
+                      <li id="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="displayflex {{ status }}" data-remove="{{ value.url_to_remove }}" data-add="{{ value.url_to_add }}">
+                        <input type="checkbox"
+                               name="{{ value.param_name }}"
+                               id="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}"
+                               value="{{ value.value }}"
+                               {% if value.active %}checked{% endif %}
+                               {% if value.count == 0 and value.active == false %}disabled{% endif%}>
+                        <span class="color-filter--{{ status }} {{ status }}" style="{{ bg_color }}{{ bg_img }}"></span>
+                        <label class="" for="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}">{{ value.label | escape }} <span class="filter__count">({{ value.count }})</span></label>
+                      </li>
+                    {% else %}
+                      <li id="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="displayflex {{ status }}" data-remove="{{ value.url_to_remove }}" data-add="{{ value.url_to_add }}">
+                        <input class="marginchecbox" type="checkbox"
+                               name="{{ value.param_name }}"
+                               id="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}"
+                               value="{{ value.value }}"
+                               {% if value.active %}checked{% endif %}
+                               {% if value.count == 0 and value.active == false %}disabled{% endif%}>
+                        <label class="  " for="{{ filter.label | handle }}--{{ value.value | handle }}--{{ unique_id }}">{{ value.label | escape }} <span class="filter__count">({{ value.count }})</span></label>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
                   </ul>
-                </div>
-
-                <noscript>
-                  <!-- No js filters submits with button -->
-                  <label for="Filter-Featured">Featured</label>
-                  <select id="Filter-Featured" class="styled-select m0 coll-filter">
-                    <option value="">0 selected</option>
-                    
-                      
-                        <option id="Filter-Featured-1" value="/collections/all-coffees?filter.p.m.custom.featured=Best+Sellers&amp;sort_by=title-ascending">Best Sellers (1)</option>
-                      
-                    
-                      
-                        <option id="Filter-Featured-2" value="/collections/all-coffees?filter.p.m.custom.featured=New+Arrivals&amp;sort_by=title-ascending">New Arrivals (1)</option>
-                      
-                    
-                  </select>
-                </noscript>
               </li>
             
-
-<li class="clearfix filter filter--regular" data-index="2">
-                
-  
-    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
-      <g class="hover-fill" fill="var(--text-color)">
-        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
-      </g>
-      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
-    </svg>
-  
-
-
-
-
-
-
-                <div class="collection__filtering js-hz-filter">
-                  <label class="visually-hidden" for="product-type">Product type</label>
-                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Product type" data-generic-placeholder="Type to filter" placeholder="Product type" id="product-type">
-                  <ul class="value-list js-hz-filter-list">
-                    
-
-                        <li id="Filter-Product type-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.product_type=Coffee&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.product_type" id="product-type--coffee--hz-toolbar" value="Coffee">
-                          <label class="js-hz-filter-label" for="product-type--coffee--hz-toolbar">Coffee <span class="filter__count">(28)</span></label>
-                        </li>
-                      
-                    
-                  </ul>
-                </div>
-
-                <noscript>
-                  <!-- No js filters submits with button -->
-                  <label for="Filter-Product type">Product type</label>
-                  <select id="Filter-Product type" class="styled-select m0 coll-filter">
-                    <option value="">0 selected</option>
-                    
-                      
-                        <option id="Filter-Product type-1" value="/collections/all-coffees?filter.p.product_type=Coffee&amp;sort_by=title-ascending">Coffee (28)</option>
-                      
-                    
-                  </select>
-                </noscript>
-              </li>
-            
-
-<li class="clearfix filter filter--regular" data-index="3">
-                
-  
-    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
-      <g class="hover-fill" fill="var(--text-color)">
-        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
-      </g>
-      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
-    </svg>
-  
-
-
-
-
-
-
-                <div class="collection__filtering js-hz-filter">
-                  <label class="visually-hidden" for="roast">Roast</label>
-                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Roast" data-generic-placeholder="Type to filter" placeholder="Roast" id="roast">
-                  <ul class="value-list js-hz-filter-list">
-                    
-
-                        <li id="Filter-Roast-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Dark&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--dark--hz-toolbar" value="Dark">
-                          <label class="js-hz-filter-label" for="roast--dark--hz-toolbar">Dark <span class="filter__count">(1)</span></label>
-                        </li>
-                      
-                    
-
-                        <li id="Filter-Roast-2" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Light&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--light--hz-toolbar" value="Light">
-                          <label class="js-hz-filter-label" for="roast--light--hz-toolbar">Light <span class="filter__count">(1)</span></label>
-                        </li>
-                      
-                    
-
-                        <li id="Filter-Roast-3" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Medium&amp;sort_by=title-ascending">
-                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--medium--hz-toolbar" value="Medium">
-                          <label class="js-hz-filter-label" for="roast--medium--hz-toolbar">Medium <span class="filter__count">(1)</span></label>
-                        </li>
-                      
-                    
-                  </ul>
-                </div>
-
-                <noscript>
-                  <!-- No js filters submits with button -->
-                  <label for="Filter-Roast">Roast</label>
-                  <select id="Filter-Roast" class="styled-select m0 coll-filter">
-                    <option value="">0 selected</option>
-                    
-                      
-                        <option id="Filter-Roast-1" value="/collections/all-coffees?filter.p.m.custom.roast=Dark&amp;sort_by=title-ascending">Dark (1)</option>
-                      
-                    
-                      
-                        <option id="Filter-Roast-2" value="/collections/all-coffees?filter.p.m.custom.roast=Light&amp;sort_by=title-ascending">Light (1)</option>
-                      
-                    
-                      
-                        <option id="Filter-Roast-3" value="/collections/all-coffees?filter.p.m.custom.roast=Medium&amp;sort_by=title-ascending">Medium (1)</option>
-                      
-                    
-                  </select>
-                </noscript>
-              </li>
-            
-
-        
+            {% endcase %}
+          {%- endfor -%}
+        {%- endif -%}
       </ul>
+      </nav>
       <noscript>
-        <!-- No js filters button to submit select filters -->
-        <button type="submit" class="button">Filter</button>
+        <button type="submit" class="button">{{ 'collections.filters.filter_button' | t }}</button>
       </noscript>
     </div>
     {% endif %}
     {% if sort_by_enabled %}
-    <div class="ccc collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
+    <button class="filter-price__trigger  sort-by__wrapper" >
       {% render 'snip-icons',
            wrapper: '.sort-by__wrapper',
-           type: 'apollo',
-           icon: 'down-carrot',
+           type: 'media-icons',
+           icon: 'updownarrow',
            classes: 'filter--icon vib-center',
            size: '6px',
            fill: 'var(--text-color)',
            hover: 'var(--text-color)' %}
-      <div class="collection__filtering js-hz-filter">
-        <label class="visually-hidden" for="sort-by--{{ section.id }}">{{ 'collections.filters.sort_by_placeholder' | t }}</label>
-        <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="sort-by" data-placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" data-generic-placeholder="{{ 'collections.filters.type_to_filter' | t }}" placeholder="{{ 'collections.filters.sort_by_placeholder' | t }}" id="sort-by--{{ section.id }}">
-        <ul class="value-list js-hz-filter-list">
+      
+    </button>
+    <div class="collection__horizontal-toolbar filtering__wrapper sortingdropdown">
+      <nav class="mobile-nav">
+        <div class="close-btn close-btnsorting">×</div>
+        <ul id="collection--sorting">
           {% for option in collection.sort_options %}
             {%- liquid
               if option.value == collection.sort_by
@@ -507,16 +433,17 @@
                 assign status = 'available'
               endif
             -%}
-            <li class="{{ status }}" data-placeholder="{{ option.name }}" data-option-value="{{ option.value }}">
-              <input type="checkbox"
+            <li class="{{ status }}" data-placeholder="{{ option.name }}" data-option-value="{{ option.value }}" data-add="{{collection.handle}}?sort_by={{ option.value | escape }}">
+              <input class="marginchecbox" type="checkbox"
                      name="sort_by"
                      id="{{ option.value | escape }}"
+                     
                      value="{{ option.value | escape }}">
               <label class="js-hz-filter-label" for="{{ option.value | handle }}">{{ option.name }}</label>
             </li>
           {% endfor %}
         </ul>
-      </div>
+        </nav>
     </div>
   {% endif %}
   </div>

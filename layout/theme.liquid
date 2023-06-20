@@ -210,7 +210,74 @@
 </html>
 <script>
 $(document).ready(function(){
-  $(document).on("mouseover",".megamenu__headerlink",function(){
+  $(window).scroll(function() {
+          console.log('logging');
+          if($(".header-section").hasClass("scrolling")){
+console.log("scrolling");
+$(".filterdropdown").addClass("inctop");
+          }else{
+            $(".filterdropdown").removeClass("inctop");
+          }
+      });
+$(document).on("click",".displaymobile .close-btn",function(event){
+  console.log("close-btn");
+  $(".filterdropdown").css("display","none");
+});
+$(document).on("click",".displaymobile .close-btnsorting",function(event){
+  console.log("close-btn");
+  $(".sortingdropdown").css("display","none");
+});
+$(document).on("click",".displaymobile .js-show-filters",function(event){
+  event.preventDefault()
+  $(".filterdropdown").css("display","block");
+  var menu01 = new MobileMenu;
+
+  menu01.init();
+
+  function MobileMenu(){
+  var $body = $('body');
+  
+  var $mobileNav = $('.mobile-nav');
+  var $dd = $('.mobile-nav .dd');
+  this.init = function(){
+   
+    $body.addClass('show');
+    var mobileNavOriginalHeight = $mobileNav.height();
+    var mobileNavHeight = $mobileNav.height();
+    $body.removeClass('show');
+    $body.addClass('show');
+    $('.mobile-nav .dd').addClass('dd-show');
+    
+    $('.mobile-nav .dd').each(function(){
+      var theHeight = $(this).next().height();
+      $(this).next().attr('data-height', theHeight);  
+    });
+    
+    $body.removeClass('show');
+    $('.mobile-nav .dd').removeClass('dd-show');
+
+    $dd.click(function(){
+      if($(this).hasClass('dd-show')){
+        mobileNavHeight = $mobileNav.outerHeight();
+        $mobileNav.css('height', (mobileNavHeight - $(this).next().data('height')));
+        $(this).next().removeAttr('style');
+        $(this).removeClass('dd-show'); 
+      }else{
+        $dd.next().removeAttr('style');
+        $dd.removeClass('dd-show');
+        $mobileNav.css('height', (mobileNavOriginalHeight + $(this).next().data('height')));
+        $(this).next().css('height', $(this).next().data('height'))
+        $(this).addClass('dd-show');
+      } 
+    }) 
+  } 
+} 
+});
+$(document).on("click",".displaymobile .sort-by__wrapper",function(event){
+  event.preventDefault()
+  $(".sortingdropdown").css("display","block");
+});
+$(document).on("mouseover",".megamenu__headerlink",function(){
   $dataImage = $(this).attr("data-image");
   $(".megamenu__container .mm-image").each(function(index){
     $dataimageattr = $(this).attr("data-image");
@@ -223,6 +290,20 @@ $(document).ready(function(){
   $(document).on('click','.plus-minus-toggle',function(){
     $(this).toggleClass('collapsed');
       $(".product__section--desc").toggle();
+});
+$(document).on('click','#collection--sorting li',function(event){
+  event.preventDefault()
+  $dataAdd =  $(this).attr("data-add");
+  console.log($dataAdd);
+  $rediurl = window.location.host + $dataAdd;
+  window.location.href = $dataAdd;
+});
+$(document).on('click','.dropdoen .displayflex',function(){
+  console.log("Hello");
+ $dataAdd =  $(this).attr("data-add");
+  $rediurl = window.location.host + $dataAdd;
+  window.location.href = $dataAdd;
+
 });
 });
 </script>
