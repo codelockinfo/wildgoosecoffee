@@ -249,7 +249,7 @@
           {%- endfor -%}
         {%- endif -%}
         {% if sort_by_enabled %}
-          <div class="collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
+          <div class="aaa collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
             {% render 'snip-icons',
                  wrapper: '.sort-by__wrapper',
                  type: 'apollo',
@@ -293,7 +293,7 @@
   
     {% if horizontal_filtering_enabled %}
     <button class="filter-price__trigger js-show-filters">
-      <span class="vib-center">{{ 'collections.filters.filter' | t }}</span>
+      <!-- <span class="vib-center">{{ 'collections.filters.filter' | t }}</span> -->
       {% render 'snip-icons',
          wrapper: '.filter-price__trigger',
          type: 'apollo',
@@ -303,9 +303,190 @@
          fill: 'var(--text-color)',
          hover: 'var(--text-color)' %}
     </button>
+    <div class="collection__horizontal-toolbar filtering__wrapper">
+      <p>Filter</p>
+      <ul id="collection--filters" role="list">
+<li class="clearfix filter filter--regular" data-index="1">
+                
+  
+    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
+      <g class="hover-fill" fill="var(--text-color)">
+        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
+      </g>
+      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
+    </svg>
+  
+
+
+
+
+
+
+                <div class="collection__filtering js-hz-filter">
+                  <label class="visually-hidden" for="featured">Featured</label>
+                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Featured" data-generic-placeholder="Type to filter" placeholder="Featured" id="featured">
+                  <ul class="value-list js-hz-filter-list">
+                    
+
+                        <li id="Filter-Featured-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.featured=Best+Sellers&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.m.custom.featured" id="featured--best-sellers--hz-toolbar" value="Best Sellers">
+                          <label class="js-hz-filter-label" for="featured--best-sellers--hz-toolbar">Best Sellers <span class="filter__count">(1)</span></label>
+                        </li>
+                      
+                    
+
+                        <li id="Filter-Featured-2" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.featured=New+Arrivals&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.m.custom.featured" id="featured--new-arrivals--hz-toolbar" value="New Arrivals">
+                          <label class="js-hz-filter-label" for="featured--new-arrivals--hz-toolbar">New Arrivals <span class="filter__count">(1)</span></label>
+                        </li>
+                      
+                    
+                  </ul>
+                </div>
+
+                <noscript>
+                  <!-- No js filters submits with button -->
+                  <label for="Filter-Featured">Featured</label>
+                  <select id="Filter-Featured" class="styled-select m0 coll-filter">
+                    <option value="">0 selected</option>
+                    
+                      
+                        <option id="Filter-Featured-1" value="/collections/all-coffees?filter.p.m.custom.featured=Best+Sellers&amp;sort_by=title-ascending">Best Sellers (1)</option>
+                      
+                    
+                      
+                        <option id="Filter-Featured-2" value="/collections/all-coffees?filter.p.m.custom.featured=New+Arrivals&amp;sort_by=title-ascending">New Arrivals (1)</option>
+                      
+                    
+                  </select>
+                </noscript>
+              </li>
+            
+
+<li class="clearfix filter filter--regular" data-index="2">
+                
+  
+    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
+      <g class="hover-fill" fill="var(--text-color)">
+        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
+      </g>
+      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
+    </svg>
+  
+
+
+
+
+
+
+                <div class="collection__filtering js-hz-filter">
+                  <label class="visually-hidden" for="product-type">Product type</label>
+                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Product type" data-generic-placeholder="Type to filter" placeholder="Product type" id="product-type">
+                  <ul class="value-list js-hz-filter-list">
+                    
+
+                        <li id="Filter-Product type-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.product_type=Coffee&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.product_type" id="product-type--coffee--hz-toolbar" value="Coffee">
+                          <label class="js-hz-filter-label" for="product-type--coffee--hz-toolbar">Coffee <span class="filter__count">(28)</span></label>
+                        </li>
+                      
+                    
+                  </ul>
+                </div>
+
+                <noscript>
+                  <!-- No js filters submits with button -->
+                  <label for="Filter-Product type">Product type</label>
+                  <select id="Filter-Product type" class="styled-select m0 coll-filter">
+                    <option value="">0 selected</option>
+                    
+                      
+                        <option id="Filter-Product type-1" value="/collections/all-coffees?filter.p.product_type=Coffee&amp;sort_by=title-ascending">Coffee (28)</option>
+                      
+                    
+                  </select>
+                </noscript>
+              </li>
+            
+
+<li class="clearfix filter filter--regular" data-index="3">
+                
+  
+    <svg class="icon--apollo-down-carrot filter--icon vib-center" height="6px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 13.3" xml:space="preserve">
+      <g class="hover-fill" fill="var(--text-color)">
+        <polygon points="17.7,0 10,8.3 2.3,0 0,2.5 10,13.3 20,2.5 "></polygon>
+      </g>
+      <style>.filtering__wrapper .icon--apollo-down-carrot:hover .hover-fill { fill: var(--text-color);}</style>
+    </svg>
+  
+
+
+
+
+
+
+                <div class="collection__filtering js-hz-filter">
+                  <label class="visually-hidden" for="roast">Roast</label>
+                  <input class="chosen-value js-hz-filter-input" type="text" value="" data-filter-type="filter" data-placeholder="Roast" data-generic-placeholder="Type to filter" placeholder="Roast" id="roast">
+                  <ul class="value-list js-hz-filter-list">
+                    
+
+                        <li id="Filter-Roast-1" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Dark&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--dark--hz-toolbar" value="Dark">
+                          <label class="js-hz-filter-label" for="roast--dark--hz-toolbar">Dark <span class="filter__count">(1)</span></label>
+                        </li>
+                      
+                    
+
+                        <li id="Filter-Roast-2" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Light&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--light--hz-toolbar" value="Light">
+                          <label class="js-hz-filter-label" for="roast--light--hz-toolbar">Light <span class="filter__count">(1)</span></label>
+                        </li>
+                      
+                    
+
+                        <li id="Filter-Roast-3" class="" data-remove="/collections/all-coffees?sort_by=title-ascending" data-add="/collections/all-coffees?filter.p.m.custom.roast=Medium&amp;sort_by=title-ascending">
+                          <input type="checkbox" name="filter.p.m.custom.roast" id="roast--medium--hz-toolbar" value="Medium">
+                          <label class="js-hz-filter-label" for="roast--medium--hz-toolbar">Medium <span class="filter__count">(1)</span></label>
+                        </li>
+                      
+                    
+                  </ul>
+                </div>
+
+                <noscript>
+                  <!-- No js filters submits with button -->
+                  <label for="Filter-Roast">Roast</label>
+                  <select id="Filter-Roast" class="styled-select m0 coll-filter">
+                    <option value="">0 selected</option>
+                    
+                      
+                        <option id="Filter-Roast-1" value="/collections/all-coffees?filter.p.m.custom.roast=Dark&amp;sort_by=title-ascending">Dark (1)</option>
+                      
+                    
+                      
+                        <option id="Filter-Roast-2" value="/collections/all-coffees?filter.p.m.custom.roast=Light&amp;sort_by=title-ascending">Light (1)</option>
+                      
+                    
+                      
+                        <option id="Filter-Roast-3" value="/collections/all-coffees?filter.p.m.custom.roast=Medium&amp;sort_by=title-ascending">Medium (1)</option>
+                      
+                    
+                  </select>
+                </noscript>
+              </li>
+            
+
+        
+      </ul>
+      <noscript>
+        <!-- No js filters button to submit select filters -->
+        <button type="submit" class="button">Filter</button>
+      </noscript>
+    </div>
     {% endif %}
     {% if sort_by_enabled %}
-    <div class="collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
+    <div class="ccc collection__horizontal-toolbar sort-by__wrapper" data-collection-sort-by>
       {% render 'snip-icons',
            wrapper: '.sort-by__wrapper',
            type: 'apollo',
