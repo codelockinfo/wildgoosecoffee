@@ -5124,6 +5124,10 @@ color: #2E2E2E;
   }
  .wildgoosecoffee .product__section-images.sm-span-12.auto,.wildgoosecoffee  .product__section-content.sm-span-12.auto{
         width: 80%;
-
+  }
+}
+@media screen and (max-width: 450px){
+   .wildgoosecoffee .product__section-images.sm-span-12.auto,.wildgoosecoffee  .product__section-content.sm-span-12.auto{
+        width: 70%;
   }
 }
