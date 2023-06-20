@@ -4700,6 +4700,9 @@ color: #2E2E2E;
 .product__section--desc h3{
       color: #5f5f5f;
 }
+.mobileanimat{
+  display: none;
+}
 @media screen and (max-width: 1400px){
 .product__section-title .metafield_tags{
   display: block;
@@ -4719,10 +4722,22 @@ color: #2E2E2E;
   }
   
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 767px){
   .anim-img-hide{
     display: none;
   }
+  .mobileanimat{
+    display: block;
+  }
+  .mobilebanner {
+    min-height: 800px;
+    background: linear-gradient(180deg, #FFF8E3 27.25%, #FFF5D9 74.56%, #FFFDF6 97.85%);
+}
+
+
+  /* article.row.parallax__section-image {
+    min-height: 1000px!important;
+  }  */
 }
 @keyframes fadeInUp {
   from {
@@ -4734,187 +4749,7 @@ color: #2E2E2E;
     transform: none;
  }
 }
-.mobiletransbg{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/vecteezy_engraved-coffee-bean-and-plant-hand-drawn-vintage-branches_7630691_1__2_-removebg-preview.png?v=1687178196);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 5s ease-in-out 3s forwards;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
-  left: 0%;
-  z-index: 1;
-   
-}
-.mobiletransbg1{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_31.png?v=1687177886);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 6s ease-in-out 2s forwards;
-  position: absolute;
-  top: 77%;
-  right: 0;
-  bottom: 0;
-  left: 21%;
-  z-index: 1;
-}
-.mobiletransbg2{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/vecteezy_set-of-hand-drawings-on-coffee-theme_17645793_4-removebg-preview.png?v=1687178464);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 9s ease-in-out 3s forwards;
-  position: absolute;
-  top: 78%;
-  right: 0;
-  bottom: 0;
-  left: 24%;
-  content: "";
-  pointer-events: none;
-  z-index: 1;
-}
-.transbg3{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_3.png?v=1687178264);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 12s ease-in-out 4s forwards;
-  position: absolute;
-  top: 56%;
-  right: 0;
-  bottom: 0;
-  left: 10%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg4{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/coffee-beans-in-full-bag-in-graphic-style-vector-illustration-R7MKEJ.png?v=1687178264);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 15s ease-in-out 5s forwards;
-  position: absolute;
-  top: 58%;
-    right: 0%;
-    bottom: 0;
-    left: 12%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
 
-.transbg5{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_67-removebg-preview.png?v=1687179133);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 18s ease-in-out 6s forwards;
-  position: absolute;
-  
-  top: 76%;
-  right: 0%;
-  bottom: 0;
-  left: 19%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg6{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1155063883-612x612-removebg-preview.png?v=1687179235);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 21s ease-in-out 7s forwards;
-  position: absolute;
-  top: 64%;
-  right: 0%;
-  bottom: 0;
-  left: 24%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg7{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_70-removebg-preview.png?v=1687179337);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 24s ease-in-out 8s forwards;
-  position: absolute;
-  top: 79%;
-    right: 0%;
-    bottom: 0;
-    left: 38%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg8{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Untitled_Artwork-removebg-preview.png?v=1687179560);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 27s ease-in-out 9s forwards;
-  position: absolute;
-  top: 65%;
-  right: 0%;
-  bottom: 0;
-  left: 44%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg9{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/image_2023_06_19T12_57_47_300Z-removebg-preview.png?v=1687179559);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 30s ease-in-out 10s forwards;
-  position: absolute;
-  top: 78%;
-  right: 0%;
-  bottom: 0;
-  left: 56%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg10{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/image_2023_06_19T12_48_56_424Z-removebg-preview.png?v=1687179338);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 33s ease-in-out 11s forwards;
-  position: absolute;
-  top: 33%;
-  right: 0%;
-  bottom: 0;
-  left: 65%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg11{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_359__1_-removebg-preview_1.png?v=1687179559);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 36s ease-in-out 12s forwards;
-  position: absolute;
-  top: 26%;
-  right: 0%;
-  bottom: 0;
-  left: 86%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
-.transbg12{
-  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1335421572-612x612__1_-removebg-preview.png?v=1687179560);
-  background-repeat: no-repeat;
-  opacity: 0;
-  animation: fadeInUp 39s ease-in-out 13s forwards;
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  bottom: 0;
-  left: 86%;
-    content: "";
-    pointer-events: none;
-    z-index: 1;
-}
 .displaymobile body .collection__filter-toggleWrapper *{
   font-size: 20px;
  
@@ -4927,7 +4762,7 @@ color: #2E2E2E;
   background-repeat: no-repeat;
   /* animation-delay: 1s; */
   opacity: 0;
-  animation: fadeInUp 5s ease-in-out 3s forwards;
+  animation: fadeInUp 10s ease-in-out 4s forwards;
   position: absolute;
   top: 0;
   right: 0;
@@ -4944,7 +4779,7 @@ color: #2E2E2E;
   
   /* animation-delay: 2s; */
   opacity: 0;
-  animation: fadeInUp 6s ease-in-out 2s forwards;
+  animation: fadeInUp 1s ease-in-out 4s forwards;
   position: absolute;
   top: 26%;
   right: 0;
@@ -4959,7 +4794,7 @@ color: #2E2E2E;
   background-repeat: no-repeat;
   /* animation-delay: 20s; */
   opacity: 0;
-  animation: fadeInUp 9s ease-in-out 3s forwards;
+  animation: fadeInUp 3s ease-in-out 4s forwards;
   position: absolute;
   top: 38%;
     right: 0;
@@ -4974,7 +4809,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_3.png?v=1687178264);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 12s ease-in-out 4s forwards;
+  animation: fadeInUp 6s ease-in-out 4s forwards;
   position: absolute;
   top: 56%;
   right: 0;
@@ -4988,7 +4823,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/coffee-beans-in-full-bag-in-graphic-style-vector-illustration-R7MKEJ.png?v=1687178264);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 15s ease-in-out 5s forwards;
+  animation: fadeInUp 9s ease-in-out 5s forwards;
   position: absolute;
   top: 58%;
     right: 0%;
@@ -5003,7 +4838,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_67-removebg-preview.png?v=1687179133);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 18s ease-in-out 6s forwards;
+  animation: fadeInUp 12s ease-in-out 6s forwards;
   position: absolute;
   
   top: 76%;
@@ -5018,7 +4853,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1155063883-612x612-removebg-preview.png?v=1687179235);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 21s ease-in-out 7s forwards;
+  animation: fadeInUp 15s ease-in-out 7s forwards;
   position: absolute;
   top: 64%;
   right: 0%;
@@ -5032,7 +4867,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_70-removebg-preview.png?v=1687179337);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 24s ease-in-out 8s forwards;
+  animation: fadeInUp 18s ease-in-out 8s forwards;
   position: absolute;
   top: 79%;
     right: 0%;
@@ -5046,7 +4881,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Untitled_Artwork-removebg-preview.png?v=1687179560);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 27s ease-in-out 9s forwards;
+  animation: fadeInUp 21s ease-in-out 9s forwards;
   position: absolute;
   top: 65%;
   right: 0%;
@@ -5060,7 +4895,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/image_2023_06_19T12_57_47_300Z-removebg-preview.png?v=1687179559);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 30s ease-in-out 10s forwards;
+  animation: fadeInUp 24s ease-in-out 10s forwards;
   position: absolute;
   top: 78%;
   right: 0%;
@@ -5074,7 +4909,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/image_2023_06_19T12_48_56_424Z-removebg-preview.png?v=1687179338);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 33s ease-in-out 11s forwards;
+  animation: fadeInUp 27s ease-in-out 11s forwards;
   position: absolute;
   top: 33%;
   right: 0%;
@@ -5088,7 +4923,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_359__1_-removebg-preview_1.png?v=1687179559);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 36s ease-in-out 12s forwards;
+  animation: fadeInUp 30s ease-in-out 12s forwards;
   position: absolute;
   top: 26%;
   right: 0%;
@@ -5102,7 +4937,7 @@ color: #2E2E2E;
   background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1335421572-612x612__1_-removebg-preview.png?v=1687179560);
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fadeInUp 39s ease-in-out 13s forwards;
+  animation: fadeInUp 33s ease-in-out 13s forwards;
   position: absolute;
   top: 0%;
   right: 0%;
@@ -5112,6 +4947,187 @@ color: #2E2E2E;
     pointer-events: none;
     z-index: 1;
 }
+.mobiletransbg{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/vecteezy_engraved-coffee-bean-and-plant-hand-drawn-vintage-branches_7630691_1-removebg-preview.png?v=1687248202);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 5s ease-in-out 3s forwards;
+  position: absolute;
+  top: 64%;
+  right: 0;
+  bottom: 0;
+  left: 6%;
+  z-index: 1;
+  animation-timing-function: ease;
+   
+}
+.mobiletransbg1{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_31_857200e2-4f24-4a0e-a55e-15e7fd4a334e.png?v=1687248629);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 6s ease-in-out 2s forwards;
+  position: absolute;
+  top: 74%;
+  right: 0;
+  bottom: 0;
+  left: 14%;
+  z-index: 1;
+}
+.mobiletransbg2{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/vecteezy_set-of-hand-drawings-on-coffee-theme_17645793_4.jpg?v=1687249245);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 9s ease-in-out 3s forwards;
+  position: absolute;
+  top: 78%;
+  right: 0;
+  bottom: 0;
+  left: 16%;
+   content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+.mobiletransbg3{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_3_65f2b008-be09-4c02-9549-561efe0cd5d0.png?v=1687249689);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 12s ease-in-out 4s forwards;
+  position: absolute;
+  top: 83%;
+  right: 0;
+  bottom: 0;
+  left: 23%;
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+.mobiletransbg4{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/coffee-beans-in-full-bag-in-graphic-style-vector-illustration-R7MKEJ_9d44fe79-360e-4f4f-a66e-a941797681e6.png?v=1687249689);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 15s ease-in-out 5s forwards;
+  position: absolute;
+  top: 84%;
+  right: 0%;
+  bottom: 0;
+  left: 27%;
+    content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+
+.mobiletransbg5{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_67.png?v=1687249707);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 18s ease-in-out 6s forwards;
+  position: absolute;
+  top: 88%;
+  right: 0%;
+  bottom: 0;
+  left: 36%;
+    content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+.mobiletransbg6{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1155063883-612x612_1.png?v=1687252812);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 21s ease-in-out 7s forwards;
+  position: absolute;
+  top: 86%;
+  right: 0%;
+  bottom: 0;
+  left: 42%;
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+.mobiletransbg7{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_70.png?v=1687252812);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 24s ease-in-out 8s forwards;
+  position: absolute;
+  top: 90%;
+    right: 0%;
+    bottom: 0;
+    left: 53%;
+    content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+.mobiletransbg8{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Untitled_Artwork.png?v=1687252812);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 27s ease-in-out 9s forwards;
+  position: absolute;
+  top: 86%;
+  right: 0%;
+  bottom: 0;
+  left: 60%;
+  content: "";
+  pointer-events: none;
+  z-index: 1;
+}
+.mobiletransbg9{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Group_5.png?v=1687252812);
+  opacity: 0;background-repeat: no-repeat;
+  animation: fadeInUp 30s ease-in-out 10s forwards;
+  position: absolute;
+  top: 88%;
+  right: 0%;
+  bottom: 0;
+  left: 73%;
+  content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+.mobiletransbg10{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Group_39794.png?v=1687253166);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 33s ease-in-out 10s forwards;
+  position: absolute;
+  top: 78%;
+  right: 0%;
+  bottom: 0;
+  left: 78%;
+    content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+.mobiletransbg11{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/Vector_359.png?v=1687253166);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 36s ease-in-out 10s forwards;
+  position: absolute;
+  top: 73%;
+  right: 0%;
+  bottom: 0;
+  left: 88%;
+   content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+.mobiletransbg12{
+  background-image: url(https://cdn.shopify.com/s/files/1/0261/8585/files/istockphoto-1335421572-612x612.png?v=1687253166);
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInUp 39s ease-in-out 10s forwards;
+  position: absolute;
+  top: 65%;
+    right: 0%;
+    bottom: 0;
+    left: 87%;
+    content: "";
+    pointer-events: none;
+    z-index: 1;
+}
+
 @media screen and (max-width: 776px){
   .wildgoosecoffee .productpage.pagewidth,.wildmerchandise .productpage.pagewidth{
         display: flex;
@@ -5133,3 +5149,53 @@ color: #2E2E2E;
         width: 70%;
   }
 }
+@media screen and (max-width: 1550px){
+  .transbg6{
+    left: 28%;
+  }
+  .transbg7{
+    left: 45%;
+  }
+  .transbg8{
+    left: 53%;
+  }
+  .transbg9{
+    left: 68%;
+    top: 76%;
+    background-size: 100px;
+  }
+  .transbg10{
+    background-size: 400px;
+    left: 73%;    top: 36%;
+  }
+  .transbg11{
+    top: 24%;
+    right: 0%;
+    bottom: 0;
+    left: 88%;
+  }
+}
+@media screen and (max-width: 1400px){
+  .transbg10 {
+    background-size: 310px;
+    left: 76%;
+    top: 36%;
+}
+.transbg9 {
+  left: 75%;
+  top: 72%;
+  background-size: 100px;
+}
+.transbg8 {
+  left: 58%;
+  top: 62%;
+}
+.transbg7 {
+  left: 49%;
+}
+}
+@media screen and (max-width: 1100px){
+  .transbg9 {
+    left: 79%;
+    top: 66%;}
+  }
