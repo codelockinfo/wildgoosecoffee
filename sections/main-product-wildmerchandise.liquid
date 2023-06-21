@@ -241,7 +241,7 @@
                         <input class="formQty" type="hidden" name="quantity" value="1" />
                         <input class="formVariantId" name="id" type="hidden" value="{{ product.selected_or_first_available_variant.id }}">
                         
-                        <div class="cusproductflex">
+                        <div class="cusproductflex displayflex spaces-between">
                             {% render 'customproduct_price', variant: current_variant, product: product %}
                             <div class="product-add custadd">
                             <div class="note note-success js-added-msg" style="display: none">
